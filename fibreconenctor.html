@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>Fibre Connector | Fast Uncapped Fibre Internet | Free Installation | 14-Day Free Trial</title>
+    <meta name="description" content="Fibre Connector helps you access fast uncapped fibre internet for family, business and organization with free installation using Openserve Accredited Infrastructure and Installers. 14-day free trial, no upfront cash.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Fibre Connector | Fast Uncapped Fibre Internet | Free Installation">
+    <meta property="og:description" content="Access fast uncapped fibre internet with free installation. 14-day free trial, no upfront cash. Openserve Accredited.">
+    <meta property="og:image" content="https://yourusername.github.io/repository-name/images/social-preview.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/repository-name">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22grad%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 stop-color=%220033a0/><stop offset=%22100%25%22 stop-color=%220056cc/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22url(%23grad)%22/><path d=%22M30,40 L70,40 L70,60 L30,60 Z M35,30 L65,30 L65,35 L35,35 Z M40,20 L60,20 L60,25 L40,25 Z%22 fill=%22white%22/></svg>" type="image/svg+xml">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#f0f7ff',
+                100: '#e0effe',
+                200: '#bae0fd',
+                300: '#7cc4fa',
+                400: '#36a5f3',
+                500: '#0d8ae3',
+                600: '#0067c2',
+                700: '#0052a0',
+                800: '#003d7d',
+                900: '#002a5a',
+              },
+              accent: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                500: '#64748b',
+                700: '#334155',
+                900: '#0f172a',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in',
+              'slide-up': 'slideUp 0.6s ease-out',
+              'pulse-subtle': 'pulseSubtle 3s infinite',
+              'float': 'float 3s ease-in-out infinite',
+              'gradient': 'gradient 8s ease infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              pulseSubtle: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0.8' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              gradient: {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      html {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        overflow-x: hidden;
+        background: linear-gradient(135deg, #f8fafc 0%, #f0f7ff 100%);
+      }
+      
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .gradient-bg {
+        background: linear-gradient(-45deg, #f0f7ff, #ffffff, #e0effe, #ffffff);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      
+      .hero-gradient {
+        background: linear-gradient(135deg, #0033a0 0%, #0056cc 50%, #0077ff 100%);
+      }
+      
+      .card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 51, 160, 0.1);
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, #0033a0 0%, #0056cc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .border-gradient {
+        position: relative;
+        border: 2px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(135deg, #0033a0, #0056cc) border-box;
+      }
+      
+      .touch-target {
+        min-height: 44px;
+        min-width: 44px;
+      }
+      
+      @media (max-width: 768px) {
+        .mobile-stack {
+          flex-direction: column;
+        }
+        
+        .mobile-center {
+          text-align: center;
+        }
+        
+        .mobile-full {
+          width: 100%;
+        }
+        
+        .mobile-padding {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+      
+      .section-padding {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+      
+      @media (max-width: 768px) {
+        .section-padding {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+      }
+      
+      .nav-link {
+        position: relative;
+        padding-bottom: 4px;
+      }
+      
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #0033a0, #0056cc);
+        transition: width 0.3s ease;
+      }
+      
+      .nav-link:hover::after {
+        width: 100%;
+      }
+      
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+      }
+      
+      .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .stat-counter {
+        font-variant-numeric: tabular-nums;
+      }
+      
+      .fibre-glow {
+        filter: drop-shadow(0 0 20px rgba(0, 123, 255, 0.3));
+      }
+      
+      .whatsapp-button {
+        background: linear-gradient(135deg, #25D366, #128C7E);
+      }
+      
+      .whatsapp-button:hover {
+        background: linear-gradient(135deg, #128C7E, #0E6E5E);
+      }
+      
+      .image-hover-zoom {
+        overflow: hidden;
+        border-radius: 1rem;
+      }
+      
+      .image-hover-zoom img {
+        transition: transform 0.5s ease;
+      }
+      
+      .image-hover-zoom:hover img {
+        transform: scale(1.05);
+      }
+      
+      .image-overlay {
+        position: relative;
+      }
+      
+      .image-overlay::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(0, 51, 160, 0.1), rgba(0, 51, 160, 0.3));
+        border-radius: 1rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .image-overlay:hover::after {
+        opacity: 1;
+      }
+      
+      .fibre-cable {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .fibre-cable::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #0066ff, transparent);
+        animation: cableFlow 2s linear infinite;
+      }
+      
+      @keyframes cableFlow {
+        0% { left: -100%; }
+        100% { left: 100%; }
+      }
+    </style>
+</head>
+<body class="text-accent-900 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-effect z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21 11c0-5-4-9-9-9s-9 4-9 9c0 4.1 2.5 7.6 6 8.7V22h6v-2.3c3.5-1.1 6-4.6 6-8.7zm-9-7c3.9 0 7 3.1 7 7 0 3.5-2.6 6.4-6 6.9V20h-2v-3.1c-3.4-.5-6-3.4-6-6.9 0-3.9 3.1-7 7-7zm-1 12h2v-2h-2v2zm0-4h2V7h-2v4z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold text-primary-800 group-hover:text-primary-600 transition-colors">Fibre Connector</span>
+                        <span class="block text-xs text-accent-500">Fast Uncapped Fibre Internet</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#hero" class="nav-link text-sm font-medium text-accent-700 hover:text-primary-600 transition-colors">Home</a>
+                    <a href="#infrastructure" class="nav-link text-sm font-medium text-accent-700 hover:text-primary-600 transition-colors">Infrastructure</a>
+                    <a href="#offers" class="nav-link text-sm font-medium text-accent-700 hover:text-primary-600 transition-colors">Special Offers</a>
+                    <a href="#solutions" class="nav-link text-sm font-medium text-accent-700 hover:text-primary-600 transition-colors">Solutions</a>
+                    <a href="#coverage" class="nav-link text-sm font-medium text-accent-700 hover:text-primary-600 transition-colors">Coverage</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-accent-700 hover:text-primary-600 transition-colors">Contact</a>
+                    <a href="https://wa.me/27766473499" target="_blank" class="flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors">
+                        <span>💬</span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://wa.me/27766473499" target="_blank" class="whatsapp-button text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:shadow-lg transition-all shadow-md hover-lift">
+                        Get Connected
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden touch-target p-2 text-accent-700 hover:bg-accent-100 rounded-lg transition-colors">
+                    <svg id="menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white border-t border-accent-100 hidden shadow-xl">
+            <div class="px-4 py-6 flex flex-col gap-1">
+                <a href="#hero" class="py-3 px-4 text-accent-700 font-medium rounded-lg hover:bg-accent-50 transition-colors">Home</a>
+                <a href="#infrastructure" class="py-3 px-4 text-accent-700 font-medium rounded-lg hover:bg-accent-50 transition-colors">Infrastructure</a>
+                <a href="#offers" class="py-3 px-4 text-accent-700 font-medium rounded-lg hover:bg-accent-50 transition-colors">Special Offers</a>
+                <a href="#solutions" class="py-3 px-4 text-accent-700 font-medium rounded-lg hover:bg-accent-50 transition-colors">Solutions</a>
+                <a href="#coverage" class="py-3 px-4 text-accent-700 font-medium rounded-lg hover:bg-accent-50 transition-colors">Coverage</a>
+                <a href="#contact" class="py-3 px-4 text-accent-700 font-medium rounded-lg hover:bg-accent-50 transition-colors">Contact</a>
+                <div class="pt-4 mt-2 border-t border-accent-100">
+                    <a href="https://wa.me/27766473499" target="_blank" class="flex items-center gap-3 py-3 px-4 text-primary-600 font-medium rounded-lg hover:bg-accent-50 transition-colors">
+                        <span>💬</span>
+                        <span>WhatsApp: +27766473499</span>
+                    </a>
+                    <a href="mailto:connect@fibreconnector.co.za" class="flex items-center gap-3 py-3 px-4 text-primary-600 font-medium rounded-lg hover:bg-accent-50 transition-colors">
+                        <span>📧</span>
+                        <span>connect@fibreconnector.co.za</span>
+                    </a>
+                    <a href="tel:+27766473499" class="flex items-center gap-3 py-3 px-4 text-primary-600 font-medium rounded-lg hover:bg-accent-50 transition-colors">
+                        <span>📞</span>
+                        <span>Call: +27766473499</span>
+                    </a>
+                </div>
+                <a href="https://wa.me/27766473499" target="_blank" class="mt-4 whatsapp-button text-white py-3.5 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-all">
+                    Get Connected on WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden gradient-bg">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-primary-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto text-center">
+                <!-- Accreditation Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-primary-100 mb-8 animate-slide-up">
+                    <span class="w-2 h-2 rounded-full bg-primary-500 animate-ping"></span>
+                    <span class="text-sm font-medium text-primary-700">Openserve Accredited</span>
+                    <span class="text-sm text-accent-600">• Professional Installation</span>
+                </div>
+                
+                <!-- Main Headline -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <span class="block text-accent-900">Lightning Fast</span>
+                    <span class="block text-gradient mt-2">Fibre Internet</span>
+                </h1>
+                
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-accent-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+                    Access fast uncapped fibre internet for your family, business and organization with free installation
+                </p>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-accent-100 card-hover">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-700 mb-2">0</div>
+                        <div class="text-sm font-medium text-accent-700">Upfront Cash</div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-accent-100 card-hover">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-700 mb-2">14</div>
+                        <div class="text-sm font-medium text-accent-700">Day Free Trial</div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-accent-100 card-hover">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-700 mb-2">100+</div>
+                        <div class="text-sm font-medium text-accent-700">Mbps Speeds</div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-accent-100 card-hover">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-700 mb-2">24/7</div>
+                        <div class="text-sm font-medium text-accent-700">Support</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20to%20get%20connected%20to%20fast%20fibre%20internet" target="_blank" class="touch-target inline-flex items-center justify-center gap-3 whatsapp-button text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl hover-lift group">
+                        <span class="text-xl">💬</span>
+                        <span>Get Connected Now</span>
+                        <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                    <a href="#solutions" class="touch-target inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-8 py-4 rounded-xl font-semibold hover:bg-accent-50 transition-all shadow-lg hover:shadow-xl hover-lift border border-primary-100">
+                        <span class="text-xl">🔍</span>
+                        <span>View Solutions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="infrastructure" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent-900 mb-4">
+                    Premium <span class="text-gradient">Fibre Infrastructure</span>
+                </h2>
+                <p class="text-lg text-accent-600">
+                    Professional installation using Openserve Accredited Infrastructure and Installers
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <div class="image-hover-zoom image-overlay rounded-2xl overflow-hidden shadow-2xl">
+                        <img 
+                            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                            alt="Professional Fibre Installation" 
+                            class="w-full h-[500px] object-cover"
+                        >
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Professional Installation</h3>
+                            <p class="text-white/90">Openserve Accredited technicians ensure perfect setup</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-on-scroll">
+                    <h3 class="text-2xl font-bold text-accent-900 mb-6">Enterprise-Grade Infrastructure</h3>
+                    <p class="text-lg text-accent-600 mb-6 leading-relaxed">
+                        We use only Openserve Accredited infrastructure and professional installers to deliver reliable, high-speed fibre internet to your home or business.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                            <div class="text-lg font-bold text-primary-700 mb-1">Openserve Network</div>
+                            <p class="text-accent-600 text-sm">South Africa's leading fibre infrastructure provider</p>
+                        </div>
+                        <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                            <div class="text-lg font-bold text-primary-700 mb-1">Certified Installers</div>
+                            <p class="text-accent-600 text-sm">Fully accredited and trained installation technicians</p>
+                        </div>
+                        <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                            <div class="text-lg font-bold text-primary-700 mb-1">Free Installation</div>
+                            <p class="text-accent-600 text-sm">No setup fees, no hidden costs</p>
+                        </div>
+                        <div class="bg-primary-50 p-4 rounded-xl border border-primary-100">
+                            <div class="text-lg font-bold text-primary-700 mb-1">24/7 Support</div>
+                            <p class="text-accent-600 text-sm">Round-the-clock technical assistance</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20to%20learn%20more%20about%20your%20fibre%20infrastructure" target="_blank" class="touch-target inline-flex items-center gap-3 whatsapp-button text-white px-6 py-3.5 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg">
+                        <span>💬 Discuss Installation</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Network Features -->
+            <div class="mt-16 bg-primary-50 rounded-2xl p-8">
+                <h4 class="text-center text-xl font-bold text-accent-900 mb-8">Our Network Features</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl flex flex-col items-center justify-center text-center">
+                        <div class="text-3xl mb-4">⚡</div>
+                        <div class="text-xl font-bold text-primary-700 mb-2">100-1000 Mbps</div>
+                        <div class="text-sm text-accent-600">Lightning Fast Speeds</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl flex flex-col items-center justify-center text-center">
+                        <div class="text-3xl mb-4">🔄</div>
+                        <div class="text-xl font-bold text-primary-700 mb-2">Uncapped</div>
+                        <div class="text-sm text-accent-600">No Data Limits</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl flex flex-col items-center justify-center text-center">
+                        <div class="text-3xl mb-4">🎮</div>
+                        <div class="text-xl font-bold text-primary-700 mb-2">Low Latency</div>
+                        <div class="text-sm text-accent-600">Perfect for Gaming</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl flex flex-col items-center justify-center text-center">
+                        <div class="text-3xl mb-4">📞</div>
+                        <div class="text-xl font-bold text-primary-700 mb-2">Free VOIP</div>
+                        <div class="text-sm text-accent-600">Included Phone Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="py-16 md:py-24 bg-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent-900 mb-4">
+                    Exclusive <span class="text-gradient">Special Offers</span>
+                </h2>
+                <p class="text-lg text-accent-600">
+                    14-day free trial with no upfront costs and free professional installation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll order-2 md:order-1">
+                    <h3 class="text-2xl font-bold text-accent-900 mb-6">Risk-Free Connection</h3>
+                    <p class="text-lg text-accent-600 mb-6 leading-relaxed">
+                        Experience the power of fibre internet with our 14-day free trial. If you're not completely satisfied, you can cancel with no obligation.
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-lg">🎁</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">14-Day Free Trial</h4>
+                                <p class="text-accent-600">Test our service for two weeks completely free</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-lg">💰</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">Zero Upfront Costs</h4>
+                                <p class="text-accent-600">No installation fees, no setup costs</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-lg">⚡</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">Free Installation</h4>
+                                <p class="text-accent-600">Professional setup by accredited technicians</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl border border-primary-100 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-700 mb-2">No Contract Lock-in</div>
+                            <div class="text-accent-600">Flexible month-to-month option available</div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20to%20start%20my%2014-day%20free%20trial" target="_blank" class="touch-target inline-flex items-center gap-3 whatsapp-button text-white px-6 py-3.5 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg">
+                        <span>💬 Start Free Trial</span>
+                        <span>→</span>
+                    </a>
+                </div>
+                
+                <div class="animate-on-scroll order-1 md:order-2">
+                    <div class="image-hover-zoom image-overlay rounded-2xl overflow-hidden shadow-2xl">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                            alt="Fast Fibre Internet Connection" 
+                            class="w-full h-[500px] object-cover"
+                        >
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Unlimited Streaming</h3>
+                            <p class="text-white/90">4K streaming, gaming, and video calls without limits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Benefits -->
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-accent-100 card-hover text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-accent-900 mb-4">Free Trial</h4>
+                    <p class="text-accent-600">14 days to experience our premium fibre service</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-accent-100 card-hover text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <span class="text-2xl">🔧</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-accent-900 mb-4">Free Installation</h4>
+                    <p class="text-accent-600">Professional setup with no hidden fees</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-accent-100 card-hover text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+                        <span class="text-2xl">📞</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-accent-900 mb-4">24/7 Support</h4>
+                    <p class="text-accent-600">Always available to assist with any issues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditation Banner -->
+    <section class="py-6 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                        <span class="text-lg">✅</span>
+                    </div>
+                    <div>
+                        <p class="font-bold">Openserve Accredited Partner</p>
+                        <p class="text-sm text-white/90">Professional Infrastructure & Installation</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 text-sm">
+                    <a href="https://wa.me/27766473499" target="_blank" class="flex items-center gap-2 hover:text-white/80 transition-colors">
+                        <span>💬</span>
+                        <span>WhatsApp Connection</span>
+                    </a>
+                    <a href="mailto:connect@fibreconnector.co.za" class="flex items-center gap-2 hover:text-white/80 transition-colors">
+                        <span>📧</span>
+                        <span>connect@fibreconnector.co.za</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-medium mb-6">
+                        <span>🏆</span>
+                        <span>Our Mission</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-accent-900 mb-6">
+                        Connecting South Africa with <span class="text-gradient">lightning-fast fibre</span>
+                    </h2>
+                    <p class="text-lg text-accent-600 mb-6 leading-relaxed">
+                        At Fibre Connector, we're committed to bringing reliable, high-speed internet to homes and businesses across Tshwane and Gauteng.
+                    </p>
+                    <p class="text-accent-600 mb-8 leading-relaxed">
+                        As an Openserve Accredited partner, we use only the best infrastructure and professional installers to ensure you get the fastest, most reliable connection possible. Our 14-day free trial and zero upfront costs make it easy to experience the difference.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20to%20learn%20more%20about%20your%20fibre%20services" target="_blank" class="touch-target inline-flex items-center gap-2 whatsapp-button text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg">
+                            <span>Get Connected</span>
+                            <span>→</span>
+                        </a>
+                        <a href="#contact" class="touch-target inline-flex items-center gap-2 bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-accent-50 transition-colors border border-primary-200">
+                            <span>Check Coverage</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6 animate-on-scroll">
+                    <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl border border-primary-100 card-hover">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 mb-4 fibre-glow">
+                            <span class="text-2xl">⚡</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-accent-900 mb-2">Blazing Speeds</h3>
+                        <p class="text-sm text-accent-600">100-1000 Mbps for seamless browsing and streaming</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl border border-primary-100 card-hover">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                            <span class="text-2xl">🔄</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-accent-900 mb-2">Uncapped Data</h3>
+                        <p class="text-sm text-accent-600">Stream, work, and play without data limits</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl border border-primary-100 card-hover">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                            <span class="text-2xl">🏠</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-accent-900 mb-2">Free Installation</h3>
+                        <p class="text-sm text-accent-600">Professional setup with no upfront costs</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl border border-primary-100 card-hover">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 mb-4">
+                            <span class="text-2xl">📞</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-accent-900 mb-2">Free VOIP</h3>
+                        <p class="text-sm text-accent-600">Make calls over the internet included</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="section-padding bg-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent-900 mb-4">
+                    Tailored <span class="text-gradient">Fibre Solutions</span>
+                </h2>
+                <p class="text-lg text-accent-600">
+                    Perfect fibre packages for every need - family, business, or organization
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Family -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-accent-100 card-hover animate-on-scroll">
+                    <div class="p-8">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center text-white mb-6">
+                            <span class="text-2xl">🏠</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-accent-900 mb-4">Family Fibre</h3>
+                        <p class="text-accent-600 mb-6">
+                            Keep your family connected with reliable, high-speed internet for streaming, gaming, and remote learning.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Multiple devices simultaneously</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">4K streaming & gaming</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Free VOIP calls included</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20a%20quote%20for%20FAMILY%20fibre%20internet" target="_blank" class="touch-target inline-flex items-center justify-center gap-2 whatsapp-button text-white w-full py-3 rounded-lg font-semibold transition-colors">
+                            <span>💬</span>
+                            <span>Get Family Package</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-accent-100 card-hover animate-on-scroll">
+                    <div class="p-8">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center text-white mb-6">
+                            <span class="text-2xl">🏢</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-accent-900 mb-4">Business Fibre</h3>
+                        <p class="text-accent-600 mb-6">
+                            Power your business with enterprise-grade fibre internet for seamless operations, video conferencing, and cloud services.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Dedicated business support</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Priority installation</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">SLA guarantees</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20a%20quote%20for%20BUSINESS%20fibre%20internet" target="_blank" class="touch-target inline-flex items-center justify-center gap-2 whatsapp-button text-white w-full py-3 rounded-lg font-semibold transition-colors">
+                            <span>💬</span>
+                            <span>Get Business Package</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Organization -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-accent-100 card-hover animate-on-scroll">
+                    <div class="p-8">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center text-white mb-6">
+                            <span class="text-2xl">🏛️</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-accent-900 mb-4">Organization Fibre</h3>
+                        <p class="text-accent-600 mb-6">
+                            Connect schools, NGOs, churches, and community centers with affordable, high-speed fibre internet solutions.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Special organization rates</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Bulk connection discounts</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-xs">✓</span>
+                                <span class="text-accent-700">Extended support hours</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20a%20quote%20for%20ORGANIZATION%20fibre%20internet" target="_blank" class="touch-target inline-flex items-center justify-center gap-2 whatsapp-button text-white w-full py-3 rounded-lg font-semibold transition-colors">
+                            <span>💬</span>
+                            <span>Get Organization Package</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent-900 mb-4">
+                    Ready to Get <span class="text-gradient">Connected?</span>
+                </h2>
+                <p class="text-lg text-accent-600">
+                    Contact us for an obligation-free connection assessment and start your 14-day free trial
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="bg-white p-8 rounded-2xl border border-accent-100 shadow-lg animate-on-scroll">
+                    <h3 class="text-2xl font-bold text-accent-900 mb-8">Get in Touch</h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-xl">💬</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">WhatsApp Connection</h4>
+                                <a href="https://wa.me/27766473499" target="_blank" class="text-primary-600 hover:text-primary-800 transition-colors text-lg">
+                                    +27766473499
+                                </a>
+                                <p class="text-accent-500 text-sm mt-1">Click to start WhatsApp conversation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-xl">📧</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">Email Address</h4>
+                                <a href="mailto:connect@fibreconnector.co.za" class="text-primary-600 hover:text-primary-800 transition-colors text-lg">
+                                    connect@fibreconnector.co.za
+                                </a>
+                                <p class="text-accent-500 text-sm mt-1">Primary contact for fibre inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-xl">📞</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">Phone Number</h4>
+                                <a href="tel:+27766473499" class="text-primary-600 hover:text-primary-800 transition-colors text-lg">
+                                    +27766473499
+                                </a>
+                                <p class="text-accent-500 text-sm mt-1">Available during business hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                                <span class="text-xl">📍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-accent-900 mb-1">Service Location</h4>
+                                <p class="text-accent-700">
+                                    Tshwane, Gauteng<br>
+                                    Covering Pretoria and surrounding areas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick CTA -->
+                <div class="animate-on-scroll">
+                    <div class="bg-gradient-to-br from-primary-600 to-primary-800 p-8 rounded-2xl text-white mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Free Coverage Check</h3>
+                        <p class="text-white/90 mb-8">
+                            Check if fibre is available in your area. We'll verify coverage and provide a free installation quote within 24 hours.
+                        </p>
+                        <a href="https://wa.me/27766473499?text=Hi%20Fibre%20Connector,%20I'd%20like%20to%20check%20if%20fibre%20is%20available%20in%20my%20area" target="_blank" class="touch-target inline-flex items-center justify-center gap-3 whatsapp-button text-white w-full py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl">
+                            <span>💬 Check Coverage</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-primary-400">Fibre</span>
+                        <span> Connector</span>
+                    </div>
+                    <p class="mb-4">
+                        Connecting homes and businesses across Tshwane with fast, reliable fibre internet through Openserve Accredited infrastructure.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span>📞</span>
+                            <span>+27766473499</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>📧</span>
+                            <span>connect@fibreconnector.co.za</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="#about" class="hover:text-primary-300 transition-colors">About Us</a>
+                        <a href="#infrastructure" class="hover:text-primary-300 transition-colors">Infrastructure</a>
+                        <a href="#offers" class="hover:text-primary-300 transition-colors">Special Offers</a>
+                        <a href="#solutions" class="hover:text-primary-300 transition-colors">Solutions</a>
+                        <a href="#contact" class="hover:text-primary-300 transition-colors">Contact</a>
+                        <a href="#coverage" class="hover:text-primary-300 transition-colors">Coverage Check</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Service Area</h4>
+                    <p>
+                        Tshwane Metropolitan Area<br>
+                        Gauteng Province<br>
+                        South Africa
+                    </p>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-accent-800 text-center">
+                <p class="text-white/80">
+                    All rights reserved © 2024 by Fibre Connector. Openserve Accredited Infrastructure Partner.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpenIcon = document.getElementById('menu-open');
+        const menuCloseIcon = document.getElementById('menu-close');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    menuOpenIcon.classList.add('hidden');
+                    menuCloseIcon.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Close menu when clicking links
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        menuOpenIcon.classList.remove('hidden');
+                        menuCloseIcon.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    }
+                    
+                    // Calculate header height
+                    const headerHeight = document.querySelector('nav').offsetHeight;
+                    
+                    // Scroll to element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements with animation class
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Add hover effects to cards
+        document.querySelectorAll('.card-hover').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.createElement('button');
+        backToTop.innerHTML = '↑';
+        backToTop.className = 'fixed bottom-8 right-8 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-colors z-40 hidden items-center justify-center text-xl';
+        backToTop.style.transform = 'translateY(100px)';
+        backToTop.style.transition = 'transform 0.3s ease';
+        document.body.appendChild(backToTop);
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('hidden');
+                backToTop.style.transform = 'translateY(0)';
+            } else {
+                backToTop.style.transform = 'translateY(100px)';
+                setTimeout(() => {
+                    if (window.scrollY <= 500) {
+                        backToTop.classList.add('hidden');
+                    }
+                }, 300);
+            }
+        });
+
+        // WhatsApp button enhancement
+        const whatsappButtons = document.querySelectorAll('a[href*="whatsapp"], a[href*="wa.me"]');
+        whatsappButtons.forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Image hover effects
+        const imageZoomElements = document.querySelectorAll('.image-hover-zoom');
+        imageZoomElements.forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                const img = this.querySelector('img');
+                if (img) {
+                    img.style.transform = 'scale(1.05)';
+                }
+            });
+            element.addEventListener('mouseleave', function() {
+                const img = this.querySelector('img');
+                if (img) {
+                    img.style.transform = 'scale(1)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
