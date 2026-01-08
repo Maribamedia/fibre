@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    <title>FibreConnector | 25Mbps Fibre Internet | 14-Day Free Trial | Free Installation | No Upfront Cost</title>
-    <meta name="description" content="Tired of slow internet? FibreConnector offers 25Mbps fibre internet for families and local businesses. 14-day free trial, free installation, zero upfront cost. From R490/month.">
+    <title>FibreConnector | Reliable 25Mbps Fibre Internet | 14-Day Free Trial | Free Installation | No Upfront Cost</title>
+    <meta name="description" content="End slow internet frustration. FibreConnector provides stable 25Mbps fibre internet for families and local businesses. Try risk-free for 14 days with free installation and zero upfront cost. From R490/month.">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="FibreConnector | Fix Your Slow Internet Today">
-    <meta property="og:description" content="25Mbps fibre internet with 14-day free trial, free installation, zero upfront cost. Perfect for families and local businesses.">
+    <meta property="og:title" content="Fix Your Slow Internet | FibreConnector 25Mbps Fibre">
+    <meta property="og:description" content="14-day free trial with free installation, zero upfront cost. Reliable 25Mbps fibre for families & businesses. Stop buffering and dropouts today.">
     <meta property="og:image" content="https://yourusername.github.io/repository-name/images/social-preview.jpg">
     <meta property="og:url" content="https://yourusername.github.io/repository-name">
     <meta name="twitter:card" content="summary_large_image">
@@ -38,6 +38,13 @@
                 700: '#0052a0',
                 800: '#003d7d',
                 900: '#002a5a',
+              },
+              secondary: {
+                50: '#fef7ec',
+                100: '#fdeed3',
+                500: '#f59e0b',
+                700: '#d97706',
+                900: '#92400e',
               }
             },
             fontFamily: {
@@ -46,6 +53,21 @@
             animation: {
               'fade-in': 'fadeIn 0.5s ease-in',
               'slide-up': 'slideUp 0.6s ease-out',
+              'pulse-subtle': 'pulseSubtle 3s infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              pulseSubtle: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0.8' },
+              }
             }
           }
         }
@@ -59,7 +81,7 @@
       }
       
       .hero-gradient {
-        background: linear-gradient(135deg, #0033a0 0%, #0056cc 100%);
+        background: linear-gradient(135deg, #0033a0 0%, #0056cc 50%, #0077ff 100%);
       }
       
       .text-gradient {
@@ -68,11 +90,59 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
+      
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 51, 160, 0.1);
+      }
+      
+      .guarantee-badge {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+        animation: pulseSubtle 3s infinite;
+      }
+      
+      .touch-target {
+        min-height: 44px;
+        min-width: 44px;
+      }
+      
+      .fibre-cable {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .fibre-cable::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #0066ff, transparent);
+        animation: cableFlow 2s linear infinite;
+      }
+      
+      @keyframes cableFlow {
+        0% { left: -100%; }
+        100% { left: 100%; }
+      }
     </style>
 </head>
 <body class="text-gray-900 antialiased">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <nav class="fixed w-full glass-effect z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
@@ -82,11 +152,43 @@
                             <path d="M21 11c0-5-4-9-9-9s-9 4-9 9c0 4.1 2.5 7.6 6 8.7V22h6v-2.3c3.5-1.1 6-4.6 6-8.7zm-9-7c3.9 0 7 3.1 7 7 0 3.5-2.6 6.4-6 6.9V20h-2v-3.1c-3.4-.5-6-3.4-6-6.9 0-3.9 3.1-7 7-7zm-1 12h2v-2h-2v2zm0-4h2V7h-2v4z"/>
                         </svg>
                     </div>
-                    <span class="text-lg font-bold text-primary-800">FibreConnector</span>
+                    <div>
+                        <span class="text-lg font-bold text-primary-800">FibreConnector</span>
+                        <span class="block text-xs text-gray-500">Stable 25Mbps Fibre Internet</span>
+                    </div>
                 </a>
 
-                <!-- CTA Button -->
-                <a href="https://cal.com/fibreconnector" target="_blank" class="bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-all shadow-md">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#solution" class="text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Solution</a>
+                    <a href="#how-it-works" class="text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">How It Works</a>
+                    <a href="#pricing" class="text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Pricing</a>
+                    <a href="#faq" class="text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">FAQ</a>
+                    <a href="https://cal.com/fibreconnector" target="_blank" class="bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-all shadow-md hover:scale-105">
+                        Book Free Installation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden touch-target p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
+                    <svg id="menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-100 hidden shadow-xl">
+            <div class="px-4 py-6 flex flex-col gap-1">
+                <a href="#solution" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Solution</a>
+                <a href="#how-it-works" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">How It Works</a>
+                <a href="#pricing" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Pricing</a>
+                <a href="#faq" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">FAQ</a>
+                <a href="https://cal.com/fibreconnector" target="_blank" class="mt-4 bg-primary-600 text-white py-3.5 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-all">
                     Book Free Installation
                 </a>
             </div>
@@ -94,259 +196,764 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-12 md:pt-40 md:pb-16">
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 border border-primary-200 mb-6">
-                    <span class="text-sm font-medium text-primary-700">🎯 One Guaranteed Solution</span>
+            <div class="max-w-6xl mx-auto">
+                <!-- Guarantee Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full guarantee-badge mb-8 animate-fade-in">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    <span class="text-sm font-medium">🎯 One Guaranteed Solution for Slow Internet</span>
                 </div>
                 
                 <!-- Main Headline -->
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    <span class="block">Tired of Slow Internet?</span>
-                    <span class="block text-gradient mt-2">Get Reliable 25Mbps Fibre</span>
+                    <span class="block text-gray-900">Tired of Buffering, Dropped Calls,</span>
+                    <span class="block text-gradient mt-2">and Slow Internet Frustration?</span>
                 </h1>
                 
                 <!-- Subheadline -->
-                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Perfect for residential families and local businesses. No buffering, no dropouts, just stable connectivity.
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl">
+                    <span class="font-semibold text-primary-700">FibreConnector delivers reliable 25Mbps fibre internet</span> specifically designed for residential families and local businesses. No more interruptions, no more waiting - just stable, consistent connectivity.
                 </p>
 
                 <!-- VSL YouTube Embed -->
-                <div class="mb-10 max-w-3xl mx-auto">
-                    <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
+                <div class="mb-10 max-w-4xl mx-auto animate-slide-up">
+                    <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                         <!-- Replace with your actual VSL YouTube embed code -->
                         <iframe 
                             src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-                            title="FibreConnector - Fix Your Slow Internet" 
+                            title="FibreConnector - End Your Slow Internet Struggles"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
-                            class="w-full h-full">
+                            class="w-full h-full"
+                            loading="lazy">
                         </iframe>
                     </div>
+                    <p class="text-center text-gray-500 text-sm mt-2">Watch how FibreConnector solves your internet problems in 3 minutes</p>
                 </div>
 
-                <!-- Pain Point Solution -->
-                <div class="bg-white rounded-2xl p-8 mb-10 border border-gray-200 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Your Internet Problems Solved:</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0">
-                                <span class="text-xl">❌</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-1">Slow Speeds</h4>
-                                <p class="text-gray-600">Buffering videos, slow downloads</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0">
-                                <span class="text-xl">❌</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-1">Unreliable Connection</h4>
-                                <p class="text-gray-600">Dropouts during important calls</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
-                                <span class="text-xl">✅</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-1">25Mbps Stable Fibre</h4>
-                                <p class="text-gray-600">Perfect for streaming & work</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
-                                <span class="text-xl">✅</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-1">Always Connected</h4>
-                                <p class="text-gray-600">No more connectivity issues</p>
-                            </div>
-                        </div>
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+                        <div class="text-2xl font-bold text-primary-700 mb-1">25 Mbps</div>
+                        <div class="text-sm text-gray-600">Perfect Speed</div>
                     </div>
-                </div>
-
-                <!-- Guaranteed Solution -->
-                <div class="mb-10">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">One Guaranteed Solution Includes:</h3>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="bg-primary-50 p-6 rounded-xl border border-primary-100 text-center">
-                            <div class="text-3xl font-bold text-primary-700 mb-2">R0</div>
-                            <div class="text-sm font-medium text-gray-700">Upfront Cost</div>
-                        </div>
-                        <div class="bg-primary-50 p-6 rounded-xl border border-primary-100 text-center">
-                            <div class="text-3xl font-bold text-primary-700 mb-2">14</div>
-                            <div class="text-sm font-medium text-gray-700">Day Free Trial</div>
-                        </div>
-                        <div class="bg-primary-50 p-6 rounded-xl border border-primary-100 text-center">
-                            <div class="text-3xl font-bold text-primary-700 mb-2">FREE</div>
-                            <div class="text-sm font-medium text-gray-700">Installation</div>
-                        </div>
-                        <div class="bg-primary-50 p-6 rounded-xl border border-primary-100 text-center">
-                            <div class="text-3xl font-bold text-primary-700 mb-2">24/7</div>
-                            <div class="text-sm font-medium text-gray-700">Support</div>
-                        </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+                        <div class="text-2xl font-bold text-primary-700 mb-1">14 Days</div>
+                        <div class="text-sm text-gray-600">Free Trial</div>
                     </div>
-                </div>
-
-                <!-- Pricing -->
-                <div class="mb-10">
-                    <div class="inline-flex items-center gap-3 bg-white px-6 py-4 rounded-xl shadow-lg">
-                        <span class="text-3xl font-bold text-primary-700">From R490</span>
-                        <span class="text-gray-600">per month</span>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+                        <div class="text-2xl font-bold text-primary-700 mb-1">R0</div>
+                        <div class="text-sm text-gray-600">Upfront Cost</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm text-center">
+                        <div class="text-2xl font-bold text-primary-700 mb-1">24/7</div>
+                        <div class="text-sm text-gray-600">Support</div>
                     </div>
                 </div>
 
                 <!-- Primary CTA -->
-                <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center justify-center gap-3 hero-gradient text-white px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105 mb-4">
-                    <span>🚀 Start 14-Day Free Trial</span>
-                    <span>→</span>
-                </a>
-                <p class="text-gray-600 text-sm">Free Installation • No Upfront Cost • Cancel Anytime</p>
+                <div class="text-center mb-12">
+                    <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center justify-center gap-3 hero-gradient text-white px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105 mb-4 touch-target">
+                        <span>🚀 Start Your 14-Day Free Trial Now</span>
+                        <span>→</span>
+                    </a>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Free Installation • Zero Upfront Cost • Cancel Anytime</span><br>
+                        Limited spots available for free installation this month
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="py-16 bg-white">
+    <!-- Problem Section -->
+    <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why 25Mbps Fibre is Perfect for You</h2>
-                <p class="text-gray-600">Designed specifically for families and local businesses</p>
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Does This Sound Familiar?</h2>
+                <p class="text-lg text-gray-600">These common internet problems are costing you time, money, and patience</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
-                        <span class="text-2xl">🏠</span>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Family Problems -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-red-600">
+                            <span class="text-2xl">🏠</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">For Families</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">For Families</h3>
-                    <p class="text-gray-600">Stream on 4 devices, homework, video calls - all at once without buffering</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Videos buffer during family movie night</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Homework takes hours due to slow downloads</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Video calls with family drop constantly</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Can't stream on multiple devices at once</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Online gaming is laggy and frustrating</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
-                        <span class="text-2xl">🏢</span>
+
+                <!-- Business Problems -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-red-600">
+                            <span class="text-2xl">🏢</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">For Local Businesses</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">For Local Businesses</h3>
-                    <p class="text-gray-600">Reliable connectivity for POS systems, emails, video meetings, and cloud services</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">POS systems go offline during transactions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Video meetings freeze at critical moments</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Cloud backups take forever to complete</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Email attachments won't send or receive</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span class="text-gray-700">Website loads slowly, losing customers</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
-                        <span class="text-2xl">⚡</span>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="bg-white rounded-2xl p-8 border border-red-200 shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 text-center mb-6">The Real Cost of Slow Internet</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-red-600 mb-2">2-3 Hours</div>
+                        <div class="text-gray-700">Wasted weekly on slow connections</div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Just Right Speed</h3>
-                    <p class="text-gray-600">25Mbps is the sweet spot - fast enough for everything, affordable for everyone</p>
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-red-600 mb-2">15-25%</div>
+                        <div class="text-gray-700">Productivity loss for businesses</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl font-bold text-red-600 mb-2">R1000+</div>
+                        <div class="text-gray-700">Monthly opportunity cost for downtime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">One Guaranteed Solution:<br><span class="text-gradient">FibreConnector 25Mbps Fibre</span></h2>
+                <p class="text-lg text-gray-600">Engineered specifically to solve your internet problems permanently</p>
+            </div>
+
+            <!-- The Guarantee -->
+            <div class="bg-gradient-to-r from-primary-50 to-blue-50 rounded-2xl p-8 mb-12 border border-primary-100">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Our Triple Guarantee</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl border border-primary-100 text-center card-hover">
+                        <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">💰</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Zero Upfront Cost</h4>
+                        <p class="text-gray-600">No deposit, no installation fees, no hidden costs. You only pay R490/month after your free trial.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-primary-100 text-center card-hover">
+                        <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">🆓</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">14-Day Free Trial</h4>
+                        <p class="text-gray-600">Test our 25Mbps fibre for 14 days completely free. Cancel anytime with no obligation if not satisfied.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-primary-100 text-center card-hover">
+                        <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">🔧</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Free Professional Installation</h4>
+                        <p class="text-gray-600">Our certified technicians install everything at no cost. Typically completed within 2-4 hours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why 25Mbps is Perfect -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Why 25Mbps is the Sweet Spot</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <span class="text-xl">✅</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Perfect for Multiple Devices</h4>
+                                <p class="text-gray-600">Simultaneously support 4-6 devices streaming, browsing, and working without slowdowns</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <span class="text-xl">✅</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">HD Streaming Ready</h4>
+                                <p class="text-gray-600">Stream Netflix, YouTube, and Disney+ in HD on multiple screens without buffering</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <span class="text-xl">✅</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Business Operations Smooth</h4>
+                                <p class="text-gray-600">Handle POS transactions, video calls, emails, and cloud services simultaneously</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <span class="text-xl">✅</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Cost-Effective Solution</h4>
+                                <p class="text-gray-600">25Mbps provides optimal performance without paying for unnecessary excess speed</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <span class="text-xl">✅</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Future-Proof Reliability</h4>
+                                <p class="text-gray-600">Fibre technology ensures consistent speeds regardless of weather or network congestion</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <span class="text-xl">✅</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Low Latency for Gaming</h4>
+                                <p class="text-gray-600">Perfect ping for online gaming, video calls, and real-time applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dedicated Support -->
+            <div class="bg-primary-50 rounded-2xl p-8 border border-primary-100">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Dedicated Technical Support</h3>
+                        <p class="text-gray-600 mb-4">Your connection comes with personalized support:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary-600">✓</span>
+                                <span>24/7 technical support hotline</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary-600">✓</span>
+                                <span>WhatsApp support for quick troubleshooting</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary-600">✓</span>
+                                <span>Same-day assistance for critical issues</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary-600">✓</span>
+                                <span>Regular network maintenance and updates</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <div class="w-48 h-48 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-6xl">📞</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="py-16 bg-gray-50">
+    <section id="how-it-works" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get Connected in 3 Easy Steps</h2>
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get Connected in 4 Simple Steps</h2>
+                <p class="text-lg text-gray-600">From booking to browsing in as little as 48 hours</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="relative text-center">
-                    <div class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl mx-auto mb-6">1</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Book Free Installation</h3>
-                    <p class="text-gray-600">Schedule your free installation with our Cal.com booking link</p>
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl z-10">
+                        1
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 pt-12 border border-gray-200 shadow-sm text-center card-hover">
+                        <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">📅</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Book Free Installation</h3>
+                        <p class="text-gray-600 text-sm">Click "Book Free Installation" to schedule with our Cal.com calendar. Choose your preferred date and time.</p>
+                    </div>
                 </div>
-                <div class="relative text-center">
-                    <div class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl mx-auto mb-6">2</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">14-Day Free Trial</h3>
-                    <p class="text-gray-600">Test our 25Mbps fibre for 14 days completely free</p>
+
+                <div class="relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl z-10">
+                        2
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 pt-12 border border-gray-200 shadow-sm text-center card-hover">
+                        <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">🔧</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Professional Installation</h3>
+                        <p class="text-gray-600 text-sm">Our certified technician installs your fibre connection. Takes 2-4 hours, completely free.</p>
+                    </div>
                 </div>
-                <div class="relative text-center">
-                    <div class="w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl mx-auto mb-6">3</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Stay Connected</h3>
-                    <p class="text-gray-600">Continue with R490/month or cancel anytime</p>
+
+                <div class="relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl z-10">
+                        3
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 pt-12 border border-gray-200 shadow-sm text-center card-hover">
+                        <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">🆓</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">14-Day Free Trial</h3>
+                        <p class="text-gray-600 text-sm">Enjoy 14 days of unlimited 25Mbps fibre internet. Test it thoroughly with your family or business.</p>
+                    </div>
                 </div>
+
+                <div class="relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-xl z-10">
+                        4
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 pt-12 border border-gray-200 shadow-sm text-center card-hover">
+                        <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                            <span class="text-2xl">✅</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Stay Connected</h3>
+                        <p class="text-gray-600 text-sm">Continue at R490/month or cancel anytime. No contracts, no lock-ins, complete flexibility.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Typical Installation Timeline</h3>
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-0 right-0 top-1/2 h-0.5 bg-gray-200 transform -translate-y-1/2"></div>
+                    
+                    <div class="relative flex justify-between">
+                        <div class="text-center w-1/4">
+                            <div class="w-8 h-8 rounded-full bg-primary-600 mx-auto mb-2 flex items-center justify-center text-white font-bold">Day 1</div>
+                            <p class="text-sm font-semibold">Booking & Confirmation</p>
+                            <p class="text-xs text-gray-500">Within 24 hours</p>
+                        </div>
+                        <div class="text-center w-1/4">
+                            <div class="w-8 h-8 rounded-full bg-primary-600 mx-auto mb-2 flex items-center justify-center text-white font-bold">Day 2</div>
+                            <p class="text-sm font-semibold">Site Survey</p>
+                            <p class="text-xs text-gray-500">Technical assessment</p>
+                        </div>
+                        <div class="text-center w-1/4">
+                            <div class="w-8 h-8 rounded-full bg-primary-600 mx-auto mb-2 flex items-center justify-center text-white font-bold">Day 3</div>
+                            <p class="text-sm font-semibold">Installation</p>
+                            <p class="text-xs text-gray-500">2-4 hours setup</p>
+                        </div>
+                        <div class="text-center w-1/4">
+                            <div class="w-8 h-8 rounded-full bg-primary-600 mx-auto mb-2 flex items-center justify-center text-white font-bold">Day 4+</div>
+                            <p class="text-sm font-semibold">Free Trial Begins</p>
+                            <p class="text-xs text-gray-500">14 days testing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-lg text-gray-600">One plan that fits all your needs perfectly</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 border-2 border-primary-200 shadow-xl">
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
+                            ⭐ Most Popular Choice
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">25Mbps Fibre Plan</h3>
+                        <p class="text-gray-600">Perfect for families and small businesses</p>
+                    </div>
+
+                    <div class="text-center mb-8">
+                        <div class="flex items-baseline justify-center mb-2">
+                            <span class="text-5xl font-bold text-gray-900">R490</span>
+                            <span class="text-gray-600 ml-2">/ month</span>
+                        </div>
+                        <p class="text-gray-500">After 14-day free trial</p>
+                    </div>
+
+                    <!-- What's Included -->
+                    <div class="mb-8">
+                        <h4 class="text-lg font-bold text-gray-900 mb-4">Everything Included:</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <div>
+                                    <span class="font-medium text-gray-700">25Mbps Download Speed</span>
+                                    <span class="block text-sm text-gray-500">Consistent fibre speed</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <div>
+                                    <span class="font-medium text-gray-700">Unlimited Data</span>
+                                    <span class="block text-sm text-gray-500">No caps, no throttling</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <div>
+                                    <span class="font-medium text-gray-700">Free Router</span>
+                                    <span class="block text-sm text-gray-500">Wi-Fi 6 compatible</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <div>
+                                    <span class="font-medium text-gray-700">24/7 Support</span>
+                                    <span class="block text-sm text-gray-500">Dedicated technical team</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <div>
+                                    <span class="font-medium text-gray-700">No Contract</span>
+                                    <span class="block text-sm text-gray-500">Cancel anytime</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <div>
+                                    <span class="font-medium text-gray-700">Free Installation</span>
+                                    <span class="block text-sm text-gray-500">R1500+ value</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparison -->
+                    <div class="bg-gray-50 rounded-xl p-6 mb-8">
+                        <h4 class="text-lg font-bold text-gray-900 mb-4 text-center">You Save Over R2000 in the First Month</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Typical Installation Fee:</span>
+                                <span class="font-bold text-gray-900">R1500</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Typical Router Deposit:</span>
+                                <span class="font-bold text-gray-900">R500</span>
+                            </div>
+                            <div class="flex justify-between items-center border-t border-gray-200 pt-3">
+                                <span class="text-lg font-bold text-gray-900">Your Cost with FibreConnector:</span>
+                                <span class="text-2xl font-bold text-green-600">R0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="text-center">
+                        <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center justify-center gap-3 hero-gradient text-white w-full py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105 mb-4 touch-target">
+                            <span>🎯 Start Your Free Trial Today</span>
+                        </a>
+                        <p class="text-gray-500 text-sm">No credit card required • No commitment • Free installation included</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Proposition -->
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                        <span class="text-xl">💸</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">No Hidden Costs</h4>
+                    <p class="text-gray-600 text-sm">What you see is what you pay. No activation fees, no setup charges.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                        <span class="text-xl">🔄</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Flexible & Scalable</h4>
+                    <p class="text-gray-600 text-sm">Upgrade or downgrade anytime as your needs change.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-4">
+                        <span class="text-xl">🛡️</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">No Risk Trial</h4>
+                    <p class="text-gray-600 text-sm">14 days to test everything. Cancel if not 100% satisfied.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Everything you need to know about FibreConnector</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">How does the 14-day free trial work?</h3>
+                    <p class="text-gray-600">After free installation, you get 14 days of full 25Mbps fibre internet at no cost. You can test everything - streaming, downloads, video calls, gaming. If satisfied, continue at R490/month. If not, simply cancel with no charges.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">What does "free installation" include?</h3>
+                    <p class="text-gray-600">Our certified technician installs the fibre line to your premises, sets up the router, tests the connection, and ensures everything works perfectly. This includes all equipment, cabling, and labour at no cost to you (typically R1500+ value).</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Is 25Mbps really enough for my family/business?</h3>
+                    <p class="text-gray-600">Absolutely. 25Mbps fibre can comfortably handle:
+                        <br>• 4 HD video streams simultaneously
+                        <br>• Multiple video calls
+                        <br>• Online gaming
+                        <br>• Cloud backups
+                        <br>• POS system operations
+                        <br>For most families and small businesses, 25Mbps is the optimal speed for both performance and cost.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">What if I need to cancel during or after the trial?</h3>
+                    <p class="text-gray-600">You can cancel anytime with no penalty. During the trial, simply notify us before day 14. After the trial, you can cancel with 30 days notice. There are no cancellation fees or hidden charges.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">How long does installation take?</h3>
+                    <p class="text-gray-600">Typically 2-4 hours from arrival to completion. We schedule installations within 48-72 hours of booking, depending on your location and availability.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">What areas do you cover?</h3>
+                    <p class="text-gray-600">We currently serve major residential and business areas in Tshwane and Gauteng. When you book, we'll immediately check coverage for your specific address before confirming your installation.</p>
+                </div>
+            </div>
+
+            <!-- Still have questions -->
+            <div class="mt-12 text-center">
+                <p class="text-gray-700 mb-4">Still have questions?</p>
+                <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all">
+                    <span>📞</span>
+                    <span>Book a Call with Our Team</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Final CTA Section -->
     <section class="py-20 hero-gradient text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Stop Dealing with Slow Internet</h2>
-            <p class="text-xl mb-10 text-white/90">Get 25Mbps reliable fibre with our risk-free 14-day trial</p>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Stop Settling for Slow Internet</h2>
+            <p class="text-xl mb-10 text-white/90 max-w-3xl mx-auto">Join thousands of satisfied families and businesses who've ended their internet frustration with FibreConnector</p>
             
-            <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <!-- Final Value Proposition -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
                 <div class="bg-white/20 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-2xl font-bold mb-2">R0</div>
-                    <div>Upfront Cost</div>
+                    <div class="text-3xl font-bold mb-2">R0</div>
+                    <div class="text-sm">To Get Started</div>
                 </div>
                 <div class="bg-white/20 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-2xl font-bold mb-2">14 Days</div>
-                    <div>Free Trial</div>
+                    <div class="text-3xl font-bold mb-2">14 Days</div>
+                    <div class="text-sm">Risk-Free Trial</div>
                 </div>
                 <div class="bg-white/20 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-2xl font-bold mb-2">FREE</div>
-                    <div>Installation</div>
+                    <div class="text-3xl font-bold mb-2">100%</div>
+                    <div class="text-sm">Satisfaction Guarantee</div>
+                </div>
+                <div class="bg-white/20 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="text-3xl font-bold mb-2">24/7</div>
+                    <div class="text-sm">Dedicated Support</div>
                 </div>
             </div>
 
-            <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-2xl hover:scale-105 mb-6">
-                <span>📅 Book Your Free Installation Now</span>
+            <!-- Urgency -->
+            <div class="bg-white/10 rounded-2xl p-6 mb-10 max-w-2xl mx-auto">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="text-2xl">⏰</span>
+                    <span class="text-lg font-bold">Limited Free Installations Available This Month</span>
+                </div>
+                <p class="text-white/80">We only schedule 15 free installations per week to ensure quality service. Book now to secure your spot.</p>
+            </div>
+
+            <!-- Final CTA -->
+            <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-12 py-6 rounded-xl font-bold text-lg transition-all shadow-2xl hover:scale-105 mb-6 touch-target">
+                <span>🚀 Secure Your Free Installation Slot Now</span>
                 <span>→</span>
             </a>
             
-            <p class="text-white/80">Limited spots available • First come, first served</p>
+            <p class="text-white/80">No credit card required • No obligation • Free professional installation included</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="text-2xl font-bold mb-4">
-                <span class="text-primary-400">Fibre</span>
-                <span>Connector</span>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-primary-400">Fibre</span>
+                        <span>Connector</span>
+                    </div>
+                    <p class="mb-4 text-gray-400">
+                        Providing reliable 25Mbps fibre internet solutions for residential families and local businesses across Gauteng.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2 text-gray-300">
+                            <span>📞</span>
+                            <span>24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="#solution" class="text-gray-400 hover:text-white transition-colors">Solution</a>
+                        <a href="#how-it-works" class="text-gray-400 hover:text-white transition-colors">How It Works</a>
+                        <a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
+                        <a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Our Guarantee</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>✓ 14-Day Free Trial</li>
+                        <li>✓ Free Installation</li>
+                        <li>✓ Zero Upfront Cost</li>
+                        <li>✓ Dedicated Support</li>
+                    </ul>
+                </div>
             </div>
-            <p class="mb-6 text-gray-400">Reliable 25Mbps fibre internet for residential families and local businesses</p>
             
-            <div class="mb-8">
+            <!-- Booking CTA in Footer -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 mb-6">Ready to end your internet frustration?</p>
                 <a href="https://cal.com/fibreconnector" target="_blank" class="inline-flex items-center justify-center gap-2 bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-all">
-                    <span>Book Free Installation</span>
+                    <span>📅 Book Your Free Installation</span>
                 </a>
             </div>
             
-            <div class="text-gray-400 text-sm">
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
                 <p>© 2024 FibreConnector. All rights reserved.</p>
-                <p class="mt-2">25Mbps Fibre • 14-Day Free Trial • Free Installation • No Upfront Cost</p>
+                <p class="mt-2">25Mbps Fibre Internet • 14-Day Free Trial • Free Installation • No Upfront Cost</p>
             </div>
         </div>
     </footer>
 
-    <!-- Simple JavaScript -->
+    <!-- JavaScript -->
     <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpenIcon = document.getElementById('menu-open');
+        const menuCloseIcon = document.getElementById('menu-close');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    menuOpenIcon.classList.add('hidden');
+                    menuCloseIcon.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Close menu when clicking links
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+                
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        menuOpenIcon.classList.remove('hidden');
+                        menuCloseIcon.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    }
+                    
+                    // Calculate header height
+                    const headerHeight = document.querySelector('nav').offsetHeight;
+                    
+                    // Scroll to element
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - headerHeight - 20,
                         behavior: 'smooth'
                     });
                 }
             });
         });
 
-        // Add animation on scroll
+        // Animation on scroll
         const observerOptions = {
-            threshold: 0.1
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -358,12 +965,58 @@
             });
         }, observerOptions);
 
-        // Observe elements
-        document.querySelectorAll('.grid > div').forEach(element => {
+        // Observe all cards and sections
+        document.querySelectorAll('.card-hover, .grid > div, section > div').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'all 0.6s ease-out';
             observer.observe(element);
+        });
+
+        // Add hover effects to cards
+        document.querySelectorAll('.card-hover').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.createElement('button');
+        backToTop.innerHTML = '↑';
+        backToTop.className = 'fixed bottom-8 right-8 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-colors z-40 hidden flex items-center justify-center text-xl';
+        backToTop.style.transform = 'translateY(100px)';
+        backToTop.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+        backToTop.style.opacity = '0';
+        document.body.appendChild(backToTop);
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('hidden');
+                setTimeout(() => {
+                    backToTop.style.transform = 'translateY(0)';
+                    backToTop.style.opacity = '1';
+                }, 10);
+            } else {
+                backToTop.style.transform = 'translateY(100px)';
+                backToTop.style.opacity = '0';
+                setTimeout(() => {
+                    if (window.scrollY <= 500) {
+                        backToTop.classList.add('hidden');
+                    }
+                }, 300);
+            }
+        });
+
+        // Add click tracking for Cal.com links
+        document.querySelectorAll('a[href*="cal.com"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // You can add analytics tracking here
+                console.log('Cal.com link clicked:', this.href);
+            });
         });
     </script>
 </body>
