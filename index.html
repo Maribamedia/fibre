@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    <!-- UPDATED TITLE -->
     <title>Home Connector | Professional Home Improvement Services in Bronkhorstspruit, Pretoria & Surrounds</title>
-    <!-- UPDATED META DESCRIPTION -->
     <meta name="description" content="Local home improvement experts in Bronkhorstspruit, Pretoria, Cullinan & Rayton. Painting, paving, plastering, brickwork, tiling, remodeling. 30+ years collective experience. WhatsApp for free quote!">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Home Connector | Local Home Improvement Experts in Bronkhorstspruit & Pretoria East">
     <meta property="og:description" content="30+ years collective experience in painting, paving, plastering, brickwork, tiling & remodeling. WhatsApp for free assessment!">
-    <meta property="og:image" content="https://yourusername.github.io/repository-name/images/social-preview.jpg">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://yourusername.github.io/repository-name">
     <meta name="twitter:card" content="summary_large_image">
     
@@ -50,7 +48,7 @@
               'slide-up': 'slideUp 0.6s ease-out',
               'pulse-subtle': 'pulseSubtle 3s infinite',
               'float': 'float 6s ease-in-out infinite',
-              'slide': 'slide 20s linear infinite',
+              'slide': 'slide 40s linear infinite',
             },
             keyframes: {
               fadeIn: {
@@ -67,7 +65,7 @@
               },
               float: {
                 '0%, 100%': { transform: 'translateY(0px)' },
-                '50%': { transform: 'translateY(-20px)' },
+                '50%': { transform: 'translateY(-10px)' },
               },
               slide: {
                 '0%': { transform: 'translateX(0)' },
@@ -231,7 +229,7 @@
         animation: float 6s ease-in-out infinite;
       }
       
-      /* Slideshow Styles */
+      /* Slideshow Styles - FIXED */
       .slideshow-container {
         width: 100%;
         height: 500px;
@@ -243,25 +241,27 @@
       
       .slideshow-track {
         display: flex;
-        width: calc(300% * 8); /* 8 images with 300% width each */
-        animation: slide 80s linear infinite;
+        width: 800%; /* 8 slides at 100% each */
+        height: 100%;
+        animation: slide 40s linear infinite;
       }
       
       .slide {
-        width: 300%;
-        height: 500px;
+        width: 12.5%; /* 100% / 8 slides */
+        height: 100%;
         flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background-size: cover;
         background-position: center;
+        position: relative;
       }
       
       .slide-overlay {
-        background: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -271,20 +271,8 @@
         color: white;
       }
       
-      @keyframes slide {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-300% * 8 / 8)); }
-      }
-      
-      .slideshow-pause:hover .slideshow-track {
-        animation-play-state: paused;
-      }
-      
       @media (max-width: 768px) {
         .slideshow-container {
-          height: 350px;
-        }
-        .slide {
           height: 350px;
         }
       }
@@ -316,7 +304,7 @@
     <nav class="fixed w-full glass-effect z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo - UPDATED -->
+                <!-- Logo -->
                 <a href="#" class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center">
                         <span class="text-white text-xl">🏠</span>
@@ -335,7 +323,7 @@
                     <a href="#why-us" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Why Choose Us</a>
                     <a href="#local" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Local Service</a>
                     <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20a%20free%20home%20improvement%20quote." target="_blank" class="bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-all shadow-md hover:scale-105">
-                        Chat on WhatsApp
+                        💬 Chat on WhatsApp
                     </a>
                 </div>
 
@@ -360,13 +348,13 @@
                 <a href="#why-us" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Why Choose Us</a>
                 <a href="#local" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Local Service</a>
                 <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20a%20free%20home%20improvement%20quote." target="_blank" class="mt-4 bg-primary-600 text-white py-3.5 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-all">
-                    Chat on WhatsApp
+                    💬 Chat on WhatsApp
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - FIXED WHATSAPP BUTTON -->
     <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-24 gradient-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-5xl mx-auto">
@@ -404,7 +392,7 @@
                             </div>
                         </div>
 
-                        <!-- Primary CTA - WhatsApp Focused -->
+                        <!-- Primary CTA - WhatsApp Focused - FIXED BUTTON -->
                         <div class="space-y-4">
                             <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20a%20free%20home%20improvement%20quote." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl mb-2 touch-target w-full md:w-auto">
                                 <span>💬 CHAT ON WHATSAPP FOR FREE QUOTE</span>
@@ -449,7 +437,7 @@
         </div>
     </section>
 
-    <!-- Services Slideshow Section -->
+    <!-- Services Slideshow Section - FIXED IMAGES -->
     <section id="slideshow" class="section-padding bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center mb-12">
@@ -457,11 +445,11 @@
                 <p class="text-lg text-gray-600">See our quality work across Bronkhorstspruit, Pretoria, Cullinan & Rayton</p>
             </div>
 
-            <!-- Image Slideshow -->
-            <div class="slideshow-container slideshow-pause mb-12 animate-on-scroll">
+            <!-- Image Slideshow - FIXED WITH REAL IMAGES -->
+            <div class="slideshow-container mb-12 animate-on-scroll">
                 <div class="slideshow-track">
                     <!-- Painting Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Professional Painting</h3>
                             <p class="text-xl mb-6 max-w-2xl">Quality interior & exterior painting services across <strong>Pretoria East</strong> and <strong>Bronkhorstspruit</strong></p>
@@ -472,7 +460,7 @@
                     </div>
                     
                     <!-- Paving Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Expert Paving</h3>
                             <p class="text-xl mb-6 max-w-2xl">Driveway and patio paving for homes in <strong>Cullinan</strong> and <strong>Rayton</strong> areas</p>
@@ -483,7 +471,7 @@
                     </div>
                     
                     <!-- Plastering Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1621370465625-d2b18f38b49c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1621370465625-d2b18f38b49c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Precision Plastering</h3>
                             <p class="text-xl mb-6 max-w-2xl">Smooth plaster finishes for homes across <strong>Pretoria</strong> and surrounding areas</p>
@@ -494,7 +482,7 @@
                     </div>
                     
                     <!-- Brickwork Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1545324412-8186dab8fda5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1545324412-8186dab8fda5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Quality Brickwork</h3>
                             <p class="text-xl mb-6 max-w-2xl">Structural and decorative brickwork for <strong>Bronkhorstspruit</strong> properties</p>
@@ -505,7 +493,7 @@
                     </div>
                     
                     <!-- Tiling Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Professional Tiling</h3>
                             <p class="text-xl mb-6 max-w-2xl">Floor and wall tiling services in <strong>Pretoria East</strong> and <strong>Rayton</strong></p>
@@ -516,7 +504,7 @@
                     </div>
                     
                     <!-- Ceiling Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Ceiling Installation</h3>
                             <p class="text-xl mb-6 max-w-2xl">Gypsum and suspended ceilings for homes in <strong>Cullinan</strong> and <strong>Bronkhorstspruit</strong></p>
@@ -527,7 +515,7 @@
                     </div>
                     
                     <!-- Rhinolite Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1616137422496-0a3c8d1b56ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1616137422496-0a3c8d1b56ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Rhinolite Applications</h3>
                             <p class="text-xl mb-6 max-w-2xl">Textured wall coatings for properties across <strong>Pretoria</strong> region</p>
@@ -538,7 +526,7 @@
                     </div>
                     
                     <!-- Remodeling Slide -->
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1545324412-8186dab8fda5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');">
                         <div class="slide-overlay">
                             <h3 class="text-3xl font-bold mb-4">Complete Remodeling</h3>
                             <p class="text-xl mb-6 max-w-2xl">Home transformations across <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong></p>
@@ -1235,48 +1223,10 @@
             });
         });
 
-        // FAQ accordion functionality
-        const faqSection = document.getElementById('faq');
-        if (faqSection) {
-            faqSection.querySelectorAll('.bg-white.rounded-xl').forEach(faqItem => {
-                const question = faqItem.querySelector('h3');
-                const answer = faqItem.querySelector('.pl-8');
-                
-                if (question && answer) {
-                    // Initially hide answers on mobile
-                    if (window.innerWidth < 768) {
-                        answer.style.display = 'none';
-                    }
-                    
-                    question.addEventListener('click', () => {
-                        if (window.innerWidth < 768) {
-                            if (answer.style.display === 'none') {
-                                answer.style.display = 'block';
-                                faqItem.style.marginBottom = '1.5rem';
-                            } else {
-                                answer.style.display = 'none';
-                                faqItem.style.marginBottom = '';
-                            }
-                        }
-                    });
-                }
-            });
-
-            // Update FAQ display on window resize
-            window.addEventListener('resize', () => {
-                faqSection.querySelectorAll('.bg-white.rounded-xl .pl-8').forEach(answer => {
-                    if (window.innerWidth >= 768) {
-                        answer.style.display = 'block';
-                    } else {
-                        answer.style.display = 'none';
-                    }
-                });
-            });
-        }
-
-        // Slideshow pause on hover
-        const slideshowContainer = document.querySelector('.slideshow-pause');
+        // Slideshow functionality
+        const slideshowContainer = document.querySelector('.slideshow-container');
         if (slideshowContainer) {
+            // Pause slideshow on hover
             slideshowContainer.addEventListener('mouseenter', () => {
                 const track = slideshowContainer.querySelector('.slideshow-track');
                 track.style.animationPlayState = 'paused';
@@ -1288,23 +1238,31 @@
             });
         }
 
-        // Add location-specific WhatsApp messages
-        function getWhatsAppMessage(service, location) {
-            const baseMessage = `Hi Home Connector! I need ${service} services in ${location}. Please send me a free quote!`;
-            return encodeURIComponent(baseMessage);
-        }
-
         // Update WhatsApp links with location context
         document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-            if (link.textContent.includes('Bronkhorstspruit')) {
-                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Bronkhorstspruit. Please send a free quote!");
-            } else if (link.textContent.includes('Pretoria')) {
-                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Pretoria/Pretoria East. Please send a free quote!");
-            } else if (link.textContent.includes('Cullinan')) {
-                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Cullinan. Please send a free quote!");
-            } else if (link.textContent.includes('Rayton')) {
-                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Rayton. Please send a free quote!");
+            // Only update if not already has a custom message
+            if (!link.href.includes('text=') || link.href.includes('[Your%20Location]')) {
+                if (link.textContent.includes('Bronkhorstspruit')) {
+                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Bronkhorstspruit. Please send a free quote!");
+                } else if (link.textContent.includes('Pretoria')) {
+                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Pretoria/Pretoria East. Please send a free quote!");
+                } else if (link.textContent.includes('Cullinan')) {
+                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Cullinan. Please send a free quote!");
+                } else if (link.textContent.includes('Rayton')) {
+                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Rayton. Please send a free quote!");
+                }
             }
+        });
+
+        // Initialize all animations on load
+        window.addEventListener('load', () => {
+            // Trigger initial animations
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
         });
     </script>
 </body>
