@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    <!-- UPDATED TITLE FOR SEO -->
-    <title>FibreConnector Bronkhorstspruit | 25Mbps Fibre Internet in Cullinan, Rayton & Pretoria East</title>
-    <!-- UPDATED META DESCRIPTION WITH KEYWORDS -->
-    <meta name="description" content="Looking for fibre in Bronkhorstspruit, Cullinan, Rayton or Pretoria East? FibreConnector provides reliable 25Mbps fibre internet with 14-day free trial, free installation & zero upfront cost. Get connected today!">
+    <!-- UPDATED TITLE -->
+    <title>Home Connector | Professional Home Improvement Services in Bronkhorstspruit, Pretoria & Surrounds</title>
+    <!-- UPDATED META DESCRIPTION -->
+    <meta name="description" content="Local home improvement experts in Bronkhorstspruit, Pretoria, Cullinan & Rayton. Painting, paving, plastering, brickwork, tiling, remodeling. 30+ years collective experience. WhatsApp for free quote!">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="FibreConnector Bronkhorstspruit | Fast Fibre Internet in Eastern Region">
-    <meta property="og:description" content="Get reliable 25Mbps fibre internet in Bronkhorstspruit, Cullinan, Rayton & Pretoria East. 14-day free trial with free installation. No contracts, cancel anytime.">
+    <meta property="og:title" content="Home Connector | Local Home Improvement Experts in Bronkhorstspruit & Pretoria East">
+    <meta property="og:description" content="30+ years collective experience in painting, paving, plastering, brickwork, tiling & remodeling. WhatsApp for free assessment!">
     <meta property="og:image" content="https://yourusername.github.io/repository-name/images/social-preview.jpg">
     <meta property="og:url" content="https://yourusername.github.io/repository-name">
     <meta name="twitter:card" content="summary_large_image">
     
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📶</text></svg>" type="image/svg+xml">
-    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>" type="image/svg+xml">
+    <meta name="theme-color" content="#0D9488">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,17 +29,17 @@
         theme: {
           extend: {
             colors: {
-              gray: {
-                50: '#fafafa',
-                100: '#f5f5f5',
-                200: '#e5e5e5',
-                300: '#d4d4d4',
-                400: '#a3a3a3',
-                500: '#737373',
-                600: '#525252',
-                700: '#404040',
-                800: '#262626',
-                900: '#171717',
+              primary: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                200: '#99f6e4',
+                300: '#5eead4',
+                400: '#2dd4bf',
+                500: '#14b8a6',
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59',
+                900: '#134e4a',
               }
             },
             fontFamily: {
@@ -49,6 +49,8 @@
               'fade-in': 'fadeIn 0.5s ease-in',
               'slide-up': 'slideUp 0.6s ease-out',
               'pulse-subtle': 'pulseSubtle 3s infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'slide': 'slide 20s linear infinite',
             },
             keyframes: {
               fadeIn: {
@@ -62,6 +64,14 @@
               pulseSubtle: {
                 '0%, 100%': { opacity: '1' },
                 '50%': { opacity: '0.8' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              slide: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
               }
             }
           }
@@ -77,11 +87,11 @@
       }
       
       .hero-gradient {
-        background: linear-gradient(135deg, #ffffff 0%, #fafafa 50%, #f5f5f5 100%);
+        background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 50%, #99f6e4 100%);
       }
       
       .text-gradient {
-        background: linear-gradient(135deg, #000000 0%, #404040 100%);
+        background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -100,12 +110,12 @@
       
       .card-hover:hover {
         transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        border-color: #000000;
+        box-shadow: 0 20px 40px rgba(13, 148, 136, 0.1);
+        border-color: #0d9488;
       }
       
       .guarantee-badge {
-        background: #000000;
+        background: #0d9488;
         color: white;
         animation: pulseSubtle 3s infinite;
         text-transform: uppercase;
@@ -116,47 +126,6 @@
       .touch-target {
         min-height: 44px;
         min-width: 44px;
-      }
-      
-      /* VSL Container Styles */
-      .vsl-container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-      
-      .vsl-wrapper {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-        height: 0;
-        overflow: hidden;
-        border-radius: 0.5rem;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        background: #000000;
-        border: 2px solid #000000;
-      }
-      
-      .vsl-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-      
-      @media (max-width: 768px) {
-        .vsl-wrapper {
-          padding-bottom: 75%; /* 4:3 on mobile for better visibility */
-        }
-      }
-      
-      @media (max-width: 480px) {
-        .vsl-wrapper {
-          padding-bottom: 100%; /* Square-ish for very small screens */
-        }
       }
       
       .section-padding {
@@ -183,7 +152,7 @@
         left: 0;
         width: 0;
         height: 2px;
-        background: #000000;
+        background: #0d9488;
         transition: width 0.3s ease;
       }
       
@@ -202,29 +171,8 @@
         transform: translateY(0);
       }
       
-      .fibre-cable {
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .fibre-cable::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #000000, transparent);
-        animation: cableFlow 2s linear infinite;
-      }
-      
-      @keyframes cableFlow {
-        0% { left: -100%; }
-        100% { left: 100%; }
-      }
-      
       .gradient-bg {
-        background: linear-gradient(-45deg, #ffffff, #fafafa, #f5f5f5, #ffffff);
+        background: linear-gradient(-45deg, #f0fdfa, #ccfbf1, #99f6e4, #f0fdfa);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
       }
@@ -255,19 +203,111 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid #000000;
+        border: 2px solid #0d9488;
         background: #ffffff;
         font-size: 1.25rem;
       }
       
-      .icon-circle-black {
-        background: #000000;
+      .icon-circle-primary {
+        background: #0d9488;
         color: #ffffff;
       }
       
       .border-emphasis {
         border-width: 2px;
-        border-color: #000000;
+        border-color: #0d9488;
+      }
+      
+      .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .floating-cta {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 40;
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      /* Slideshow Styles */
+      .slideshow-container {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      
+      .slideshow-track {
+        display: flex;
+        width: calc(300% * 8); /* 8 images with 300% width each */
+        animation: slide 80s linear infinite;
+      }
+      
+      .slide {
+        width: 300%;
+        height: 500px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .slide-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        color: white;
+      }
+      
+      @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-300% * 8 / 8)); }
+      }
+      
+      .slideshow-pause:hover .slideshow-track {
+        animation-play-state: paused;
+      }
+      
+      @media (max-width: 768px) {
+        .slideshow-container {
+          height: 350px;
+        }
+        .slide {
+          height: 350px;
+        }
+      }
+      
+      .whatsapp-button {
+        background: #25D366;
+        color: white;
+        transition: all 0.3s ease;
+      }
+      
+      .whatsapp-button:hover {
+        background: #128C7E;
+        transform: scale(1.05);
+      }
+      
+      .location-badge {
+        background: rgba(13, 148, 136, 0.1);
+        border: 1px solid #0d9488;
+        color: #0d9488;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 500;
       }
     </style>
 </head>
@@ -278,26 +318,23 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo - UPDATED -->
                 <a href="#" class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-black flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM8 18H4V6H8V18ZM14 18H10V6H14V18ZM20 18H16V6H20V18Z"/>
-                        </svg>
+                    <div class="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center">
+                        <span class="text-white text-xl">🏠</span>
                     </div>
                     <div>
-                        <span class="text-lg font-bold">FibreConnector</span>
-                        <span class="block text-xs text-gray-500">Fibre in Bronkhorstspruit & Eastern Region</span>
+                        <span class="text-lg font-bold">Home Connector</span>
+                        <span class="block text-xs text-gray-500">Local Home Improvement Experts</span>
                     </div>
                 </a>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#hero" class="nav-link text-sm font-medium text-gray-700 hover:text-black transition-colors">Home</a>
-                    <a href="#local-coverage" class="nav-link text-sm font-medium text-gray-700 hover:text-black transition-colors">Coverage Areas</a>
-                    <a href="#problem" class="nav-link text-sm font-medium text-gray-700 hover:text-black transition-colors">Problem</a>
-                    <a href="#solution" class="nav-link text-sm font-medium text-gray-700 hover:text-black transition-colors">Solution</a>
-                    <a href="#pricing" class="nav-link text-sm font-medium text-gray-700 hover:text-black transition-colors">Pricing</a>
-                    <a href="#faq" class="nav-link text-sm font-medium text-gray-700 hover:text-black transition-colors">FAQ</a>
-                    <a href="https://wa.me/27766473499" target="_blank" class="bg-black text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-all shadow-md hover:scale-105">
+                    <a href="#hero" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Home</a>
+                    <a href="#services" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Our Services</a>
+                    <a href="#slideshow" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Our Work</a>
+                    <a href="#why-us" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Why Choose Us</a>
+                    <a href="#local" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Local Service</a>
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20a%20free%20home%20improvement%20quote." target="_blank" class="bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-all shadow-md hover:scale-105">
                         Chat on WhatsApp
                     </a>
                 </div>
@@ -318,1251 +355,609 @@
         <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 hidden shadow-xl">
             <div class="px-4 py-6 flex flex-col gap-1">
                 <a href="#hero" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Home</a>
-                <a href="#local-coverage" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Coverage Areas</a>
-                <a href="#problem" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Problem</a>
-                <a href="#solution" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Solution</a>
-                <a href="#pricing" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Pricing</a>
-                <a href="#faq" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">FAQ</a>
-                <a href="https://wa.me/27766473499" target="_blank" class="mt-4 bg-black text-white py-3.5 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-all">
+                <a href="#services" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Our Services</a>
+                <a href="#slideshow" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Our Work</a>
+                <a href="#why-us" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Why Choose Us</a>
+                <a href="#local" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Local Service</a>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20a%20free%20home%20improvement%20quote." target="_blank" class="mt-4 bg-primary-600 text-white py-3.5 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-all">
                     Chat on WhatsApp
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section - UPDATED WITH SEO COPY -->
+    <!-- Hero Section -->
     <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-24 gradient-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto text-center">
+            <div class="max-w-5xl mx-auto">
                 <!-- Guarantee Badge -->
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full guarantee-badge mb-8 animate-fade-in">
                     <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <span class="text-sm font-medium">🎯 RELIABLE FIBRE INTERNET IN PRETORIA EAST & SURROUNDS</span>
+                    <span class="text-sm font-medium">🏆 LOCAL EXPERTS WITH 30+ YEARS COLLECTIVE EXPERIENCE</span>
                 </div>
                 
-                <!-- Main Headline - UPDATED WITH KEYWORDS -->
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    Looking for Reliable <span class="text-gradient">Fibre in Bronkhorstspruit</span>, Cullinan, or Rayton? Your Search Ends Here.
-                </h1>
-                
-                <!-- Subheadline with natural keyword integration -->
-                <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-                    Hello to our neighbours in <span class="font-semibold text-gray-800">Pretoria East, Bronkhorstspruit, Cullinan, and Rayton</span>! We're FibreConnector, your local fibre internet experts serving the entire eastern region. Experience stable, consistent connectivity without the headaches.
-                </p>
-
-                <!-- VSL Section -->
-                <div class="mb-12 animate-on-scroll">
-                    <div class="vsl-container">
-                        <div class="vsl-wrapper">
-                            <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
-                            <iframe 
-                                class="vsl-iframe"
-                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=0&rel=0&modestbranding=1&showinfo=0&cc_load_policy=1" 
-                                title="FibreConnector - Reliable Fibre Internet in Bronkhorstspruit, Cullinan & Rayton"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen
-                                loading="eager">
-                            </iframe>
-                        </div>
-                    </div>
-                    <p class="text-center text-gray-500 text-sm mt-4">Watch this 3-minute video to see how we solve your internet problems in the eastern region</p>
-                </div>
-
-                <!-- Quick Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 animate-on-scroll">
-                    <div class="bg-white p-6 rounded-2xl border border-gray-200 card-hover">
-                        <div class="text-3xl font-bold mb-2">25 Mbps</div>
-                        <div class="text-sm font-medium text-gray-700">Perfect Speed</div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl border border-gray-200 card-hover">
-                        <div class="text-3xl font-bold mb-2">14 Days</div>
-                        <div class="text-sm font-medium text-gray-700">Free Trial</div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl border border-gray-200 card-hover">
-                        <div class="text-3xl font-bold mb-2">R0</div>
-                        <div class="text-sm font-medium text-gray-700">Upfront Cost</div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl border border-gray-200 card-hover">
-                        <div class="text-3xl font-bold mb-2">24/7</div>
-                        <div class="text-sm font-medium text-gray-700">Local Support</div>
-                    </div>
-                </div>
-
-                <!-- Primary CTA -->
-                <div class="text-center mb-8 animate-on-scroll">
-                    <a href="https://wa.me/27766473499" target="_blank" class="inline-flex items-center justify-center gap-3 bg-black text-white px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105 mb-4 touch-target">
-                        <span>🚀 START YOUR 14-DAY FREE TRIAL NOW</span>
-                        <span>→</span>
-                    </a>
-                    <p class="text-gray-600">
-                        <span class="font-semibold">Free Professional Installation • Zero Upfront Cost • Cancel Anytime</span><br>
-                        <span class="text-sm text-gray-500">Limited free installation slots available this month in Bronkhorstspruit & surrounds</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW: Local Coverage Section with SEO Optimized Copy -->
-    <section id="local-coverage" class="section-padding bg-white border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-6xl mx-auto">
+                <!-- Main Headline -->
                 <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <!-- Left Column - Text Content -->
-                    <div class="animate-on-scroll">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                            Your Local Fibre Experts Serving <span class="text-gradient">Pretoria East & Surrounding Areas</span>
-                        </h2>
+                    <div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            Your Local <span class="text-gradient">Home Improvement Experts</span> in Bronkhorstspruit & Pretoria East
+                        </h1>
                         
-                        <div class="space-y-6 text-gray-600 text-lg">
-                            <p>
-                                Whether you're on a farmstead near <span class="font-semibold text-gray-800">Cullinan</span>, in a family home in <span class="font-semibold text-gray-800">Rayton</span>, or a new estate in <span class="font-semibold text-gray-800">Pretoria East</span>, we understand the unique internet needs of our communities.
-                            </p>
-                            
-                            <p>
-                                We specialise in providing stable, reliable 25Mbps fibre internet to homes and businesses across the region. As your trusted <span class="font-semibold text-gray-800">fibre provider in Bronkhorstspruit</span> and beyond, we deliver personal service—from a free, no-obligation assessment of your premises to a complete, guaranteed fibre installation.
-                            </p>
-                            
-                            <p>
-                                If you're searching for <span class="font-semibold text-gray-800">fibre in Cullinan</span> that won't let you down during important video calls, or <span class="font-semibold text-gray-800">fibre in Rayton</span> that can handle multiple devices streaming simultaneously, we've got the perfect solution for you.
-                            </p>
+                        <!-- Subheadline with natural location embedding -->
+                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                            As <span class="font-semibold text-primary-600">Home Connector</span>, we're your trusted local professionals serving <span class="font-semibold">Bronkhorstspruit, Pretoria, Cullinan, Rayton, and Pretoria East</span>. With over <span class="font-semibold">30 years collective experience</span>, we deliver quality craftsmanship in painting, paving, plastering, brickwork, ceiling installation, tiling, rhinolite applications, and remodeling.
+                        </p>
+
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8 animate-on-scroll">
+                            <div class="bg-white p-4 rounded-xl border border-gray-200 card-hover">
+                                <div class="text-2xl font-bold mb-1 text-primary-600">30+</div>
+                                <div class="text-sm font-medium text-gray-700">Years Experience</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200 card-hover">
+                                <div class="text-2xl font-bold mb-1 text-primary-600">500+</div>
+                                <div class="text-sm font-medium text-gray-700">Projects Completed</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200 card-hover">
+                                <div class="text-2xl font-bold mb-1 text-primary-600">24h</div>
+                                <div class="text-sm font-medium text-gray-700">WhatsApp Response</div>
+                            </div>
                         </div>
-                        
-                        <!-- Local Benefits -->
-                        <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
-                            <h3 class="text-xl font-bold mb-4">Why Choose Our Local Fibre Service?</h3>
-                            <ul class="space-y-3">
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">✓</span>
-                                    <span>Local technicians who understand your area's infrastructure</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">✓</span>
-                                    <span>Same-day response for urgent issues in Bronkhorstspruit & surrounds</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">✓</span>
-                                    <span>Personalised installation for your specific location</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">✓</span>
-                                    <span>Community-focused support that understands local needs</span>
-                                </li>
-                            </ul>
+
+                        <!-- Primary CTA - WhatsApp Focused -->
+                        <div class="space-y-4">
+                            <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20a%20free%20home%20improvement%20quote." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl mb-2 touch-target w-full md:w-auto">
+                                <span>💬 CHAT ON WHATSAPP FOR FREE QUOTE</span>
+                                <span>→</span>
+                            </a>
+                            <p class="text-gray-600 text-sm">
+                                <span class="font-semibold">Free Assessment • Local Teams • 30+ Years Experience • Quality Guaranteed</span>
+                            </p>
                         </div>
                     </div>
-                    
-                    <!-- Right Column - Coverage Areas -->
-                    <div class="animate-on-scroll">
-                        <div class="bg-gray-50 rounded-2xl p-8 border-2 border-black shadow-lg">
-                            <h3 class="text-2xl font-bold text-center mb-8">Our Local Fibre Coverage Areas</h3>
-                            <p class="text-gray-600 text-center mb-8 max-w-md mx-auto">
-                                We provide reliable 25Mbps fibre internet to these key areas in the eastern region:
-                            </p>
-                            
-                            <div class="grid grid-cols-2 gap-6">
-                                <!-- Bronkhorstspruit -->
-                                <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
-                                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                                        <span>📍</span>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-2">Fibre in Bronkhorstspruit</h4>
-                                    <p class="text-gray-600 text-sm">
-                                        Fast, reliable fibre internet for homes and businesses in Bronkhorstspruit and surrounding farms.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a href="https://wa.me/27766473499" class="text-sm font-semibold text-black hover:text-gray-700">
-                                            Check Availability →
-                                        </a>
-                                    </div>
-                                </div>
+
+                    <!-- Hero Right Side -->
+                    <div class="relative animate-on-scroll">
+                        <div class="bg-white rounded-2xl p-8 border-2 border-primary-600 shadow-2xl">
+                            <div class="text-center mb-6">
+                                <div class="text-4xl mb-4">📍</div>
+                                <h3 class="text-2xl font-bold mb-4">Serving Your Area</h3>
+                                <p class="text-gray-600 mb-6">We provide professional home improvement services across:</p>
                                 
-                                <!-- Cullinan -->
-                                <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
-                                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                                        <span>📍</span>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-2">Fibre in Cullinan</h4>
-                                    <p class="text-gray-600 text-sm">
-                                        Stable fibre connectivity for Cullinan area, perfect for rural and urban needs alike.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a href="https://wa.me/27766473499" class="text-sm font-semibold text-black hover:text-gray-700">
-                                            Check Availability →
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <!-- Rayton -->
-                                <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
-                                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                                        <span>📍</span>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-2">Fibre in Rayton</h4>
-                                    <p class="text-gray-600 text-sm">
-                                        High-speed fibre internet for Rayton residents and local businesses.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a href="https://wa.me/27766473499" class="text-sm font-semibold text-black hover:text-gray-700">
-                                            Check Availability →
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <!-- Pretoria East -->
-                                <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
-                                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                                        <span>📍</span>
-                                    </div>
-                                    <h4 class="text-lg font-bold mb-2">Fibre Pretoria East</h4>
-                                    <p class="text-gray-600 text-sm">
-                                        Premium fibre solutions for Pretoria East, from residential to enterprise needs.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a href="https://wa.me/27766473499" class="text-sm font-semibold text-black hover:text-gray-700">
-                                            Check Availability →
-                                        </a>
-                                    </div>
+                                <div class="grid grid-cols-2 gap-3 mb-6">
+                                    <span class="location-badge">Bronkhorstspruit</span>
+                                    <span class="location-badge">Pretoria</span>
+                                    <span class="location-badge">Cullinan</span>
+                                    <span class="location-badge">Rayton</span>
+                                    <span class="location-badge col-span-2">Pretoria East</span>
                                 </div>
                             </div>
                             
-                            <!-- Coverage Check CTA -->
-                            <div class="mt-8 pt-6 border-t border-gray-300 text-center">
-                                <p class="text-gray-600 mb-4">Not sure if we cover your exact address?</p>
-                                <a href="https://wa.me/27766473499" target="_blank" class="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all">
-                                    <span>📱 Check Your Coverage on WhatsApp</span>
+                            <!-- Quick WhatsApp CTA -->
+                            <div class="space-y-4">
+                                <p class="text-center text-gray-600 text-sm">
+                                    Need painting in <strong>Bronkhorstspruit</strong>? Paving in <strong>Pretoria East</strong>? Tiling in <strong>Cullinan</strong>? Chat with us!
+                                </p>
+                                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services%20in%20[Your%20Location]%20for%20[Service%20Needed]." target="_blank" class="w-full whatsapp-button py-3.5 rounded-lg font-bold text-center hover:bg-green-600 transition-colors">
+                                    📱 WhatsApp Our Local Team
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Expansion Notice -->
-                <div class="mt-12 bg-gray-50 rounded-xl p-6 border border-gray-300 text-center animate-on-scroll">
-                    <h3 class="text-xl font-bold mb-3">Expanding Our Reach</h3>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
-                        We're constantly expanding our fibre network in the eastern region. If you don't see your exact area listed above, 
-                        please contact us as we may already be installing in your neighbourhood or can add you to our expansion list.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section (UPDATED with local references) -->
-    <section id="problem" class="section-padding bg-gray-50">
+    <!-- Services Slideshow Section -->
+    <section id="slideshow" class="section-padding bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Frustration of Slow Internet is Real in Our Region</h2>
-                <p class="text-lg text-gray-600">These common problems cost families and businesses in Bronkhorstspruit, Cullinan, Rayton and Pretoria East time, money, and patience every single day</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-gradient">Home Improvement Services</span> in Action</h2>
+                <p class="text-lg text-gray-600">See our quality work across Bronkhorstspruit, Pretoria, Cullinan & Rayton</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Family Problems -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="icon-circle icon-circle-black">
-                            <span>🏠</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">For Residential Families</h3>
-                            <p class="text-gray-600 text-sm">Daily frustrations that disrupt family life in our communities</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Buffering During Family Time</h4>
-                                <p class="text-gray-600">Movie night ruined by constant buffering, making quality family time frustrating instead of enjoyable</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Homework Takes Hours</h4>
-                                <p class="text-gray-600">Children struggle to complete online assignments as slow downloads and page loads waste valuable study time</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Dropped Video Calls</h4>
-                                <p class="text-gray-600">Important calls with distant family members constantly drop, making it hard to stay connected</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Multiple Device Strain</h4>
-                                <p class="text-gray-600">When everyone is online - streaming, gaming, browsing - the internet grinds to a complete halt</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Business Problems -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="icon-circle icon-circle-black">
-                            <span>🏢</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">For Local Businesses</h3>
-                            <p class="text-gray-600 text-sm">Issues that directly impact your bottom line in our region</p>
+            <!-- Image Slideshow -->
+            <div class="slideshow-container slideshow-pause mb-12 animate-on-scroll">
+                <div class="slideshow-track">
+                    <!-- Painting Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Professional Painting</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Quality interior & exterior painting services across <strong>Pretoria East</strong> and <strong>Bronkhorstspruit</strong></p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20painting%20services%20in%20[Bronkhorstspruit/Pretoria]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Painting Quote
+                            </a>
                         </div>
                     </div>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">POS System Failures</h4>
-                                <p class="text-gray-600">Sales transactions fail when your point-of-sale system goes offline, losing revenue and frustrating customers</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Professional Image Damaged</h4>
-                                <p class="text-gray-600">Video meetings with clients or suppliers freeze at critical moments, making your business appear unprofessional</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Data Backup Delays</h4>
-                                <p class="text-gray-600">Critical cloud backups take hours or even days to complete, leaving your business data at risk</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-xl mt-1">❌</span>
-                            <div>
-                                <h4 class="font-bold mb-1">Email Communication Issues</h4>
-                                <p class="text-gray-600">Important emails with attachments won't send or receive, delaying crucial business communications</p>
-                            </div>
-                        </li>
-                    </ul>
+                    
+                    <!-- Paving Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Expert Paving</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Driveway and patio paving for homes in <strong>Cullinan</strong> and <strong>Rayton</strong> areas</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20paving%20services%20in%20[Cullinan/Rayton]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Paving Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Plastering Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1621370465625-d2b18f38b49c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Precision Plastering</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Smooth plaster finishes for homes across <strong>Pretoria</strong> and surrounding areas</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20plastering%20services%20in%20[Pretoria/Pretoria%20East]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Plastering Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Brickwork Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1545324412-8186dab8fda5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Quality Brickwork</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Structural and decorative brickwork for <strong>Bronkhorstspruit</strong> properties</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20brickwork%20services%20in%20[Bronkhorstspruit/Cullinan]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Brickwork Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Tiling Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Professional Tiling</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Floor and wall tiling services in <strong>Pretoria East</strong> and <strong>Rayton</strong></p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20tiling%20services%20in%20[Pretoria%20East/Rayton]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Tiling Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Ceiling Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Ceiling Installation</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Gypsum and suspended ceilings for homes in <strong>Cullinan</strong> and <strong>Bronkhorstspruit</strong></p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20ceiling%20installation%20in%20[Cullinan/Bronkhorstspruit]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Ceiling Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Rhinolite Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1616137422496-0a3c8d1b56ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Rhinolite Applications</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Textured wall coatings for properties across <strong>Pretoria</strong> region</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20rhinolite%20services%20in%20[Pretoria/Pretoria%20East]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Rhinolite Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Remodeling Slide -->
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1545324412-8186dab8fda5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-overlay">
+                            <h3 class="text-3xl font-bold mb-4">Complete Remodeling</h3>
+                            <p class="text-xl mb-6 max-w-2xl">Home transformations across <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong></p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20remodeling%20services%20in%20[Your%20Location]." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold">
+                                WhatsApp for Remodeling Quote
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Impact Statistics -->
-            <div class="bg-white rounded-2xl p-8 border-2 border-black card-hover animate-on-scroll">
-                <h3 class="text-2xl font-bold text-center mb-8">The Real Cost of Slow Internet in Our Area</h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center p-6">
-                        <div class="text-4xl font-bold mb-3">2-3 Hours</div>
-                        <div class="text-gray-700">Wasted each week waiting on slow connections</div>
-                        <div class="text-gray-500 text-sm mt-2">That's 100-150 hours per year of lost productivity</div>
-                    </div>
-                    <div class="text-center p-6">
-                        <div class="text-4xl font-bold mb-3">15-25%</div>
-                        <div class="text-gray-700">Productivity loss for small businesses</div>
-                        <div class="text-gray-500 text-sm mt-2">Direct impact on your revenue in our region</div>
-                    </div>
-                    <div class="text-center p-6">
-                        <div class="text-4xl font-bold mb-3">R1000+</div>
-                        <div class="text-gray-700">Monthly opportunity cost from downtime</div>
-                        <div class="text-gray-500 text-sm mt-2">Lost sales and productivity in local businesses</div>
-                    </div>
-                </div>
+            <!-- Slideshow CTA -->
+            <div class="text-center animate-on-scroll">
+                <p class="text-xl text-gray-600 mb-8">See something you like? Our local teams are ready to transform your home!</p>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20saw%20your%20work%20and%20need%20services%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl mb-4 touch-target">
+                    <span>💬 CHAT ON WHATSAPP ABOUT YOUR PROJECT</span>
+                    <span>→</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Solution Section (Updated to reference local service) -->
-    <section id="solution" class="section-padding bg-white">
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Your Local Solution: <span class="text-gradient">FibreConnector 25Mbps Fibre Internet</span></h2>
-                <p class="text-lg text-gray-600">Engineered specifically to solve every internet problem permanently for homes and businesses in Bronkhorstspruit, Cullinan, Rayton and Pretoria East</p>
-            </div>
-
-            <!-- Triple Guarantee -->
-            <div class="bg-gray-50 rounded-2xl p-8 mb-12 border border-gray-300 animate-on-scroll">
-                <h3 class="text-2xl font-bold text-center mb-8">Our Triple Guarantee to You</h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-2xl border border-gray-300 text-center card-hover">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">💰</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-4">Zero Upfront Cost</h4>
-                        <p class="text-gray-600 mb-4">No deposit, no installation fees, no activation charges, no hidden costs of any kind.</p>
-                        <div class="font-semibold">You only pay R490/month after your free trial</div>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl border border-gray-300 text-center card-hover">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">🆓</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-4">14-Day Free Trial</h4>
-                        <p class="text-gray-600 mb-4">Test our 25Mbps fibre for two full weeks completely free. Cancel anytime with zero obligation.</p>
-                        <div class="font-semibold">Risk-free testing period</div>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl border border-gray-300 text-center card-hover">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">🔧</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-4">Free Professional Installation</h4>
-                        <p class="text-gray-600 mb-4">Our certified local technicians install everything at no cost. Typically completed within 2-4 hours.</p>
-                        <div class="font-semibold">R1500+ installation value</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Why 25Mbps is Perfect -->
-            <div class="mb-12 animate-on-scroll">
-                <h3 class="text-2xl font-bold text-center mb-8">Why 25Mbps is the Perfect Speed for Our Region</h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">Perfect for Local Families</h4>
-                                <p class="text-gray-600">Simultaneously support 4-6 devices streaming HD video, browsing, gaming, and working without any slowdowns or buffering - ideal for households in Bronkhorstspruit, Cullinan, and Rayton.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">HD Streaming Ready</h4>
-                                <p class="text-gray-600">Stream Netflix, YouTube, Disney+, and Showmax in full HD on multiple screens simultaneously without any buffering or quality loss.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">Local Business Operations</h4>
-                                <p class="text-gray-600">Handle POS transactions, video conferencing, email with large attachments, cloud backups, and inventory management simultaneously - perfect for businesses in Pretoria East and surrounds.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">Cost-Effective Solution</h4>
-                                <p class="text-gray-600">25Mbps provides optimal performance without paying for unnecessary excess speed. You get exactly what you need at an affordable price.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">Future-Proof Reliability</h4>
-                                <p class="text-gray-600">Fibre optic technology ensures consistent speeds regardless of weather conditions, network congestion, or distance from exchange - crucial for our region's varying landscapes.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">Low Latency Performance</h4>
-                                <p class="text-gray-600">Perfect ping for online gaming, crystal-clear video calls, and real-time applications that require immediate response times.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dedicated Support -->
-            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-300 animate-on-scroll">
-                <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="flex-1">
-                        <h3 class="text-2xl font-bold mb-6">Local Technical Support Included</h3>
-                        <p class="text-gray-600 mb-6">Your 25Mbps fibre connection comes with personalized local support to ensure you're always connected:</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black">
-                                    <span>✓</span>
-                                </div>
-                                <span class="text-gray-700">24/7 technical support hotline with direct access to our engineers</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black">
-                                    <span>✓</span>
-                                </div>
-                                <span class="text-gray-700">WhatsApp support for quick troubleshooting and assistance</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black">
-                                    <span>✓</span>
-                                </div>
-                                <span class="text-gray-700">Same-day assistance for critical issues affecting your business</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black">
-                                    <span>✓</span>
-                                </div>
-                                <span class="text-gray-700">Regular network maintenance and proactive performance monitoring</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black">
-                                    <span>✓</span>
-                                </div>
-                                <span class="text-gray-700">Local technicians available for on-site support in Bronkhorstspruit & surrounds</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <div class="icon-circle icon-circle-black" style="width: 192px; height: 192px;">
-                            <div class="text-center">
-                                <span class="text-5xl block mb-4">📞</span>
-                                <p class="font-bold">Local Support<br>Always Here</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="section-padding bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete Internet Solutions for Our Region</h2>
-                <p class="text-lg text-gray-600">Everything you need for reliable home or business internet in Bronkhorstspruit, Cullinan, Rayton and Pretoria East</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-gradient">Professional Services</span></h2>
+                <p class="text-lg text-gray-600">Comprehensive home improvement solutions for <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong> homeowners</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <!-- Product 1 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>📶</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">25Mbps Fibre Connection</h3>
-                    <p class="text-gray-600 text-sm text-center">Perfect for 4-6 simultaneous devices, HD streaming, and smooth browsing</p>
+                <!-- Painting -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="text-lg font-bold mb-3">Professional Painting</h3>
+                    <p class="text-gray-600 text-sm mb-4">Interior & exterior painting with premium materials. Serving <strong>Pretoria East</strong> and <strong>Bronkhorstspruit</strong> homes.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20painting%20services%20in%20[Bronkhorstspruit/Pretoria%20East]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Painting Quote →
+                    </a>
                 </div>
 
-                <!-- Product 2 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>🛜</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">Wi-Fi Router</h3>
-                    <p class="text-gray-600 text-sm text-center">Dual-band router with advanced security features included at no extra cost</p>
+                <!-- Paving -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🧱</div>
+                    <h3 class="text-lg font-bold mb-3">Expert Paving</h3>
+                    <p class="text-gray-600 text-sm mb-4">Driveways, walkways, and patio paving. Popular service in <strong>Cullinan</strong> and <strong>Rayton</strong> areas.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20paving%20services%20in%20[Cullinan/Rayton]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Paving Quote →
+                    </a>
                 </div>
 
-                <!-- Product 3 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>🔌</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">Fibre ONT Device</h3>
-                    <p class="text-gray-600 text-sm text-center">High-quality optical network terminal for stable fibre-to-home connection</p>
+                <!-- Plastering -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🏗️</div>
+                    <h3 class="text-lg font-bold mb-3">Precision Plastering</h3>
+                    <p class="text-gray-600 text-sm mb-4">Smooth, even plaster finishes. Trusted by <strong>Pretoria</strong> homeowners for quality work.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20plastering%20services%20in%20[Pretoria/Pretoria%20East]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Plastering Quote →
+                    </a>
                 </div>
 
-                <!-- Product 4 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>📞</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">24/7 Local Support</h3>
-                    <p class="text-gray-600 text-sm text-center">Direct phone, email, and WhatsApp support with our technical team</p>
+                <!-- Brickwork -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🧱</div>
+                    <h3 class="text-lg font-bold mb-3">Quality Brickwork</h3>
+                    <p class="text-gray-600 text-sm mb-4">Structural and decorative brickwork. Serving <strong>Bronkhorstspruit</strong> properties with expertise.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20brickwork%20services%20in%20[Bronkhorstspruit/Cullinan]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Brickwork Quote →
+                    </a>
                 </div>
 
-                <!-- Product 5 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>🛡️</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">Network Security</h3>
-                    <p class="text-gray-600 text-sm text-center">Built-in firewall and security features to protect your connected devices</p>
+                <!-- Ceiling Installation -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">⬆️</div>
+                    <h3 class="text-lg font-bold mb-3">Ceiling Installation</h3>
+                    <p class="text-gray-600 text-sm mb-4">Gypsum, suspended, and decorative ceilings. Popular in <strong>Cullinan</strong> homes.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20ceiling%20installation%20in%20[Cullinan/Bronkhorstspruit]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Ceiling Quote →
+                    </a>
                 </div>
 
-                <!-- Product 6 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>⚡</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">Backup Power Option</h3>
-                    <p class="text-gray-600 text-sm text-center">Optional UPS system to keep you connected during power outages</p>
+                <!-- Tiling -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🔲</div>
+                    <h3 class="text-lg font-bold mb-3">Professional Tiling</h3>
+                    <p class="text-gray-600 text-sm mb-4">Floor and wall tiling with perfect alignment. Serving <strong>Pretoria East</strong> and <strong>Rayton</strong>.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20tiling%20services%20in%20[Pretoria%20East/Rayton]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Tiling Quote →
+                    </a>
                 </div>
 
-                <!-- Product 7 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>📊</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">Usage Analytics</h3>
-                    <p class="text-gray-600 text-sm text-center">Online portal to monitor your data usage and connection performance</p>
+                <!-- Rhinolite -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="text-lg font-bold mb-3">Rhinolite Applications</h3>
+                    <p class="text-gray-600 text-sm mb-4">Textured wall coatings for protection. Trusted across the <strong>Pretoria</strong> region.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20rhinolite%20services%20in%20[Pretoria/Pretoria%20East]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Rhinolite Quote →
+                    </a>
                 </div>
 
-                <!-- Product 8 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-4">
-                        <span>🔄</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3">Easy Upgrades</h3>
-                    <p class="text-gray-600 text-sm text-center">Simple process to upgrade your speed as your needs grow</p>
-                </div>
-            </div>
-
-            <!-- Product Features -->
-            <div class="bg-white rounded-2xl p-8 border-2 border-black animate-on-scroll">
-                <h3 class="text-2xl font-bold text-center mb-8">Key Product Benefits for Our Region</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="text-2xl font-bold mb-2">No Contracts</div>
-                        <p class="text-gray-600 text-sm">Month-to-month flexibility with no lock-in period</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold mb-2">Unlimited Data</div>
-                        <p class="text-gray-600 text-sm">Truly unlimited usage with no throttling or caps</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold mb-2">Guaranteed Speed</div>
-                        <p class="text-gray-600 text-sm">Consistent 25Mbps speed delivered via fibre optic</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold mb-2">Free Equipment</div>
-                        <p class="text-gray-600 text-sm">All necessary equipment included at no extra cost</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section id="guarantee" class="section-padding bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-start">
-                <!-- Left Column -->
-                <div class="animate-on-scroll">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">What We Guarantee to Our Local Customers</h2>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle icon-circle-black flex-shrink-0">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Zero Upfront Cost Guarantee</h3>
-                                <p class="text-gray-600">No deposit required. No installation fees. No activation charges. You only start paying after your 14-day free trial if you decide to continue.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle icon-circle-black flex-shrink-0">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">14-Day Free Trial Guarantee</h3>
-                                <p class="text-gray-600">Test our 25Mbps fibre for two full weeks completely free. Cancel anytime during the trial period with no obligation and no charges.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle icon-circle-black flex-shrink-0">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Free Installation Guarantee</h3>
-                                <p class="text-gray-600">Professional installation by certified technicians at no cost to you. Typically completed within 2-4 hours at your scheduled time.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="icon-circle icon-circle-black flex-shrink-0">
-                                <span>✓</span>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Satisfaction Guarantee</h3>
-                                <p class="text-gray-600">If you're not completely satisfied with your service, cancel within 30 days and receive a full refund of your first month's payment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="animate-on-scroll">
-                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-300">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="icon-circle icon-circle-black">
-                                <span>⭐</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold">Risk-Free Premium Implementation</h3>
-                                <p class="text-gray-600">Everything included for a seamless experience in our region</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold mb-2 text-lg">Local Site Assessment</h4>
-                                <p class="text-gray-600">Our technicians conduct a thorough site survey to ensure optimal installation placement and performance for your specific location.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2 text-lg">Quality Equipment</h4>
-                                <p class="text-gray-600">Enterprise-grade fibre equipment installed and configured for maximum reliability and performance in our region.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2 text-lg">Clean Installation</h4>
-                                <p class="text-gray-600">Neat and tidy installation with minimal disruption to your home or business premises.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2 text-lg">Full Testing</h4>
-                                <p class="text-gray-600">Comprehensive speed and performance testing before we leave to ensure everything works perfectly.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2 text-lg">User Training</h4>
-                                <p class="text-gray-600">Brief tutorial on using your new connection and accessing support when needed.</p>
-                            </div>
-                        </div>
-
-                        <!-- Guarantee Badge -->
-                        <div class="mt-8 p-4 bg-black text-white rounded-lg">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🛡️</span>
-                                <div>
-                                    <div class="font-bold">100% SATISFACTION GUARANTEED</div>
-                                    <div class="text-sm opacity-90">or your money back within 30 days</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section (Updated with local references) -->
-    <section id="how-it-works" class="section-padding bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Connected in 4 Simple Steps</h2>
-                <p class="text-lg text-gray-600">From booking to browsing in as little as 48-72 hours in Bronkhorstspruit, Cullinan, Rayton and Pretoria East</p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
-                <div class="relative animate-on-scroll">
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-black text-white flex items-center justify-center font-bold text-xl z-10 shadow-lg">
-                        1
-                    </div>
-                    <div class="bg-white rounded-2xl p-8 pt-14 border border-gray-300 card-hover h-full">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">📅</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">Book Free Installation</h3>
-                        <p class="text-gray-600 text-center mb-4">Click "Chat on WhatsApp" to schedule with our team. Choose your preferred date and time.</p>
-                        <div class="font-semibold text-center text-sm">Takes 2 minutes to complete</div>
-                    </div>
-                </div>
-
-                <div class="relative animate-on-scroll">
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-black text-white flex items-center justify-center font-bold text-xl z-10 shadow-lg">
-                        2
-                    </div>
-                    <div class="bg-white rounded-2xl p-8 pt-14 border border-gray-300 card-hover h-full">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">🔧</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">Local Technician Visit</h3>
-                        <p class="text-gray-600 text-center mb-4">Our certified local technician arrives at your scheduled time and installs your fibre connection.</p>
-                        <div class="font-semibold text-center text-sm">Typically takes 2-4 hours</div>
-                    </div>
-                </div>
-
-                <div class="relative animate-on-scroll">
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-black text-white flex items-center justify-center font-bold text-xl z-10 shadow-lg">
-                        3
-                    </div>
-                    <div class="bg-white rounded-2xl p-8 pt-14 border border-gray-300 card-hover h-full">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">🆓</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">14-Day Free Trial</h3>
-                        <p class="text-gray-600 text-center mb-4">Enjoy 14 full days of unlimited 25Mbps fibre internet. Test it thoroughly with your family or business.</p>
-                        <div class="font-semibold text-center text-sm">Zero cost, zero obligation</div>
-                    </div>
-                </div>
-
-                <div class="relative animate-on-scroll">
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-black text-white flex items-center justify-center font-bold text-xl z-10 shadow-lg">
-                        4
-                    </div>
-                    <div class="bg-white rounded-2xl p-8 pt-14 border border-gray-300 card-hover h-full">
-                        <div class="icon-circle icon-circle-black mx-auto mb-6">
-                            <span class="text-2xl">✅</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">Stay Connected</h3>
-                        <p class="text-gray-600 text-center mb-4">Continue at R490/month or cancel anytime. No contracts, no lock-ins, complete flexibility.</p>
-                        <div class="font-semibold text-center text-sm">Month-to-month flexibility</div>
-                    </div>
+                <!-- Remodeling -->
+                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll text-center">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="text-lg font-bold mb-3">Complete Remodeling</h3>
+                    <p class="text-gray-600 text-sm mb-4">Full home transformations across <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong>.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20remodeling%20services%20in%20[Your%20Location]." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp for Remodeling Quote →
+                    </a>
                 </div>
             </div>
 
-            <!-- Detailed Timeline -->
-            <div class="bg-white rounded-2xl p-8 border-2 border-black card-hover animate-on-scroll">
-                <h3 class="text-2xl font-bold text-center mb-8">Typical Installation Timeline for Our Region</h3>
-                <div class="relative">
-                    <!-- Timeline line -->
-                    <div class="absolute left-0 right-0 top-1/2 h-1 bg-gray-300 transform -translate-y-1/2 hidden md:block"></div>
-                    
-                    <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0">
-                        <div class="text-center relative z-10">
-                            <div class="icon-circle icon-circle-black mx-auto mb-4" style="width: 48px; height: 48px;">
-                                <span class="font-bold">1</span>
-                            </div>
-                            <h4 class="font-bold mb-2">Booking & Confirmation</h4>
-                            <p class="text-gray-600 text-sm">Schedule your installation and receive immediate confirmation</p>
-                            <p class="font-semibold text-xs mt-2">Within 24 hours</p>
-                        </div>
-                        <div class="text-center relative z-10">
-                            <div class="icon-circle icon-circle-black mx-auto mb-4" style="width: 48px; height: 48px;">
-                                <span class="font-bold">2</span>
-                            </div>
-                            <h4 class="font-bold mb-2">Local Site Survey</h4>
-                            <p class="text-gray-600 text-sm">Technical assessment of your premises for optimal installation</p>
-                            <p class="font-semibold text-xs mt-2">Quick technical check</p>
-                        </div>
-                        <div class="text-center relative z-10">
-                            <div class="icon-circle icon-circle-black mx-auto mb-4" style="width: 48px; height: 48px;">
-                                <span class="font-bold">3</span>
-                            </div>
-                            <h4 class="font-bold mb-2">Installation Day</h4>
-                            <p class="text-gray-600 text-sm">Professional installation and setup of your fibre connection</p>
-                            <p class="font-semibold text-xs mt-2">2-4 hours setup</p>
-                        </div>
-                        <div class="text-center relative z-10">
-                            <div class="icon-circle icon-circle-black mx-auto mb-4" style="width: 48px; height: 48px;">
-                                <span class="font-bold">4</span>
-                            </div>
-                            <h4 class="font-bold mb-2">Free Trial Begins</h4>
-                            <p class="text-gray-600 text-sm">Your 14-day risk-free trial period starts immediately</p>
-                            <p class="font-semibold text-xs mt-2">14 days testing</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section-padding bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing for Our Region</h2>
-                <p class="text-lg text-gray-600">One perfect plan that fits all your needs in Bronkhorstspruit, Cullinan, Rayton and Pretoria East without complicated options</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white rounded-3xl p-8 border-2 border-black shadow-2xl animate-on-scroll">
-                    <!-- Popular Badge -->
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-full text-sm font-medium mb-6 mx-auto flex justify-center badge">
-                        <span>⭐</span>
-                        <span>MOST POPULAR CHOICE IN OUR REGION</span>
-                    </div>
-                    
-                    <div class="text-center mb-8">
-                        <h3 class="text-2xl font-bold mb-2">25Mbps Fibre Plan</h3>
-                        <p class="text-gray-600">Perfectly balanced for residential families and local businesses in our area</p>
-                    </div>
-
-                    <!-- Price Display -->
-                    <div class="text-center mb-8">
-                        <div class="flex items-baseline justify-center mb-2">
-                            <span class="text-5xl font-bold">R490</span>
-                            <span class="text-gray-600 text-xl ml-2">/ month</span>
-                        </div>
-                        <p class="text-gray-500">After your 14-day free trial</p>
-                        <p class="font-semibold text-sm mt-2">No contract • Cancel anytime</p>
-                    </div>
-
-                    <!-- What's Included -->
-                    <div class="mb-8">
-                        <h4 class="text-lg font-bold text-center mb-6">Everything Included in Your Plan:</h4>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                                <div class="icon-circle icon-circle-black flex-shrink-0">
-                                    <span>✓</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold">25Mbps Download Speed</span>
-                                    <p class="text-gray-600 text-sm mt-1">Consistent fibre speed guaranteed, perfect for multiple simultaneous users</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                                <div class="icon-circle icon-circle-black flex-shrink-0">
-                                    <span>✓</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold">Truly Unlimited Data</span>
-                                    <p class="text-gray-600 text-sm mt-1">No caps, no throttling, no fair usage policies - stream and download without limits</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                                <div class="icon-circle icon-circle-black flex-shrink-0">
-                                    <span>✓</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold">Free Wi-Fi Router</span>
-                                    <p class="text-gray-600 text-sm mt-1">High-quality router included at no extra cost (Wi-Fi 5 compatible with dual-band)</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                                <div class="icon-circle icon-circle-black flex-shrink-0">
-                                    <span>✓</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold">24/7 Dedicated Support</span>
-                                    <p class="text-gray-600 text-sm mt-1">Direct access to our technical team for any issues or questions</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                                <div class="icon-circle icon-circle-black flex-shrink-0">
-                                    <span>✓</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold">No Contract Required</span>
-                                    <p class="text-gray-600 text-sm mt-1">Month-to-month flexibility - cancel anytime with 30 days notice</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                                <div class="icon-circle icon-circle-black flex-shrink-0">
-                                    <span>✓</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold">Free Installation</span>
-                                    <p class="text-gray-600 text-sm mt-1">Professional installation worth R1500+ included at no cost</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cost Comparison -->
-                    <div class="bg-gray-50 rounded-2xl p-6 mb-8">
-                        <h4 class="text-lg font-bold text-center mb-4">You Save Over R2000 in the First Month</h4>
-                        <div class="space-y-4 max-w-md mx-auto">
-                            <div class="flex justify-between items-center border-b border-gray-300 pb-3">
-                                <span class="text-gray-700">Typical Fibre Installation Fee:</span>
-                                <span class="font-bold line-through">R1500</span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-gray-300 pb-3">
-                                <span class="text-gray-700">Typical Router Deposit:</span>
-                                <span class="font-bold line-through">R500</span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-gray-300 pb-3">
-                                <span class="text-gray-700">Typical Activation Fee:</span>
-                                <span class="font-bold line-through">R350</span>
-                            </div>
-                            <div class="flex justify-between items-center pt-3">
-                                <span class="text-xl font-bold">Your Total Cost with FibreConnector:</span>
-                                <span class="text-2xl font-bold">R0</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CTA -->
-                    <div class="text-center">
-                        <a href="https://wa.me/27766473499" target="_blank" class="inline-flex items-center justify-center gap-3 bg-black text-white w-full py-5 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105 mb-4 touch-target">
-                            <span>🎯 START YOUR RISK-FREE TRIAL TODAY</span>
-                        </a>
-                        <p class="text-gray-500 text-sm">No credit card required • No commitment • Free installation included • 14-day free trial</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Value Proposition -->
-            <div class="mt-12 grid md:grid-cols-3 gap-8">
-                <div class="text-center animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-6">
-                        <span class="text-2xl">💸</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4">No Hidden Costs Ever</h4>
-                    <p class="text-gray-600">What you see is what you pay. No activation fees, no setup charges, no hidden costs of any kind. Complete price transparency.</p>
-                </div>
-                <div class="text-center animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-6">
-                        <span class="text-2xl">🔄</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4">Flexible & Scalable</h4>
-                    <p class="text-gray-600">Upgrade or downgrade your speed anytime as your needs change. No contracts mean you're always in control of your service.</p>
-                </div>
-                <div class="text-center animate-on-scroll">
-                    <div class="icon-circle icon-circle-black mx-auto mb-6">
-                        <span class="text-2xl">🛡️</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4">No Risk Trial Period</h4>
-                    <p class="text-gray-600">14 full days to test everything thoroughly. Cancel anytime during the trial period with no obligation and no charges.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section (Updated with local references) -->
-    <section id="faq" class="section-padding bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-                <p class="text-lg text-gray-600">Everything you need to know about FibreConnector in Bronkhorstspruit, Cullinan, Rayton and Pretoria East</p>
-            </div>
-
-            <div class="space-y-6">
-                <!-- Question 1 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-3 flex items-center gap-3">
-                        <span class="font-bold">Q:</span>
-                        How does the 14-day free trial actually work?
-                    </h3>
-                    <div class="pl-8">
-                        <p class="text-gray-600 mb-3">After your free professional installation, you immediately get 14 full days of unlimited 25Mbps fibre internet at absolutely no cost. During this period, you can:</p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Test streaming on multiple devices simultaneously</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Conduct video calls and online meetings</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Run your business operations and POS systems</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Check gaming performance and download speeds</span>
-                            </li>
-                        </ul>
-                        <p class="text-gray-600 mt-3">If you're completely satisfied, you continue at R490/month. If not, simply notify us before day 14 and cancel with no charges whatsoever.</p>
-                    </div>
-                </div>
-
-                <!-- Question 2 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-3 flex items-center gap-3">
-                        <span class="font-bold">Q:</span>
-                        What exactly does "free installation" include?
-                    </h3>
-                    <div class="pl-8">
-                        <p class="text-gray-600 mb-3">Our free professional installation is a complete, end-to-end service that includes:</p>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Installation of the fibre line to your premises by certified technicians</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Setup and configuration of your Wi-Fi router</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Testing and optimization of your connection</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>Basic troubleshooting and setup assistance for your devices</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="mt-1">✓</span>
-                                <span>All necessary equipment, cabling, and labour at no cost</span>
-                            </li>
-                        </ul>
-                        <p class="text-gray-600 mt-3">This service typically represents a R1500+ value that we provide completely free as part of your sign-up.</p>
-                    </div>
-                </div>
-
-                <!-- Question 3 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-3 flex items-center gap-3">
-                        <span class="font-bold">Q:</span>
-                        Is 25Mbps really enough for my family or business in our area?
-                    </h3>
-                    <div class="pl-8">
-                        <p class="text-gray-600 mb-3">Absolutely. 25Mbps fibre is the sweet spot that provides optimal performance for most users in Bronkhorstspruit, Cullinan, Rayton and Pretoria East. Here's what it can handle simultaneously:</p>
-                        <div class="grid md:grid-cols-2 gap-4 mt-4">
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-bold mb-2">For Families:</h4>
-                                <ul class="space-y-1 text-sm text-gray-600">
-                                    <li>• 4 HD video streams (Netflix, YouTube)</li>
-                                    <li>• Multiple video calls (Zoom, Teams)</li>
-                                    <li>• Online gaming with low latency</li>
-                                    <li>• Homework and research</li>
-                                    <li>• Social media browsing</li>
-                                </ul>
-                            </div>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-bold mb-2">For Businesses:</h4>
-                                <ul class="space-y-1 text-sm text-gray-600">
-                                    <li>• POS system transactions</li>
-                                    <li>• Video conferencing</li>
-                                    <li>• Cloud backups and sync</li>
-                                    <li>• Email with attachments</li>
-                                    <li>• Multiple employee devices</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-4">For 90% of families and small businesses in our region, 25Mbps provides the perfect balance of speed and affordability.</p>
-                    </div>
-                </div>
-
-                <!-- Question 4 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-3 flex items-center gap-3">
-                        <span class="font-bold">Q:</span>
-                        What if I need to cancel during or after the trial?
-                    </h3>
-                    <div class="pl-8">
-                        <p class="text-gray-600 mb-3">We've made cancellation simple and penalty-free:</p>
-                        <div class="space-y-4">
-                            <div class="border-l-4 border-black pl-4">
-                                <h4 class="font-bold">During the 14-day trial:</h4>
-                                <p class="text-gray-600">Simply notify us via email or WhatsApp before your trial ends, and you won't be charged anything. No questions asked.</p>
-                            </div>
-                            <div class="border-l-4 border-black pl-4">
-                                <h4 class="font-bold">After the trial period:</h4>
-                                <p class="text-gray-600">You can cancel with 30 days notice. There are no cancellation fees, no early termination charges, and no hidden penalties.</p>
-                            </div>
-                            <div class="border-l-4 border-black pl-4">
-                                <h4 class="font-bold">Equipment return:</h4>
-                                <p class="text-gray-600">If you cancel, you simply return the router (we provide a prepaid return label). There's no equipment purchase required.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 5 -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-3 flex items-center gap-3">
-                        <span class="font-bold">Q:</span>
-                        How long does the installation process take in our area?
-                    </h3>
-                    <div class="pl-8">
-                        <p class="text-gray-600 mb-3">The entire process from booking to being fully connected typically takes 48-72 hours in Bronkhorstspruit, Cullinan, Rayton and Pretoria East:</p>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black" style="width: 32px; height: 32px;">
-                                    <span class="font-bold text-sm">1</span>
-                                </div>
-                                <div>
-                                    <span class="font-medium">Booking & Scheduling:</span>
-                                    <span class="text-gray-600 ml-2">Within 24 hours</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black" style="width: 32px; height: 32px;">
-                                    <span class="font-bold text-sm">2</span>
-                                </div>
-                                <div>
-                                    <span class="font-medium">Installation Appointment:</span>
-                                    <span class="text-gray-600 ml-2">Scheduled within 48 hours</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black" style="width: 32px; height: 32px;">
-                                    <span class="font-bold text-sm">3</span>
-                                </div>
-                                <div>
-                                    <span class="font-medium">On-site Installation:</span>
-                                    <span class="text-gray-600 ml-2">2-4 hours at your premises</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="icon-circle icon-circle-black" style="width: 32px; height: 32px;">
-                                    <span class="font-bold text-sm">4</span>
-                                </div>
-                                <div>
-                                    <span class="font-medium">Activation & Testing:</span>
-                                    <span class="text-gray-600 ml-2">Immediate after installation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Question 6 - UPDATED with local coverage details -->
-                <div class="bg-white rounded-xl p-6 border border-gray-300 card-hover animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-3 flex items-center gap-3">
-                        <span class="font-bold">Q:</span>
-                        What areas in the eastern region do you currently cover?
-                    </h3>
-                    <div class="pl-8">
-                        <p class="text-gray-600 mb-3">We currently serve these key areas in the eastern region:</p>
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <span class="font-semibold">• Fibre in Bronkhorstspruit</span>
-                            </div>
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <span class="font-semibold">• Fibre in Cullinan</span>
-                            </div>
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <span class="font-semibold">• Fibre in Rayton</span>
-                            </div>
-                            <div class="bg-gray-50 p-3 rounded-lg">
-                                <span class="font-semibold">• Fibre Pretoria East</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mb-3">When you book your installation, we immediately check coverage for your specific address before confirming your appointment.</p>
-                        <div class="bg-gray-50 p-4 rounded-lg mt-4">
-                            <h4 class="font-bold mb-2">Coverage Check Process for Our Region:</h4>
-                            <ul class="space-y-2 text-sm text-gray-600">
-                                <li class="flex items-start gap-2">
-                                    <span class="mt-1">①</span>
-                                    <span>You provide your address during booking</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="mt-1">②</span>
-                                    <span>We instantly check fibre infrastructure availability in your area</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="mt-1">③</span>
-                                    <span>If available, we confirm your installation immediately</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="mt-1">④</span>
-                                    <span>If not available, we notify you and add you to our expansion list</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="text-gray-600 mt-4">Our coverage is constantly expanding in the eastern region. If we're not in your exact area yet, we'll notify you as soon as we become available.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Still have questions -->
-            <div class="mt-12 text-center animate-on-scroll">
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-300">
-                    <h4 class="text-2xl font-bold mb-4">Still have questions about fibre in our area?</h4>
-                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Our local team is ready to answer any questions you have about our service, coverage in Bronkhorstspruit, Cullinan, Rayton or Pretoria East, or the installation process.</p>
-                    <a href="https://wa.me/27766473499" target="_blank" class="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all shadow-lg hover:scale-105">
-                        <span>📞</span>
-                        <span>Chat with Our Local Team on WhatsApp</span>
+            <!-- Services CTA -->
+            <div class="text-center animate-on-scroll">
+                <div class="bg-white rounded-2xl p-8 border-2 border-primary-600">
+                    <h3 class="text-2xl font-bold mb-6">Need Multiple Services? We Do It All!</h3>
+                    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                        From painting your <strong>Bronkhorstspruit</strong> home to paving your <strong>Cullinan</strong> driveway, our experienced teams handle complete home improvement projects across the region.
+                    </p>
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20multiple%20services%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]%20for%20[Describe%20Project]." target="_blank" class="inline-flex items-center gap-3 whatsapp-button px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl">
+                        <span>💬 CHAT ON WHATSAPP FOR COMPLETE PROJECT</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose <span class="text-gradient">Home Connector</span></h2>
+                <p class="text-lg text-gray-600">The local professional choice for homeowners in <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong></p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="icon-circle icon-circle-primary mb-6">
+                        <span>👷</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">30+ Years Collective Experience</h3>
+                    <p class="text-gray-600">Our team brings decades of combined expertise to every project across <strong>Pretoria East</strong> and surrounding areas.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="icon-circle icon-circle-primary mb-6">
+                        <span>📍</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Local Knowledge</h3>
+                    <p class="text-gray-600">We understand the specific needs of homes in <strong>Bronkhorstspruit, Cullinan, Rayton</strong> and <strong>Pretoria</strong> regions.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="icon-circle icon-circle-primary mb-6">
+                        <span>💬</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Easy WhatsApp Communication</h3>
+                    <p class="text-gray-600">Quick quotes, project updates, and support via WhatsApp. Just message +27766473499!</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="icon-circle icon-circle-primary mb-6">
+                        <span>🏆</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Quality Guaranteed</h3>
+                    <p class="text-gray-600">We stand behind our work with a satisfaction guarantee on all services in your area.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="icon-circle icon-circle-primary mb-6">
+                        <span>⏱️</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Timely Completion</h3>
+                    <p class="text-gray-600">We respect your schedule and complete projects efficiently across the region.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="icon-circle icon-circle-primary mb-6">
+                        <span>🤝</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Trusted Local Teams</h3>
+                    <p class="text-gray-600">Our skilled craftsmen are known and trusted throughout the communities we serve.</p>
+                </div>
+            </div>
+
+            <!-- Experience CTA -->
+            <div class="bg-primary-50 rounded-2xl p-8 border-2 border-primary-600 animate-on-scroll">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Experience You Can Trust</h3>
+                        <p class="text-gray-600">With <strong>30+ years collective experience</strong> serving <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong>, we've seen it all and deliver solutions that last.</p>
+                    </div>
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'd%20like%20to%20work%20with%20your%20experienced%20team%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]." target="_blank" class="whatsapp-button px-8 py-4 rounded-lg font-semibold whitespace-nowrap">
+                        💬 WhatsApp Our Experienced Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Service Section -->
+    <section id="local" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Serving <span class="text-gradient">Your Local Area</span></h2>
+                <p class="text-lg text-gray-600">Professional home improvement services where you need them most</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Left Column - Local Benefits -->
+                <div class="animate-on-scroll">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-300 h-full">
+                        <h3 class="text-2xl font-bold mb-6">Why Local Service Matters</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="icon-circle icon-circle-primary flex-shrink-0">
+                                    <span>✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">We Know Your Area</h4>
+                                    <p class="text-gray-600">Understanding local building styles in <strong>Pretoria East</strong>, soil conditions in <strong>Cullinan</strong>, and weather patterns in <strong>Bronkhorstspruit</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="icon-circle icon-circle-primary flex-shrink-0">
+                                    <span>✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Quick Response Times</h4>
+                                    <p class="text-gray-600">Located nearby to serve <strong>Rayton</strong> and surrounding areas with faster service and follow-up support.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="icon-circle icon-circle-primary flex-shrink-0">
+                                    <span>✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Community Trust</h4>
+                                    <p class="text-gray-600">Built on reputation across <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong> communities.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="icon-circle icon-circle-primary flex-shrink-0">
+                                    <span>✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Local Material Knowledge</h4>
+                                    <p class="text-gray-600">Knowing which materials work best for our climate and conditions in your specific area.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Service Areas -->
+                <div class="animate-on-scroll">
+                    <div class="bg-primary-50 rounded-2xl p-8 border-2 border-primary-600 h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Our Service Areas</h3>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <!-- Bronkhorstspruit -->
+                            <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
+                                <div class="text-3xl mb-4">📍</div>
+                                <h4 class="text-lg font-bold mb-2">Bronkhorstspruit</h4>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Comprehensive home improvement services for Bronkhorstspruit homeowners
+                                </p>
+                                <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20services%20in%20Bronkhorstspruit." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                                    WhatsApp for Bronkhorstspruit
+                                </a>
+                            </div>
+                            
+                            <!-- Pretoria -->
+                            <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
+                                <div class="text-3xl mb-4">📍</div>
+                                <h4 class="text-lg font-bold mb-2">Pretoria & Pretoria East</h4>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Professional services across Pretoria and Pretoria East regions
+                                </p>
+                                <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20services%20in%20Pretoria/Pretoria%20East." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                                    WhatsApp for Pretoria
+                                </a>
+                            </div>
+                            
+                            <!-- Cullinan -->
+                            <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
+                                <div class="text-3xl mb-4">📍</div>
+                                <h4 class="text-lg font-bold mb-2">Cullinan</h4>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Quality home improvements for Cullinan area properties
+                                </p>
+                                <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20services%20in%20Cullinan." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                                    WhatsApp for Cullinan
+                                </a>
+                            </div>
+                            
+                            <!-- Rayton -->
+                            <div class="bg-white p-6 rounded-xl border border-gray-300 card-hover text-center">
+                                <div class="text-3xl mb-4">📍</div>
+                                <h4 class="text-lg font-bold mb-2">Rayton</h4>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Expert services for Rayton homeowners and businesses
+                                </p>
+                                <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20services%20in%20Rayton." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                                    WhatsApp for Rayton
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local CTA -->
+            <div class="text-center animate-on-scroll">
+                <div class="bg-white rounded-2xl p-8 border-2 border-primary-600">
+                    <h3 class="text-2xl font-bold mb-6">Ready for Local Professional Service?</h3>
+                    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Whether you're in <strong>Bronkhorstspruit</strong> needing painting, <strong>Pretoria East</strong> requiring paving, <strong>Cullinan</strong> looking for tiling, or <strong>Rayton</strong> wanting remodeling - we're your local experts.
+                    </p>
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]%20and%20need%20[Service]%20services." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl touch-target">
+                        <span>📍 WHATSAPP YOUR LOCAL EXPERTS NOW</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What <span class="text-gradient">Our Clients Say</span></h2>
+                <p class="text-lg text-gray-600">Hear from homeowners across <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong></p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-primary-600 font-bold">TM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thabo M.</h4>
+                            <p class="text-gray-500 text-sm">Painting in Bronkhorstspruit</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Home Connector transformed our Bronkhorstspruit home with expert painting. WhatsApp communication was easy, and their 30+ years experience showed in the quality."</p>
+                    <div class="flex text-primary-500">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-primary-600 font-bold">SP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah P.</h4>
+                            <p class="text-gray-500 text-sm">Paving in Pretoria East</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Our Pretoria East driveway looks amazing! The local team understood exactly what we needed. So convenient to get quotes via WhatsApp."</p>
+                    <div class="flex text-primary-500">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-300 card-hover animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-primary-600 font-bold">JR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">James R.</h4>
+                            <p class="text-gray-500 text-sm">Tiling in Cullinan</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Complete bathroom tiling in our Cullinan home. The experience showed in every detail. Local professionals who really care about quality."</p>
+                    <div class="flex text-primary-500">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial CTA -->
+            <div class="text-center animate-on-scroll">
+                <p class="text-xl text-gray-600 mb-8">Join hundreds of satisfied homeowners across the region!</p>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'd%20like%20to%20get%20a%20quote%20like%20your%20other%20happy%20clients%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl touch-target">
+                    <span>💬 WHATSAPP FOR YOUR FREE QUOTE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Final CTA Section -->
-    <section class="py-20 bg-black text-white">
+    <section class="py-20 bg-primary-600 text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Stop Settling for Slow Internet in Our Region</h2>
-            <p class="text-xl mb-10 text-gray-300 max-w-3xl mx-auto">Join hundreds of satisfied families and businesses in Bronkhorstspruit, Cullinan, Rayton and Pretoria East who've ended their internet frustration with FibreConnector's reliable 25Mbps fibre</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Transform Your Home with Local Experts</h2>
+            <p class="text-xl mb-10 text-primary-100 max-w-3xl mx-auto">Professional home improvement services for <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong> homeowners</p>
             
             <!-- Final Value Proposition -->
             <div class="grid md:grid-cols-4 gap-6 mb-12">
                 <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-3xl font-bold mb-2">R0</div>
-                    <div class="text-sm text-gray-300">To Get Started</div>
+                    <div class="text-3xl font-bold mb-2">30+</div>
+                    <div class="text-sm text-primary-100">Years Experience</div>
                 </div>
                 <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-3xl font-bold mb-2">14 Days</div>
-                    <div class="text-sm text-gray-300">Risk-Free Trial</div>
+                    <div class="text-3xl font-bold mb-2">Local</div>
+                    <div class="text-sm text-primary-100">Teams in Your Area</div>
                 </div>
                 <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-3xl font-bold mb-2">100%</div>
-                    <div class="text-sm text-gray-300">Satisfaction Guarantee</div>
+                    <div class="text-3xl font-bold mb-2">Free</div>
+                    <div class="text-sm text-primary-100">WhatsApp Quotes</div>
                 </div>
                 <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                    <div class="text-3xl font-bold mb-2">24/7</div>
-                    <div class="text-sm text-gray-300">Local Support</div>
+                    <div class="text-3xl font-bold mb-2">Quality</div>
+                    <div class="text-sm text-primary-100">Guaranteed</div>
                 </div>
             </div>
 
@@ -1570,126 +965,127 @@
             <div class="bg-white/10 rounded-2xl p-6 mb-10 max-w-2xl mx-auto border border-white/20">
                 <div class="flex items-center justify-center gap-4 mb-4">
                     <span class="text-2xl animate-pulse">⏰</span>
-                    <span class="text-lg font-bold">Limited Free Installations Available This Month in Our Region</span>
+                    <span class="text-lg font-bold">Limited Booking Availability This Month</span>
                 </div>
-                <p class="text-gray-300">To ensure the highest quality service, we only schedule 15 free installations per week across Bronkhorstspruit, Cullinan, Rayton and Pretoria East. Book now to secure your spot before we're fully booked.</p>
+                <p class="text-primary-100">Due to high demand across <strong>Bronkhorstspruit, Pretoria, Cullinan & Rayton</strong>, we're booking 2-3 weeks in advance. Message us now to secure your spot!</p>
             </div>
 
             <!-- Final CTA -->
             <div class="mb-8">
-                <a href="https://wa.me/27766473499" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-black px-12 py-6 rounded-xl font-bold text-lg transition-all shadow-2xl hover:scale-105 mb-4 touch-target">
-                    <span>🚀 SECURE YOUR FREE INSTALLATION SLOT NOW</span>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20ready%20to%20transform%20my%20home%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]%20and%20need%20[Service].%20Please%20send%20a%20free%20quote!" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-primary-600 px-12 py-6 rounded-xl font-bold text-lg transition-all shadow-2xl hover:scale-105 mb-4 touch-target">
+                    <span>🚀 WHATSAPP FOR IMMEDIATE QUOTE</span>
                     <span>→</span>
                 </a>
-                <p class="text-gray-300 text-sm">No credit card required • No obligation • Free professional installation included</p>
+                <p class="text-primary-100 text-sm">No forms • Direct chat with our team • Free quotes • 30+ years experience</p>
             </div>
 
             <!-- Trust Indicators -->
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-gray-300 text-sm">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-primary-100 text-sm">
                 <div class="flex items-center gap-2">
                     <span>✅</span>
-                    <span>No long-term contracts</span>
+                    <span>Local Bronkhorstspruit Teams</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <span>✅</span>
-                    <span>Cancel anytime</span>
+                    <span>Pretoria Area Experts</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <span>✅</span>
-                    <span>Free router included</span>
+                    <span>Cullinan & Rayton Service</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <span>✅</span>
-                    <span>24/7 local support</span>
+                    <span>30+ Years Experience</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer - UPDATED with local references -->
-    <footer class="bg-black text-white py-12">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <div class="text-2xl font-bold mb-6">
-                        <span>Fibre</span>
-                        <span class="text-gray-300">Connector</span>
+                        <span class="text-primary-400">Home</span>
+                        <span>Connector</span>
                     </div>
                     <p class="mb-6 text-gray-400">
-                        Providing reliable 25Mbps fibre internet solutions for residential families and local businesses across Bronkhorstspruit, Cullinan, Rayton and Pretoria East. Our mission is to end internet frustration with simple, affordable, and reliable connectivity.
+                        Local home improvement experts serving <strong>Bronkhorstspruit, Pretoria, Cullinan, Rayton & Pretoria East</strong>. 30+ years collective experience in painting, paving, plastering, brickwork, tiling, and remodeling.
                     </p>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3 text-gray-300">
                             <span>📍</span>
-                            <span>Serving Bronkhorstspruit, Cullinan, Rayton & Pretoria East</span>
+                            <span>Serving Your Local Area</span>
                         </div>
                         <div class="flex items-center gap-3 text-gray-300">
-                            <span>📞</span>
-                            <span>24/7 Local Technical Support Available</span>
+                            <span>👷</span>
+                            <span>30+ Years Collective Experience</span>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold mb-6 text-lg">Quick Links</h4>
+                    <h4 class="font-bold mb-6 text-lg">Our Services</h4>
                     <div class="grid grid-cols-2 gap-4">
-                        <a href="#hero" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                        <a href="#local-coverage" class="text-gray-400 hover:text-white transition-colors">Coverage Areas</a>
-                        <a href="#problem" class="text-gray-400 hover:text-white transition-colors">Problem</a>
-                        <a href="#solution" class="text-gray-400 hover:text-white transition-colors">Solution</a>
-                        <a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
-                        <a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Painting</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Paving</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Plastering</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Brickwork</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Tiling</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Ceilings</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Rhinolite</a>
+                        <a href="#services" class="text-gray-400 hover:text-primary-400 transition-colors">Remodeling</a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold mb-6 text-lg">Our Guarantee</h4>
+                    <h4 class="font-bold mb-6 text-lg">Contact Us</h4>
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-center gap-3">
-                            <span>✓</span>
-                            <span>14-Day Free Trial</span>
+                            <span class="text-primary-400">💬</span>
+                            <a href="https://wa.me/27766473499" target="_blank" class="hover:text-primary-400 transition-colors">
+                                WhatsApp: +27766473499
+                            </a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span>✓</span>
-                            <span>Free Professional Installation</span>
+                            <span class="text-primary-400">📍</span>
+                            <span>Serving Bronkhorstspruit & Surrounds</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span>✓</span>
-                            <span>Zero Upfront Cost</span>
+                            <span class="text-primary-400">👷</span>
+                            <span>Local Professional Teams</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span>✓</span>
-                            <span>Dedicated 24/7 Support</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span>✓</span>
-                            <span>No Contracts, Cancel Anytime</span>
+                            <span class="text-primary-400">🏆</span>
+                            <span>Quality Guaranteed</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <!-- Booking CTA in Footer -->
+            <!-- Footer CTA -->
             <div class="border-t border-gray-800 pt-8 text-center">
-                <p class="text-gray-400 mb-6 text-lg">Ready to end your internet frustration in our region once and for all?</p>
-                <a href="https://wa.me/27766473499" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-black px-10 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all shadow-lg hover:scale-105">
+                <p class="text-gray-400 mb-6 text-lg">Ready to improve your home with local experts?</p>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Bronkhorstspruit/Pretoria/Cullinan/Rayton]%20and%20need%20home%20improvement%20services." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-10 py-4 rounded-xl font-semibold hover:shadow-lg transition-all">
                     <span>📱 CHAT ON WHATSAPP TODAY</span>
                 </a>
             </div>
             
             <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-                <p>© 2024 FibreConnector. All rights reserved.</p>
-                <p class="mt-2">25Mbps Fibre Internet • 14-Day Free Trial • Free Installation • No Upfront Cost • From R490/month</p>
-                <p class="mt-2 text-xs">Designed for residential families and local businesses in Bronkhorstspruit, Cullinan, Rayton & Pretoria East</p>
+                <p>© 2024 Home Connector. All rights reserved.</p>
+                <p class="mt-2">Professional Home Improvement Services • 30+ Years Collective Experience • Local Teams in Bronkhorstspruit, Pretoria, Cullinan & Rayton</p>
+                <p class="mt-2 text-xs">Quality craftsmanship for homeowners across the region</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Widget - UPDATED -->
-    <a href="https://wa.me/27766473499" target="_blank" class="fixed bottom-6 right-6 z-50 bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-800 transition-all duration-300 hover:scale-110 animate-bounce">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437c-0.083,0.167-0.125,0.271-0.249,0.416s-0.249,0.333-0.374,0.457 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"/>
-        </svg>
+    <!-- Floating WhatsApp CTA Button -->
+    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20Bronkhorstspruit/Pretoria%20area%20and%20need%20home%20improvement%20services." target="_blank" class="floating-cta whatsapp-button p-4 rounded-full shadow-2xl">
+        <div class="flex items-center gap-2 px-4">
+            <span class="text-xl">💬</span>
+            <span class="font-bold">WHATSAPP US</span>
+        </div>
     </a>
 
     <!-- JavaScript -->
@@ -1797,7 +1193,7 @@
         // Back to top button
         const backToTop = document.createElement('button');
         backToTop.innerHTML = '↑';
-        backToTop.className = 'fixed bottom-8 left-8 w-12 h-12 bg-black text-white rounded-full shadow-lg hover:bg-gray-800 transition-colors z-40 hidden flex items-center justify-center text-xl';
+        backToTop.className = 'fixed bottom-8 left-8 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-colors z-40 hidden flex items-center justify-center text-xl';
         backToTop.style.transform = 'translateY(100px)';
         backToTop.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
         backToTop.style.opacity = '0';
@@ -1825,70 +1221,90 @@
             }
         });
 
-        // VSL optimization
-        function optimizeVSL() {
-            const vslWrapper = document.querySelector('.vsl-wrapper');
-            if (window.innerWidth < 768) {
-                vslWrapper.style.borderRadius = '0.25rem';
-                vslWrapper.style.borderWidth = '1px';
-            } else {
-                vslWrapper.style.borderRadius = '0.5rem';
-                vslWrapper.style.borderWidth = '2px';
-            }
-        }
-
-        // Run on load and resize
-        window.addEventListener('load', optimizeVSL);
-        window.addEventListener('resize', optimizeVSL);
-
-        // Add click tracking for WhatsApp links
+        // WhatsApp click tracking
         document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
             link.addEventListener('click', function() {
-                // You can add analytics tracking here
-                console.log('WhatsApp link clicked:', this.href);
-                
-                // Optional: Add a small delay for visual feedback
-                this.style.opacity = '0.8';
+                // Add animation feedback
+                this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
-                    this.style.opacity = '1';
+                    this.style.transform = '';
                 }, 300);
+                
+                // Optional: Log to console (replace with analytics in production)
+                console.log('WhatsApp CTA clicked:', this.textContent);
             });
         });
 
         // FAQ accordion functionality
-        document.querySelectorAll('#faq .bg-white.rounded-xl').forEach(faqItem => {
-            const question = faqItem.querySelector('h3');
-            const answer = faqItem.querySelector('.pl-8');
-            
-            if (question && answer) {
-                // Initially hide answers on mobile
-                if (window.innerWidth < 768) {
-                    answer.style.display = 'none';
-                }
+        const faqSection = document.getElementById('faq');
+        if (faqSection) {
+            faqSection.querySelectorAll('.bg-white.rounded-xl').forEach(faqItem => {
+                const question = faqItem.querySelector('h3');
+                const answer = faqItem.querySelector('.pl-8');
                 
-                question.addEventListener('click', () => {
+                if (question && answer) {
+                    // Initially hide answers on mobile
                     if (window.innerWidth < 768) {
-                        if (answer.style.display === 'none') {
-                            answer.style.display = 'block';
-                            faqItem.style.marginBottom = '1.5rem';
-                        } else {
-                            answer.style.display = 'none';
-                            faqItem.style.marginBottom = '';
-                        }
+                        answer.style.display = 'none';
                     }
-                });
-            }
-        });
-
-        // Update FAQ display on window resize
-        window.addEventListener('resize', () => {
-            document.querySelectorAll('#faq .bg-white.rounded-xl .pl-8').forEach(answer => {
-                if (window.innerWidth >= 768) {
-                    answer.style.display = 'block';
-                } else {
-                    answer.style.display = 'none';
+                    
+                    question.addEventListener('click', () => {
+                        if (window.innerWidth < 768) {
+                            if (answer.style.display === 'none') {
+                                answer.style.display = 'block';
+                                faqItem.style.marginBottom = '1.5rem';
+                            } else {
+                                answer.style.display = 'none';
+                                faqItem.style.marginBottom = '';
+                            }
+                        }
+                    });
                 }
             });
+
+            // Update FAQ display on window resize
+            window.addEventListener('resize', () => {
+                faqSection.querySelectorAll('.bg-white.rounded-xl .pl-8').forEach(answer => {
+                    if (window.innerWidth >= 768) {
+                        answer.style.display = 'block';
+                    } else {
+                        answer.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Slideshow pause on hover
+        const slideshowContainer = document.querySelector('.slideshow-pause');
+        if (slideshowContainer) {
+            slideshowContainer.addEventListener('mouseenter', () => {
+                const track = slideshowContainer.querySelector('.slideshow-track');
+                track.style.animationPlayState = 'paused';
+            });
+            
+            slideshowContainer.addEventListener('mouseleave', () => {
+                const track = slideshowContainer.querySelector('.slideshow-track');
+                track.style.animationPlayState = 'running';
+            });
+        }
+
+        // Add location-specific WhatsApp messages
+        function getWhatsAppMessage(service, location) {
+            const baseMessage = `Hi Home Connector! I need ${service} services in ${location}. Please send me a free quote!`;
+            return encodeURIComponent(baseMessage);
+        }
+
+        // Update WhatsApp links with location context
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            if (link.textContent.includes('Bronkhorstspruit')) {
+                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Bronkhorstspruit. Please send a free quote!");
+            } else if (link.textContent.includes('Pretoria')) {
+                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Pretoria/Pretoria East. Please send a free quote!");
+            } else if (link.textContent.includes('Cullinan')) {
+                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Cullinan. Please send a free quote!");
+            } else if (link.textContent.includes('Rayton')) {
+                link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need services in Rayton. Please send a free quote!");
+            }
         });
     </script>
 </body>
