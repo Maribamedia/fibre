@@ -2,13 +2,13 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    <title>Home Connector | Comprehensive Home Improvement Services in Gauteng</title>
-    <meta name="description" content="Home Connector: Professional home improvement services with quality craftsmanship guaranteed and performance-based pricing. Serving Pretoria, Johannesburg, Sandton, Centurion, Midrand, Fourways, Randburg, Roodepoort, and Bronkhorstspruit.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Home Connector | Professional Home Improvement Services in Gauteng</title>
+    <meta name="description" content="Home improvement experts: Painting, paving, plastering, brickwork, tiling, remodeling. 30+ years experience. WhatsApp for free quote!">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Home Connector | Quality Home Improvement Services in Gauteng">
-    <meta property="og:description" content="Comprehensive home improvement services with quality craftsmanship guaranteed and performance-based pricing.">
+    <meta property="og:title" content="Home Connector | Home Improvement Experts in Gauteng">
+    <meta property="og:description" content="30+ years experience in painting, paving, plastering, brickwork, tiling & remodeling. WhatsApp for free assessment!">
     <meta property="og:image" content="https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide1.jpg">
     <meta property="og:url" content="https://Maribamedia.github.io/HomeConnector">
     <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#0D9488">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,22 +38,17 @@
                 700: '#0f766e',
                 800: '#115e59',
                 900: '#134e4a',
-              },
-              secondary: '#1e40af',
-              accent: '#f59e0b'
+              }
             },
             fontFamily: {
               sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-              heading: ['Poppins', 'Inter', 'system-ui', 'sans-serif']
             },
             animation: {
               'fade-in': 'fadeIn 0.5s ease-in',
               'slide-up': 'slideUp 0.6s ease-out',
               'pulse-subtle': 'pulseSubtle 3s infinite',
               'float': 'float 6s ease-in-out infinite',
-              'slide': 'slide 32s linear infinite',
-              'bounce-subtle': 'bounceSubtle 2s infinite',
-              'gradient': 'gradient 15s ease infinite',
+              'slide': 'slide 40s linear infinite',
             },
             keyframes: {
               fadeIn: {
@@ -74,18 +69,11 @@
               },
               slide: {
                 '0%': { transform: 'translateX(0%)' },
-                '25%': { transform: 'translateX(0%)' },
-                '50%': { transform: 'translateX(-25%)' },
-                '75%': { transform: 'translateX(-50%)' },
-                '100%': { transform: 'translateX(-75%)' },
-              },
-              bounceSubtle: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-5px)' },
-              },
-              gradient: {
-                '0%, 100%': { backgroundPosition: '0% 50%' },
-                '50%': { backgroundPosition: '100% 50%' },
+                '20%': { transform: 'translateX(0%)' },
+                '40%': { transform: 'translateX(-100%)' },
+                '60%': { transform: 'translateX(-200%)' },
+                '80%': { transform: 'translateX(-300%)' },
+                '100%': { transform: 'translateX(-400%)' }
               }
             }
           }
@@ -97,66 +85,39 @@
       body {
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
         background-color: #ffffff;
-        color: #1f2937;
-        overflow-x: hidden;
+        color: #000000;
       }
       
       .hero-gradient {
-        background: linear-gradient(135deg, #0d9488 0%, #1e40af 100%);
-      }
-      
-      .hero-pattern {
-        background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-        background-size: 20px 20px;
+        background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 50%, #99f6e4 100%);
       }
       
       .text-gradient {
-        background: linear-gradient(135deg, #0d9488 0%, #1e40af 100%);
+        background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
       
       .glass-effect {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border-bottom: 1px solid rgba(13, 148, 136, 0.1);
+        border-bottom: 1px solid #e5e5e5;
       }
       
       .card-hover {
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s ease;
       }
       
       .card-hover:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 25px 50px rgba(13, 148, 136, 0.15);
-        border-color: #0d9488;
-      }
-      
-      .quality-badge {
-        background: linear-gradient(135deg, #0d9488 0%, #1e40af 100%);
-        color: white;
-        animation: pulseSubtle 3s infinite;
-        font-weight: 600;
-        letter-spacing: 0.05em;
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(13, 148, 136, 0.1);
       }
       
       .touch-target {
         min-height: 44px;
         min-width: 44px;
-      }
-      
-      .section-padding {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-      }
-      
-      @media (max-width: 768px) {
-        .section-padding {
-          padding-top: 4rem;
-          padding-bottom: 4rem;
-        }
       }
       
       .nav-link {
@@ -171,7 +132,7 @@
         left: 0;
         width: 0;
         height: 2px;
-        background: linear-gradient(90deg, #0d9488, #1e40af);
+        background: #0d9488;
         transition: width 0.3s ease;
       }
       
@@ -181,8 +142,8 @@
       
       .animate-on-scroll {
         opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
       }
       
       .animate-on-scroll.visible {
@@ -190,132 +151,43 @@
         transform: translateY(0);
       }
       
-      .gradient-bg {
-        background: linear-gradient(-45deg, #f0fdfa, #e0f2fe, #f0fdfa, #e0f2fe);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-      }
-      
-      .service-card {
-        border-left: 4px solid #0d9488;
+      .whatsapp-button {
+        background: #25D366;
+        color: white;
         transition: all 0.3s ease;
       }
       
-      .service-card:hover {
-        border-left-color: #1e40af;
-      }
-      
-      .pricing-highlight {
-        background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(13, 148, 136, 0.1));
-        border: 2px solid rgba(245, 158, 11, 0.3);
-      }
-      
-      .area-badge {
-        background: rgba(13, 148, 136, 0.1);
-        border: 1px solid rgba(13, 148, 136, 0.3);
-        color: #0d9488;
-        transition: all 0.3s ease;
-      }
-      
-      .area-badge:hover {
-        background: rgba(13, 148, 136, 0.2);
+      .whatsapp-button:hover {
+        background: #128C7E;
         transform: scale(1.05);
       }
       
       .floating-cta {
         position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 40;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        z-index: 50;
         animation: float 6s ease-in-out infinite;
-        box-shadow: 0 10px 40px rgba(13, 148, 136, 0.3);
       }
       
-      .map-container {
-        position: relative;
-        overflow: hidden;
-        border-radius: 1rem;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      }
-      
-      .map-pin {
-        position: absolute;
-        transform: translate(-50%, -100%);
-        animation: bounceSubtle 2s infinite;
-      }
-      
-      .whatsapp-button {
-        background: linear-gradient(135deg, #25D366, #128C7E);
-        color: white;
-        transition: all 0.3s ease;
-        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
-      }
-      
-      .whatsapp-button:hover {
-        background: linear-gradient(135deg, #128C7E, #25D366);
-        transform: translateY(-2px);
-        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
-      }
-      
-      .value-proposition {
-        background: linear-gradient(135deg, rgba(13, 148, 136, 0.05), rgba(30, 64, 175, 0.05));
-        border: 1px solid rgba(13, 148, 136, 0.1);
-      }
-      
-      .highlight-text {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .highlight-text::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 30%;
-        background: rgba(245, 158, 11, 0.3);
-        z-index: -1;
-        transition: height 0.3s ease;
-      }
-      
-      .highlight-text:hover::after {
-        height: 50%;
-      }
-      
-      .stats-card {
-        background: white;
-        border-radius: 1rem;
-        padding: 1.5rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(13, 148, 136, 0.1);
-        transition: all 0.3s ease;
-      }
-      
-      .stats-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(13, 148, 136, 0.15);
-      }
-      
-      /* Slideshow Styles */
+      /* Slideshow Styles - 5 SLIDES */
       .slideshow-container {
         width: 100%;
-        height: 500px;
+        height: 400px;
         overflow: hidden;
         position: relative;
         border-radius: 1rem;
-        box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.25);
       }
       
       .slideshow-track {
         display: flex;
-        width: 400%; /* 4 slides at 100% each */
+        width: 500%; /* 5 slides at 100% each */
         height: 100%;
-        animation: slide 32s linear infinite;
+        animation: slide 40s linear infinite;
       }
 
       .slide {
-        width: 25%; /* 100% / 4 slides = 25% each */
+        width: 20%; /* 100% / 5 slides = 20% each */
         height: 100%;
         flex-shrink: 0;
         background-size: cover;
@@ -329,20 +201,45 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.6);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 3rem;
+        padding: 2rem;
         text-align: center;
         color: white;
       }
       
       @media (max-width: 768px) {
         .slideshow-container {
-          height: 350px;
+          height: 300px;
         }
+      }
+      
+      .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      
+      .mobile-menu.open {
+        max-height: 500px;
+      }
+      
+      .back-to-top {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        z-index: 50;
+        transform: translateY(100px);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+      }
+      
+      .back-to-top.visible {
+        transform: translateY(0);
+        opacity: 1;
       }
     </style>
 </head>
@@ -350,33 +247,32 @@
     <!-- Navigation -->
     <nav class="fixed w-full glass-effect z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+            <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-3">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-600 to-secondary flex items-center justify-center shadow-lg">
-                        <span class="text-white text-2xl">🏠</span>
+                <a href="#hero" class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center">
+                        <span class="text-white text-xl">🏠</span>
                     </div>
                     <div>
-                        <span class="text-xl font-bold font-heading text-gray-900">Home Connector</span>
-                        <span class="block text-xs text-gray-600 font-medium">Quality Craftsmanship Guaranteed</span>
+                        <span class="text-lg font-bold">Home Connector</span>
+                        <span class="block text-xs text-gray-500">Quality Home Improvements</span>
                     </div>
                 </a>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-6">
                     <a href="#hero" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Home</a>
                     <a href="#services" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Services</a>
-                    <a href="#why-us" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Why Choose Us</a>
-                    <a href="#areas" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Service Areas</a>
-                    <a href="#pricing" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Pricing</a>
-                    <a href="#contact" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Contact</a>
-                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services%20and%20would%20like%20a%20free%20quote." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
-                        💬 Free WhatsApp Quote
+                    <a href="#slideshow" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Our Work</a>
+                    <a href="#why-us" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Why Us</a>
+                    <a href="#areas" class="nav-link text-sm font-medium text-gray-700 hover:text-primary-600 transition-colors">Areas</a>
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services%20and%20would%20like%20a%20free%20quote." target="_blank" class="bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-all shadow-md">
+                        💬 WhatsApp Quote
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="lg:hidden touch-target p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
+                <button id="mobile-menu-btn" class="md:hidden touch-target p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
                     <svg id="menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -388,116 +284,100 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 hidden shadow-xl z-40">
-            <div class="px-4 py-6 flex flex-col gap-2">
-                <a href="#hero" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-primary-50 transition-colors">Home</a>
-                <a href="#services" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-primary-50 transition-colors">Services</a>
-                <a href="#why-us" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-primary-50 transition-colors">Why Choose Us</a>
-                <a href="#areas" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-primary-50 transition-colors">Service Areas</a>
-                <a href="#pricing" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-primary-50 transition-colors">Pricing</a>
-                <a href="#contact" class="py-3 px-4 text-gray-700 font-medium rounded-lg hover:bg-primary-50 transition-colors">Contact</a>
-                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services%20and%20would%20like%20a%20free%20quote." target="_blank" class="mt-4 whatsapp-button py-3.5 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-all">
-                    💬 Free WhatsApp Quote
+        <div id="mobile-menu" class="md:hidden mobile-menu bg-white border-t border-gray-200">
+            <div class="px-4 py-4 space-y-1">
+                <a href="#hero" class="block py-2.5 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+                <a href="#services" class="block py-2.5 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Services</a>
+                <a href="#slideshow" class="block py-2.5 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Our Work</a>
+                <a href="#why-us" class="block py-2.5 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Why Us</a>
+                <a href="#areas" class="block py-2.5 px-4 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">Areas</a>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services%20and%20would%20like%20a%20free%20quote." target="_blank" class="block mt-2 whatsapp-button py-3 rounded-lg text-center font-semibold">
+                    💬 WhatsApp Quote
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-28 pb-16 md:pt-36 md:pb-24 gradient-bg hero-pattern relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary-50/30 to-secondary/10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="hero" class="pt-20 pb-12 md:pt-28 md:pb-16 hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-6xl mx-auto">
                 <!-- Guarantee Badge -->
-                <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full quality-badge mb-8 animate-fade-in shadow-lg">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-600 text-white text-sm font-bold mb-6 animate-fade-in">
                     <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <span class="text-sm font-bold tracking-wide">🏆 QUALITY CRAFTSMANSHIP GUARANTEED</span>
+                    <span>🏆 30+ YEARS EXPERIENCE</span>
                 </div>
                 
                 <!-- Main Content -->
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-heading">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                             <span class="text-gradient">Home Connector</span><br>
-                            <span class="text-gray-900">Comprehensive Home Improvement Services</span>
+                            <span class="text-gray-900">Professional Home Improvement Services</span>
                         </h1>
                         
                         <!-- Core Value Proposition -->
-                        <div class="value-proposition rounded-2xl p-6 mb-8">
-                            <p class="text-xl text-gray-700 leading-relaxed">
-                                Professional home improvement services with 
-                                <span class="font-bold text-primary-600">quality craftsmanship guaranteed</span> and 
-                                <span class="font-bold text-accent">performance-based pricing</span>.
+                        <div class="bg-white rounded-xl p-4 mb-6 border border-primary-100">
+                            <p class="text-lg text-gray-700">
+                                Quality craftsmanship guaranteed with 
+                                <span class="font-bold text-primary-600">30+ years experience</span> in painting, paving, plastering, brickwork, tiling & remodeling.
                             </p>
                         </div>
 
                         <!-- Quick Stats -->
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 animate-on-scroll">
-                            <div class="stats-card">
-                                <div class="text-2xl font-bold mb-2 text-primary-600">✓</div>
-                                <div class="text-lg font-bold mb-1 text-gray-900">Quality Guarantee</div>
-                                <div class="text-sm text-gray-600">Every Project</div>
+                        <div class="grid grid-cols-3 gap-3 mb-6">
+                            <div class="bg-white p-3 rounded-lg border border-gray-200">
+                                <div class="text-xl font-bold mb-1 text-primary-600">30+</div>
+                                <div class="text-sm font-medium text-gray-700">Years</div>
                             </div>
-                            <div class="stats-card">
-                                <div class="text-2xl font-bold mb-2 text-primary-600">🏆</div>
-                                <div class="text-lg font-bold mb-1 text-gray-900">Expert Craftsmanship</div>
-                                <div class="text-sm text-gray-600">30+ Years Experience</div>
+                            <div class="bg-white p-3 rounded-lg border border-gray-200">
+                                <div class="text-xl font-bold mb-1 text-primary-600">500+</div>
+                                <div class="text-sm font-medium text-gray-700">Projects</div>
                             </div>
-                            <div class="stats-card">
-                                <div class="text-2xl font-bold mb-2 text-accent">💰</div>
-                                <div class="text-lg font-bold mb-1 text-gray-900">Fair Pricing</div>
-                                <div class="text-sm text-gray-600">Performance-Based</div>
-                            </div>
-                            <div class="stats-card">
-                                <div class="text-2xl font-bold mb-2 text-primary-600">📱</div>
-                                <div class="text-lg font-bold mb-1 text-gray-900">Quick Response</div>
-                                <div class="text-sm text-gray-600">24/7 WhatsApp</div>
+                            <div class="bg-white p-3 rounded-lg border border-gray-200">
+                                <div class="text-xl font-bold mb-1 text-primary-600">24h</div>
+                                <div class="text-sm font-medium text-gray-700">Response</div>
                             </div>
                         </div>
 
                         <!-- Primary CTA -->
-                        <div class="space-y-4">
-                            <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20professional%20home%20improvement%20services%20with%20quality%20guarantee.%20Please%20send%20a%20free%20quote." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-8 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl mb-2 touch-target w-full md:w-auto">
+                        <div class="space-y-3">
+                            <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20professional%20home%20improvement%20services%20with%20quality%20guarantee.%20Please%20send%20a%20free%20quote." target="_blank" class="inline-flex items-center justify-center gap-2 whatsapp-button px-6 py-3.5 rounded-lg font-bold hover:shadow-xl transition-all w-full md:w-auto touch-target">
                                 <span>💬 GET FREE QUOTE ON WHATSAPP</span>
-                                <span class="animate-bounce">→</span>
+                                <span>→</span>
                             </a>
                             <p class="text-gray-600 text-sm">
-                                <span class="font-semibold">Free Assessment • Quality Guarantee • Fair Pricing • Local Experts</span>
+                                <span class="font-semibold">Free Assessment • Quality Guarantee • Local Experts</span>
                             </p>
                         </div>
                     </div>
 
-                    <!-- Hero Right Side - Service Areas -->
-                    <div class="relative animate-on-scroll">
-                        <div class="bg-white rounded-2xl p-8 border-2 border-primary-600 shadow-2xl">
-                            <div class="text-center mb-8">
-                                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                                    <span class="text-3xl text-primary-600">📍</span>
-                                </div>
-                                <h3 class="text-2xl font-bold mb-4 font-heading">Serving Gauteng Region</h3>
-                                <p class="text-gray-600 mb-6">Professional home improvement services across major Gauteng areas:</p>
+                    <!-- Hero Right Side -->
+                    <div class="mt-8 lg:mt-0">
+                        <div class="bg-white rounded-xl p-6 border-2 border-primary-600 shadow-lg">
+                            <div class="text-center mb-6">
+                                <div class="text-3xl mb-4">📍</div>
+                                <h3 class="text-xl font-bold mb-4">Serving Gauteng</h3>
+                                <p class="text-gray-600 mb-4">Professional services across:</p>
                                 
-                                <div class="grid grid-cols-2 gap-4 mb-8">
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Pretoria</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Johannesburg</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Sandton</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Centurion</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Midrand</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Fourways</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Randburg</span>
-                                    <span class="area-badge px-4 py-3 rounded-lg text-center font-medium">Roodepoort</span>
-                                    <span class="area-badge col-span-2 px-4 py-3 rounded-lg text-center font-medium">Bronkhorstspruit</span>
+                                <div class="grid grid-cols-2 gap-3 mb-6">
+                                    <span class="bg-primary-50 text-primary-700 px-3 py-2 rounded-lg text-center text-sm font-medium">Pretoria</span>
+                                    <span class="bg-primary-50 text-primary-700 px-3 py-2 rounded-lg text-center text-sm font-medium">Johannesburg</span>
+                                    <span class="bg-primary-50 text-primary-700 px-3 py-2 rounded-lg text-center text-sm font-medium">Sandton</span>
+                                    <span class="bg-primary-50 text-primary-700 px-3 py-2 rounded-lg text-center text-sm font-medium">Centurion</span>
+                                    <span class="bg-primary-50 text-primary-700 px-3 py-2 rounded-lg text-center text-sm font-medium">Midrand</span>
+                                    <span class="bg-primary-50 text-primary-700 px-3 py-2 rounded-lg text-center text-sm font-medium">Fourways</span>
                                 </div>
                             </div>
                             
                             <!-- Quick WhatsApp CTA -->
-                            <div class="space-y-4">
-                                <p class="text-center text-gray-600">
-                                    Need services in your area? Message us for a <strong class="text-primary-600">free quote</strong>!
+                            <div class="space-y-3">
+                                <p class="text-center text-gray-600 text-sm">
+                                    Message for a <strong class="text-primary-600">free quote</strong> in your area!
                                 </p>
-                                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Your%20Area]%20and%20need%20home%20improvement%20services." target="_blank" class="w-full whatsapp-button py-3.5 rounded-lg font-bold text-center hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
+                                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Your%20Area]%20and%20need%20home%20improvement%20services." target="_blank" class="w-full whatsapp-button py-3 rounded-lg font-bold text-center flex items-center justify-center gap-2">
                                     <span>📱</span>
-                                    <span>WhatsApp Our Team Now</span>
+                                    <span>WhatsApp Our Team</span>
                                 </a>
                             </div>
                         </div>
@@ -507,182 +387,184 @@
         </div>
     </section>
 
-    <!-- Core Services Section -->
-    <section id="services" class="section-padding bg-white">
+    <!-- Slideshow Section -->
+    <section id="slideshow" class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-heading">
-                    Our <span class="text-gradient">Comprehensive Services</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Professional home improvement services with quality craftsmanship guaranteed and performance-based pricing
-                </p>
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Our <span class="text-gradient">Home Improvement Work</span></h2>
+                <p class="text-lg text-gray-600">See our quality craftsmanship in action</p>
             </div>
 
-            <!-- Services Grid -->
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <!-- Painting & Plastering -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll service-card">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 rounded-xl bg-primary-100 flex items-center justify-center">
-                                <span class="text-3xl">🎨</span>
-                            </div>
+            <!-- Image Slideshow - USING 5 SLIDES FROM GITHUB REPO -->
+            <div class="slideshow-container mb-8 animate-on-scroll">
+                <div class="slideshow-track">
+                    <!-- Slide 1 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide1.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Professional Painting</h3>
+                            <p class="mb-4 max-w-2xl">Quality interior & exterior painting services across Gauteng</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20painting%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Painting Quote
+                            </a>
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-3 font-heading">Painting & Plastering</h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                Professional finishing for interior and exterior surfaces. We deliver flawless results with attention to detail and premium materials.
-                            </p>
-                            <ul class="space-y-2 mb-6">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Interior & exterior painting</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Plaster repair & application</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Surface preparation</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Texture finishes</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20Painting%20%26%20Plastering%20services." target="_blank" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
-                                Get Free Quote →
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide2.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Expert Paving</h3>
+                            <p class="mb-4 max-w-2xl">Driveway and patio paving for homes</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20paving%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Paving Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide3.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Precision Plastering</h3>
+                            <p class="mb-4 max-w-2xl">Smooth plaster finishes for homes</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20plastering%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Plastering Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide4.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Quality Brickwork</h3>
+                            <p class="mb-4 max-w-2xl">Structural and decorative brickwork</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20brickwork%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Brickwork Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide5.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Professional Tiling</h3>
+                            <p class="mb-4 max-w-2xl">Floor and wall tiling services</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20tiling%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Tiling Quote
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Paving & Brickwork -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll service-card">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 rounded-xl bg-primary-100 flex items-center justify-center">
-                                <span class="text-3xl">🧱</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-3 font-heading">Paving & Brickwork</h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                Durable outdoor and structural construction that combines functionality with aesthetic appeal for lasting results.
-                            </p>
-                            <ul class="space-y-2 mb-6">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Driveway paving</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Patio & walkway construction</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Retaining walls</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Structural brickwork</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20Paving%20%26%20Brickwork%20services." target="_blank" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
-                                Get Free Quote →
-                            </a>
-                        </div>
-                    </div>
+            <!-- Slideshow CTA -->
+            <div class="text-center animate-on-scroll">
+                <p class="text-gray-600 mb-6">See something you like? Our teams are ready to transform your home!</p>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20saw%20your%20work%20and%20need%20home%20improvement%20services." target="_blank" class="inline-flex items-center justify-center gap-2 whatsapp-button px-6 py-3.5 rounded-lg font-bold hover:shadow-xl transition-all touch-target">
+                    <span>💬 CHAT ON WHATSAPP ABOUT YOUR PROJECT</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 md:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Our <span class="text-gradient">Professional Services</span></h2>
+                <p class="text-lg text-gray-600">Comprehensive home improvement solutions</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <!-- Painting -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🎨</div>
+                    <h3 class="text-lg font-bold mb-2">Professional Painting</h3>
+                    <p class="text-gray-600 text-sm mb-3">Interior & exterior painting with premium materials.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20painting%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
                 </div>
 
-                <!-- Ceiling & Tiling -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll service-card">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 rounded-xl bg-primary-100 flex items-center justify-center">
-                                <span class="text-3xl">🔲</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-3 font-heading">Ceiling & Tiling</h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                Expert installation for floors, walls, and ceilings with precision craftsmanship and quality materials.
-                            </p>
-                            <ul class="space-y-2 mb-6">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Ceiling installation & repair</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Floor tiling</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Wall tiling</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Grouting & sealing</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20Ceiling%20%26%20Tiling%20services." target="_blank" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
-                                Get Free Quote →
-                            </a>
-                        </div>
-                    </div>
+                <!-- Paving -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🧱</div>
+                    <h3 class="text-lg font-bold mb-2">Expert Paving</h3>
+                    <p class="text-gray-600 text-sm mb-3">Driveways, walkways, and patio paving.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20paving%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
                 </div>
 
-                <!-- Remodeling Services -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll service-card">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0">
-                            <div class="w-16 h-16 rounded-xl bg-primary-100 flex items-center justify-center">
-                                <span class="text-3xl">🏠</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-3 font-heading">Remodeling Services</h3>
-                            <p class="text-gray-600 mb-4 leading-relaxed">
-                                Complete home transformation projects from concept to completion with comprehensive project management.
-                            </p>
-                            <ul class="space-y-2 mb-6">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Kitchen renovations</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Bathroom remodeling</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Room additions</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-primary-600">✓</span>
-                                    <span class="text-gray-700">Complete home makeovers</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20Remodeling%20services." target="_blank" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors">
-                                Get Free Quote →
-                            </a>
-                        </div>
-                    </div>
+                <!-- Plastering -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🏗️</div>
+                    <h3 class="text-lg font-bold mb-2">Precision Plastering</h3>
+                    <p class="text-gray-600 text-sm mb-3">Smooth, even plaster finishes.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20plastering%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
+                </div>
+
+                <!-- Brickwork -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🧱</div>
+                    <h3 class="text-lg font-bold mb-2">Quality Brickwork</h3>
+                    <p class="text-gray-600 text-sm mb-3">Structural and decorative brickwork.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20brickwork%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
+                </div>
+
+                <!-- Ceiling Installation -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">⬆️</div>
+                    <h3 class="text-lg font-bold mb-2">Ceiling Installation</h3>
+                    <p class="text-gray-600 text-sm mb-3">Gypsum and suspended ceilings.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20ceiling%20installation." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
+                </div>
+
+                <!-- Tiling -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🔲</div>
+                    <h3 class="text-lg font-bold mb-2">Professional Tiling</h3>
+                    <p class="text-gray-600 text-sm mb-3">Floor and wall tiling with perfect alignment.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20tiling%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
+                </div>
+
+                <!-- Rhinolite -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🛡️</div>
+                    <h3 class="text-lg font-bold mb-2">Rhinolite Applications</h3>
+                    <p class="text-gray-600 text-sm mb-3">Textured wall coatings for protection.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20rhinolite%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
+                </div>
+
+                <!-- Remodeling -->
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-3xl mb-3">🏠</div>
+                    <h3 class="text-lg font-bold mb-2">Complete Remodeling</h3>
+                    <p class="text-gray-600 text-sm mb-3">Full home transformations and renovations.</p>
+                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20remodeling%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+                        WhatsApp Quote →
+                    </a>
                 </div>
             </div>
 
             <!-- Services CTA -->
             <div class="text-center animate-on-scroll">
-                <div class="bg-gradient-to-r from-primary-50 to-secondary/10 rounded-2xl p-10 border-2 border-primary-600">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 font-heading">Need Multiple Services? We Handle Complete Projects!</h3>
-                    <p class="text-gray-600 mb-8 max-w-2xl mx-auto text-lg">
-                        From painting your walls to remodeling your entire home, we provide comprehensive solutions with <strong class="text-primary-600">quality craftsmanship guaranteed</strong>.
+                <div class="bg-white rounded-xl p-6 border-2 border-primary-600">
+                    <h3 class="text-xl font-bold mb-4">Need Multiple Services?</h3>
+                    <p class="text-gray-600 mb-4">
+                        We handle complete home improvement projects from start to finish.
                     </p>
-                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20multiple%20home%20improvement%20services%20and%20would%20like%20a%20complete%20project%20quote." target="_blank" class="inline-flex items-center gap-3 whatsapp-button px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl">
-                        <span>💬 GET COMPLETE PROJECT QUOTE</span>
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20multiple%20services%20for%20my%20home." target="_blank" class="inline-flex items-center gap-2 whatsapp-button px-6 py-3 rounded-lg font-semibold transition-all">
+                        💬 WHATSAPP FOR COMPLETE PROJECT
                     </a>
                 </div>
             </div>
@@ -690,211 +572,173 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="why-us" class="section-padding bg-gray-50">
+    <section id="why-us" class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-heading">
-                    Why Choose <span class="text-gradient">Home Connector</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    We deliver exceptional value through our commitment to quality, transparency, and customer satisfaction
-                </p>
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Why Choose <span class="text-gradient">Home Connector</span></h2>
+                <p class="text-lg text-gray-600">The professional choice for homeowners</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Quality Craftsmanship -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                        <span class="text-2xl">🏆</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 font-heading">Quality Craftsmanship Guaranteed</h3>
-                    <p class="text-gray-600">Every project is backed by our quality guarantee. We use premium materials and skilled craftsmanship for lasting results.</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-2xl mb-3">👷</div>
+                    <h3 class="text-lg font-bold mb-2">30+ Years Experience</h3>
+                    <p class="text-gray-600 text-sm">Decades of combined expertise on every project.</p>
                 </div>
 
-                <!-- Performance-Based Pricing -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                        <span class="text-2xl">💰</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 font-heading">Performance-Based Pricing</h3>
-                    <p class="text-gray-600">Fair, transparent pricing based on the scope and quality of work. No hidden costs, just honest quotes for excellent results.</p>
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-2xl mb-3">📍</div>
+                    <h3 class="text-lg font-bold mb-2">Local Knowledge</h3>
+                    <p class="text-gray-600 text-sm">Understanding local needs and conditions.</p>
                 </div>
 
-                <!-- Comprehensive Services -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                        <span class="text-2xl">🛠️</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 font-heading">Comprehensive Solutions</h3>
-                    <p class="text-gray-600">From painting to complete remodeling, we handle all aspects of home improvement with seamless project coordination.</p>
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-2xl mb-3">💬</div>
+                    <h3 class="text-lg font-bold mb-2">Easy WhatsApp</h3>
+                    <p class="text-gray-600 text-sm">Quick quotes and updates via WhatsApp.</p>
                 </div>
 
-                <!-- Experienced Team -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                        <span class="text-2xl">👷</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 font-heading">30+ Years Experience</h3>
-                    <p class="text-gray-600">Our team brings decades of collective experience to every project, ensuring professional execution and attention to detail.</p>
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-2xl mb-3">🏆</div>
+                    <h3 class="text-lg font-bold mb-2">Quality Guaranteed</h3>
+                    <p class="text-gray-600 text-sm">We stand behind our work with satisfaction guarantee.</p>
                 </div>
 
-                <!-- Timely Completion -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                        <span class="text-2xl">⏱️</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 font-heading">Timely Project Completion</h3>
-                    <p class="text-gray-600">We respect your time and deliver projects on schedule with minimal disruption to your daily life.</p>
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-2xl mb-3">⏱️</div>
+                    <h3 class="text-lg font-bold mb-2">Timely Completion</h3>
+                    <p class="text-gray-600 text-sm">Projects completed efficiently and on schedule.</p>
                 </div>
 
-                <!-- Communication -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 mb-6">
-                        <span class="text-2xl">💬</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 font-heading">Clear Communication</h3>
-                    <p class="text-gray-600">Regular updates via WhatsApp, transparent quotes, and responsive support throughout your project.</p>
+                <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
+                    <div class="text-2xl mb-3">🤝</div>
+                    <h3 class="text-lg font-bold mb-2">Trusted Teams</h3>
+                    <p class="text-gray-600 text-sm">Skilled craftsmen known for quality work.</p>
                 </div>
             </div>
 
             <!-- Experience CTA -->
-            <div class="bg-gradient-to-r from-primary-600 to-secondary rounded-2xl p-10 text-white animate-on-scroll">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="bg-primary-50 rounded-xl p-6 border-2 border-primary-600 animate-on-scroll">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                     <div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-4 font-heading">Experience You Can Trust</h3>
-                        <p class="text-primary-100 text-lg">With our quality guarantee and performance-based pricing, you get exceptional value and peace of mind.</p>
+                        <h3 class="text-xl font-bold mb-2">Experience You Can Trust</h3>
+                        <p class="text-gray-600">30+ years of delivering quality craftsmanship.</p>
                     </div>
-                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20want%20to%20work%20with%20a%20team%20that%20guarantees%20quality%20craftsmanship." target="_blank" class="whatsapp-button px-8 py-4 rounded-lg font-semibold whitespace-nowrap shadow-lg">
-                        💬 Chat With Our Experts
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20want%20to%20work%20with%20your%20experienced%20team." target="_blank" class="whatsapp-button px-6 py-3 rounded-lg font-semibold whitespace-nowrap">
+                        💬 WhatsApp Our Team
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service Areas & Map -->
-    <section id="areas" class="section-padding bg-white">
+    <!-- Service Areas Section -->
+    <section id="areas" class="py-12 md:py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-heading">
-                    Serving <span class="text-gradient">Gauteng Region</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Professional home improvement services across major Gauteng areas
-                </p>
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Serving <span class="text-gradient">Gauteng Region</span></h2>
+                <p class="text-lg text-gray-600">Professional services where you need them</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 mb-16">
-                <!-- Areas List -->
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <!-- Left Column -->
                 <div class="animate-on-scroll">
-                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 h-full">
-                        <h3 class="text-2xl font-bold mb-8 font-heading">Our Service Areas</h3>
+                    <div class="bg-white rounded-xl p-6 border border-gray-200">
+                        <h3 class="text-xl font-bold mb-6">Our Service Areas</h3>
                         
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🏙️</span>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">🏙️</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Pretoria</h4>
-                                        <p class="text-sm text-gray-600">Capital City Region</p>
+                                        <h4 class="font-bold">Pretoria</h4>
+                                        <p class="text-xs text-gray-600">Capital City</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🏢</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">🏢</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Johannesburg</h4>
-                                        <p class="text-sm text-gray-600">Greater JHB Area</p>
+                                        <h4 class="font-bold">Johannesburg</h4>
+                                        <p class="text-xs text-gray-600">Greater JHB</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">💼</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">💼</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Sandton</h4>
-                                        <p class="text-sm text-gray-600">Business District</p>
+                                        <h4 class="font-bold">Sandton</h4>
+                                        <p class="text-xs text-gray-600">Business District</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">📍</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">📍</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Centurion</h4>
-                                        <p class="text-sm text-gray-600">Central Location</p>
+                                        <h4 class="font-bold">Centurion</h4>
+                                        <p class="text-xs text-gray-600">Central</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🚗</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">🚗</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Midrand</h4>
-                                        <p class="text-sm text-gray-600">Midway Location</p>
+                                        <h4 class="font-bold">Midrand</h4>
+                                        <p class="text-xs text-gray-600">Midway</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🏡</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">🏡</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Fourways</h4>
-                                        <p class="text-sm text-gray-600">Residential Area</p>
+                                        <h4 class="font-bold">Fourways</h4>
+                                        <p class="text-xs text-gray-600">Residential</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🌳</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">🌳</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Randburg</h4>
-                                        <p class="text-sm text-gray-600">Northern Suburbs</p>
+                                        <h4 class="font-bold">Randburg</h4>
+                                        <p class="text-xs text-gray-600">Northern Suburbs</p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🏘️</span>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center">
+                                        <span class="text-primary-600">🏘️</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-1">Roodepoort</h4>
-                                        <p class="text-sm text-gray-600">West Rand</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="bg-white p-6 rounded-xl border border-gray-200 card-hover col-span-2">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                                        <span class="text-xl">🌄</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold mb-1">Bronkhorstspruit</h4>
-                                        <p class="text-sm text-gray-600">Eastern Region</p>
+                                        <h4 class="font-bold">Roodepoort</h4>
+                                        <p class="text-xs text-gray-600">West Rand</p>
                                     </div>
                                 </div>
                             </div>
@@ -902,65 +746,45 @@
                     </div>
                 </div>
 
-                <!-- Map Visualization -->
+                <!-- Right Column -->
                 <div class="animate-on-scroll">
-                    <div class="bg-gradient-to-br from-primary-50 to-secondary/10 rounded-2xl p-8 border-2 border-primary-600 h-full">
-                        <h3 class="text-2xl font-bold mb-8 font-heading text-center">Service Area Map</h3>
+                    <div class="bg-primary-50 rounded-xl p-6 border-2 border-primary-600 h-full">
+                        <h3 class="text-xl font-bold mb-6 text-center">Ready for Service?</h3>
                         
-                        <div class="map-container h-96 relative">
-                            <!-- Simplified map visualization -->
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50 rounded-xl">
-                                <!-- Map representation with pins -->
-                                <div class="absolute top-1/4 left-1/4 map-pin">
-                                    <div class="bg-primary-600 text-white p-2 rounded-full shadow-lg">
-                                        <span class="text-sm font-bold">PTA</span>
-                                    </div>
-                                    <div class="w-2 h-8 bg-primary-600 ml-2"></div>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-primary-600">✓</span>
                                 </div>
-                                
-                                <div class="absolute top-1/3 left-2/3 map-pin" style="animation-delay: 0.5s;">
-                                    <div class="bg-primary-600 text-white p-2 rounded-full shadow-lg">
-                                        <span class="text-sm font-bold">JHB</span>
-                                    </div>
-                                    <div class="w-2 h-8 bg-primary-600 ml-2"></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Quick Response</h4>
+                                    <p class="text-gray-600 text-sm">Message us on WhatsApp for fast quotes and responses.</p>
                                 </div>
-                                
-                                <div class="absolute top-1/2 left-1/3 map-pin" style="animation-delay: 1s;">
-                                    <div class="bg-primary-600 text-white p-2 rounded-full shadow-lg">
-                                        <span class="text-sm font-bold">CTN</span>
-                                    </div>
-                                    <div class="w-2 h-8 bg-primary-600 ml-2"></div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-primary-600">✓</span>
                                 </div>
-                                
-                                <div class="absolute top-2/3 left-1/2 map-pin" style="animation-delay: 1.5s;">
-                                    <div class="bg-primary-600 text-white p-2 rounded-full shadow-lg">
-                                        <span class="text-sm font-bold">SDN</span>
-                                    </div>
-                                    <div class="w-2 h-8 bg-primary-600 ml-2"></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Free Assessment</h4>
+                                    <p class="text-gray-600 text-sm">Get a free project assessment and quote.</p>
                                 </div>
-                                
-                                <!-- Area labels -->
-                                <div class="absolute top-1/4 left-1/4 mt-12 ml-4">
-                                    <div class="bg-white px-3 py-1 rounded-lg shadow-sm text-sm font-medium">Pretoria</div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-primary-600">✓</span>
                                 </div>
-                                <div class="absolute top-1/3 left-2/3 mt-12 ml-4">
-                                    <div class="bg-white px-3 py-1 rounded-lg shadow-sm text-sm font-medium">Johannesburg</div>
-                                </div>
-                                <div class="absolute top-1/2 left-1/3 mt-12 ml-4">
-                                    <div class="bg-white px-3 py-1 rounded-lg shadow-sm text-sm font-medium">Centurion</div>
-                                </div>
-                                <div class="absolute top-2/3 left-1/2 mt-12 ml-4">
-                                    <div class="bg-white px-3 py-1 rounded-lg shadow-sm text-sm font-medium">Sandton</div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Quality Guarantee</h4>
+                                    <p class="text-gray-600 text-sm">All work backed by our quality guarantee.</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="mt-8 text-center">
-                            <p class="text-gray-600 mb-4">
-                                We serve the entire Gauteng region with professional home improvement services
-                            </p>
-                            <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Your%20Area]%20and%20would%20like%20to%20check%20if%20you%20service%20my%20location." target="_blank" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
-                                Check if we service your area →
+                        <div class="text-center">
+                            <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Your%20Area]%20and%20need%20home%20improvement%20services." target="_blank" class="w-full whatsapp-button py-3 rounded-lg font-bold text-center flex items-center justify-center gap-2">
+                                <span>📱</span>
+                                <span>WhatsApp Your Location</span>
                             </a>
                         </div>
                     </div>
@@ -969,12 +793,12 @@
 
             <!-- Areas CTA -->
             <div class="text-center animate-on-scroll">
-                <div class="bg-white rounded-2xl p-10 border-2 border-primary-600 shadow-xl">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 font-heading">Ready for Professional Service in Your Area?</h3>
-                    <p class="text-gray-600 mb-8 max-w-2xl mx-auto text-lg">
-                        Whether you're in <span class="highlight-text">Pretoria</span> needing painting, <span class="highlight-text">Sandton</span> requiring remodeling, or <span class="highlight-text">Centurion</span> looking for paving - we're your local experts with quality craftsmanship guaranteed.
+                <div class="bg-white rounded-xl p-6 border-2 border-primary-600">
+                    <h3 class="text-xl font-bold mb-4">Ready for Professional Service?</h3>
+                    <p class="text-gray-600 mb-4">
+                        We provide expert home improvement services across Gauteng.
                     </p>
-                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20in%20[Your%20Area]%20and%20need%20[Service]%20with%20quality%20guarantee." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl touch-target">
+                    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services%20in%20my%20area." target="_blank" class="inline-flex items-center justify-center gap-2 whatsapp-button px-6 py-3.5 rounded-lg font-bold transition-all touch-target">
                         <span>📍 WHATSAPP YOUR LOCAL EXPERTS</span>
                         <span>→</span>
                     </a>
@@ -983,309 +807,212 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="section-padding bg-gray-50">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-heading">
-                    <span class="text-gradient">Performance-Based Pricing</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Fair, transparent pricing based on the quality and scope of work
-                </p>
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">What <span class="text-gradient">Our Clients Say</span></h2>
+                <p class="text-lg text-gray-600">Hear from satisfied homeowners</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Standard Project -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll">
-                    <div class="text-center mb-8">
-                        <h3 class="text-xl font-bold mb-4 font-heading">Standard Projects</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">From R2,500</div>
-                        <p class="text-gray-600">Small to medium projects</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Single room painting</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Small tiling projects</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Minor repairs</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Basic plastering</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/27766473499?text=Hi!%20I%20have%20a%20standard%20project%20and%20would%20like%20a%20quote." target="_blank" class="block text-center bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                        Get Quote
-                    </a>
-                </div>
-
-                <!-- Premium Projects -->
-                <div class="bg-white rounded-2xl p-8 border-2 border-primary-600 card-hover animate-on-scroll transform scale-105 shadow-lg">
-                    <div class="text-center mb-8">
-                        <div class="inline-block px-4 py-1 bg-primary-600 text-white rounded-full text-sm font-semibold mb-4">MOST POPULAR</div>
-                        <h3 class="text-xl font-bold mb-4 font-heading">Premium Projects</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">From R8,000</div>
-                        <p class="text-gray-600">Medium to large projects</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Whole house painting</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Driveway paving</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Complete tiling</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Structural work</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/27766473499?text=Hi!%20I%20have%20a%20premium%20project%20and%20would%20like%20a%20detailed%20quote." target="_blank" class="block text-center whatsapp-button py-3 rounded-lg font-semibold">
-                        Get Premium Quote
-                    </a>
-                </div>
-
-                <!-- Complete Remodeling -->
-                <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover animate-on-scroll">
-                    <div class="text-center mb-8">
-                        <h3 class="text-xl font-bold mb-4 font-heading">Complete Remodeling</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">From R25,000</div>
-                        <p class="text-gray-600">Full home transformations</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Kitchen renovations</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Bathroom remodeling</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Room additions</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-600">✓</span>
-                            <span>Complete makeovers</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20complete%20remodeling%20services%20and%20would%20like%20a%20comprehensive%20quote." target="_blank" class="block text-center bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                        Get Remodeling Quote
-                    </a>
-                </div>
-            </div>
-
-            <!-- Pricing Note -->
-            <div class="pricing-highlight rounded-2xl p-8 animate-on-scroll">
-                <div class="flex items-start gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center">
-                            <span class="text-3xl text-accent">💰</span>
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-primary-600 font-bold">TM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thabo M.</h4>
+                            <p class="text-gray-500 text-xs">Pretoria East</p>
                         </div>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4 font-heading">Performance-Based Pricing Explained</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            Our pricing is based on the quality of work, materials used, and project scope. We provide detailed quotes upfront with no hidden costs. 
-                            <strong class="text-primary-600">Quality craftsmanship is guaranteed</strong> in every project, ensuring you get exceptional value for your investment.
-                        </p>
-                        <p class="text-gray-600">
-                            All quotes include: Materials, Labor, Quality Assurance, and Post-Completion Support
-                        </p>
+                    <p class="text-gray-600 text-sm mb-4">"Home Connector transformed our home with expert painting. WhatsApp communication was easy, and quality was excellent."</p>
+                    <div class="flex text-yellow-400">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
                     </div>
                 </div>
+
+                <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-primary-600 font-bold">SP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah P.</h4>
+                            <p class="text-gray-500 text-xs">Sandton</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">"Our driveway looks amazing! The team understood exactly what we needed. So convenient to get quotes via WhatsApp."</p>
+                    <div class="flex text-yellow-400">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
+                            <span class="text-primary-600 font-bold">JR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">James R.</h4>
+                            <p class="text-gray-500 text-xs">Centurion</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">"Complete bathroom tiling in our home. The experience showed in every detail. Local professionals who really care about quality."</p>
+                    <div class="flex text-yellow-400">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial CTA -->
+            <div class="text-center animate-on-scroll">
+                <p class="text-gray-600 mb-6">Join hundreds of satisfied homeowners!</p>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'd%20like%20to%20get%20a%20quote%20like%20your%20other%20happy%20clients." target="_blank" class="inline-flex items-center justify-center gap-2 whatsapp-button px-6 py-3.5 rounded-lg font-bold transition-all touch-target">
+                    <span>💬 WHATSAPP FOR FREE QUOTE</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Final CTA -->
-    <section id="contact" class="py-20 hero-gradient text-white">
+    <!-- Final CTA Section -->
+    <section class="py-12 md:py-16 bg-primary-600 text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-heading">Transform Your Home with Confidence</h2>
-            <p class="text-xl mb-10 text-white/90 max-w-3xl mx-auto">
-                Professional home improvement services with <strong>quality craftsmanship guaranteed</strong> and <strong>performance-based pricing</strong>
-            </p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Transform Your Home Today</h2>
+            <p class="text-lg mb-6 text-primary-100 max-w-3xl mx-auto">Professional home improvement services with quality craftsmanship guaranteed</p>
             
             <!-- Final Value Proposition -->
-            <div class="grid md:grid-cols-4 gap-6 mb-12">
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
-                    <div class="text-3xl font-bold mb-2">🏆</div>
-                    <div class="text-lg font-semibold mb-1">Quality Guarantee</div>
-                    <div class="text-sm text-white/80">Every Project</div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+                <div class="bg-white/10 p-3 rounded-lg">
+                    <div class="text-xl font-bold mb-1">30+</div>
+                    <div class="text-xs text-primary-100">Years Experience</div>
                 </div>
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
-                    <div class="text-3xl font-bold mb-2">💰</div>
-                    <div class="text-lg font-semibold mb-1">Fair Pricing</div>
-                    <div class="text-sm text-white/80">Performance-Based</div>
+                <div class="bg-white/10 p-3 rounded-lg">
+                    <div class="text-xl font-bold mb-1">Local</div>
+                    <div class="text-xs text-primary-100">Teams</div>
                 </div>
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
-                    <div class="text-3xl font-bold mb-2">🛠️</div>
-                    <div class="text-lg font-semibold mb-1">Comprehensive</div>
-                    <div class="text-sm text-white/80">All Services</div>
+                <div class="bg-white/10 p-3 rounded-lg">
+                    <div class="text-xl font-bold mb-1">Free</div>
+                    <div class="text-xs text-primary-100">Quotes</div>
                 </div>
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
-                    <div class="text-3xl font-bold mb-2">👷</div>
-                    <div class="text-lg font-semibold mb-1">Experienced</div>
-                    <div class="text-sm text-white/80">30+ Years</div>
+                <div class="bg-white/10 p-3 rounded-lg">
+                    <div class="text-xl font-bold mb-1">Quality</div>
+                    <div class="text-xs text-primary-100">Guaranteed</div>
                 </div>
             </div>
 
             <!-- Urgency Element -->
-            <div class="bg-white/10 rounded-2xl p-8 mb-12 max-w-2xl mx-auto border border-white/20 backdrop-blur-sm">
-                <div class="flex items-center justify-center gap-4 mb-6">
-                    <span class="text-3xl animate-pulse">⏰</span>
-                    <span class="text-2xl font-bold">Book Your Free Assessment Now</span>
+            <div class="bg-white/10 rounded-lg p-4 mb-6 max-w-2xl mx-auto">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                    <span class="text-lg animate-pulse">⏰</span>
+                    <span class="font-bold">Limited Booking Availability</span>
                 </div>
-                <p class="text-white/90">
-                    Due to high demand across Gauteng, we're booking 2-3 weeks in advance. 
-                    <strong>Message us now to secure your spot and get your free quote!</strong>
-                </p>
+                <p class="text-primary-100 text-sm">Message us now to secure your spot!</p>
             </div>
 
             <!-- Final CTA -->
-            <div class="mb-8">
-                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20ready%20to%20transform%20my%20home%20with%20quality%20craftsmanship%20guaranteed.%20Please%20send%20a%20free%20quote!" target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-12 py-6 rounded-xl font-bold text-xl transition-all shadow-2xl hover:scale-105 mb-4 touch-target">
+            <div class="mb-6">
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'm%20ready%20to%20transform%20my%20home%20with%20quality%20craftsmanship%20guaranteed.%20Please%20send%20a%20free%20quote!" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-primary-600 px-6 py-3.5 rounded-lg font-bold transition-all hover:scale-105 mb-2 touch-target w-full md:w-auto">
                     <span>🚀 WHATSAPP FOR IMMEDIATE QUOTE</span>
-                    <span class="animate-bounce">→</span>
+                    <span>→</span>
                 </a>
-                <p class="text-white/80 text-sm">No forms • Direct chat with experts • Free assessment • Quality guarantee</p>
+                <p class="text-primary-100 text-xs">No forms • Direct chat • Free assessment • Quality guarantee</p>
             </div>
 
-            <!-- Contact Info -->
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-white/80 text-sm mt-12 pt-8 border-t border-white/20">
-                <div class="flex items-center gap-3">
-                    <span>📱</span>
-                    <span>WhatsApp: +27766473499</span>
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap items-center justify-center gap-4 text-primary-100 text-xs">
+                <div class="flex items-center gap-1">
+                    <span>✅</span>
+                    <span>Local Teams</span>
                 </div>
-                <div class="flex items-center gap-3">
-                    <span>📍</span>
-                    <span>Serving Gauteng Region</span>
+                <div class="flex items-center gap-1">
+                    <span>✅</span>
+                    <span>30+ Years Experience</span>
                 </div>
-                <div class="flex items-center gap-3">
-                    <span>🏆</span>
-                    <span>Quality Craftsmanship Guaranteed</span>
+                <div class="flex items-center gap-1">
+                    <span>✅</span>
+                    <span>Quality Guarantee</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
+    <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
                 <div>
-                    <div class="text-2xl font-bold mb-6 font-heading">
+                    <div class="text-xl font-bold mb-4">
                         <span class="text-primary-400">Home</span>
                         <span>Connector</span>
                     </div>
-                    <p class="mb-6 text-gray-400 leading-relaxed">
-                        Comprehensive home improvement services with <strong class="text-primary-300">quality craftsmanship guaranteed</strong> and <strong class="text-accent">performance-based pricing</strong>.
+                    <p class="mb-4 text-gray-400 text-sm">
+                        Professional home improvement services with 30+ years experience in painting, paving, plastering, brickwork, tiling, and remodeling.
                     </p>
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-3 text-gray-300">
-                            <span>🏆</span>
-                            <span>Quality Guaranteed</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-gray-300">
-                            <span>💰</span>
-                            <span>Fair Pricing</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-gray-300">
-                            <span>📍</span>
-                            <span>Serving Gauteng Region</span>
-                        </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-3 text-sm">Our Services</h4>
+                    <div class="grid grid-cols-2 gap-2 text-xs text-gray-400">
+                        <a href="#services">Painting</a>
+                        <a href="#services">Paving</a>
+                        <a href="#services">Plastering</a>
+                        <a href="#services">Brickwork</a>
+                        <a href="#services">Tiling</a>
+                        <a href="#services">Ceilings</a>
+                        <a href="#services">Rhinolite</a>
+                        <a href="#services">Remodeling</a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold mb-6 text-lg font-heading">Our Services</h4>
-                    <div class="space-y-3">
-                        <a href="#services" class="block text-gray-400 hover:text-primary-400 transition-colors">Painting & Plastering</a>
-                        <a href="#services" class="block text-gray-400 hover:text-primary-400 transition-colors">Paving & Brickwork</a>
-                        <a href="#services" class="block text-gray-400 hover:text-primary-400 transition-colors">Ceiling & Tiling</a>
-                        <a href="#services" class="block text-gray-400 hover:text-primary-400 transition-colors">Remodeling Services</a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-6 text-lg font-heading">Service Areas</h4>
-                    <div class="grid grid-cols-2 gap-2">
-                        <span class="text-gray-400 text-sm">Pretoria</span>
-                        <span class="text-gray-400 text-sm">Johannesburg</span>
-                        <span class="text-gray-400 text-sm">Sandton</span>
-                        <span class="text-gray-400 text-sm">Centurion</span>
-                        <span class="text-gray-400 text-sm">Midrand</span>
-                        <span class="text-gray-400 text-sm">Fourways</span>
-                        <span class="text-gray-400 text-sm">Randburg</span>
-                        <span class="text-gray-400 text-sm">Roodepoort</span>
-                        <span class="text-gray-400 text-sm col-span-2">Bronkhorstspruit</span>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-6 text-lg font-heading">Contact Us</h4>
-                    <ul class="space-y-4 text-gray-400">
-                        <li class="flex items-center gap-3">
+                    <h4 class="font-bold mb-3 text-sm">Contact Us</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li class="flex items-center gap-2">
                             <span class="text-primary-400">💬</span>
                             <a href="https://wa.me/27766473499" target="_blank" class="hover:text-primary-400 transition-colors">
                                 WhatsApp: +27766473499
                             </a>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-400">📧</span>
-                            <span>Free Quotes via WhatsApp</span>
+                        <li class="flex items-center gap-2">
+                            <span class="text-primary-400">📍</span>
+                            <span>Serving Gauteng Region</span>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-400">⏰</span>
-                            <span>Mon-Sun: 7am-7pm</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-primary-400">🏆</span>
-                            <span>Quality Guaranteed</span>
+                        <li class="flex items-center gap-2">
+                            <span class="text-primary-400">👷</span>
+                            <span>30+ Years Experience</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
             <!-- Footer CTA -->
-            <div class="border-t border-gray-800 pt-12 text-center">
-                <p class="text-gray-400 mb-8 text-lg">Ready to improve your home with guaranteed quality?</p>
-                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I'd%20like%20a%20free%20quote%20for%20home%20improvement%20services%20with%20quality%20guarantee." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-button px-10 py-4 rounded-xl font-semibold hover:shadow-lg transition-all">
-                    <span>📱 GET FREE WHATSAPP QUOTE</span>
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p class="text-gray-400 mb-4 text-sm">Ready to improve your home?</p>
+                <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services." target="_blank" class="inline-flex items-center justify-center gap-2 whatsapp-button px-5 py-2.5 rounded-lg font-semibold text-sm">
+                    <span>📱 CHAT ON WHATSAPP</span>
                 </a>
             </div>
             
-            <div class="pt-12 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <div class="pt-6 border-t border-gray-800 text-center text-gray-500 text-xs">
                 <p>© 2024 Home Connector. All rights reserved.</p>
-                <p class="mt-2">Professional Home Improvement Services • Quality Craftsmanship Guaranteed • Performance-Based Pricing</p>
-                <p class="mt-2 text-xs">Serving Pretoria, Johannesburg, Sandton, Centurion, Midrand, Fourways, Randburg, Roodepoort, Bronkhorstspruit</p>
+                <p class="mt-1">Professional Home Improvement Services • Quality Craftsmanship Guaranteed</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp CTA Button -->
-    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20professional%20home%20improvement%20services%20with%20quality%20guarantee." target="_blank" class="floating-cta whatsapp-button p-4 rounded-full">
-        <div class="flex items-center gap-2 px-4">
-            <span class="text-2xl">💬</span>
-            <div class="text-left">
-                <div class="font-bold text-sm">WHATSAPP US</div>
-                <div class="text-xs opacity-90">Free Quote</div>
-            </div>
+    <a href="https://wa.me/27766473499?text=Hi%20Home%20Connector!%20I%20need%20home%20improvement%20services." target="_blank" class="floating-cta whatsapp-button p-3 rounded-full shadow-2xl touch-target">
+        <div class="flex items-center gap-2">
+            <span class="text-xl">💬</span>
+            <span class="font-bold text-sm">WHATSAPP</span>
         </div>
     </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top w-10 h-10 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-colors flex items-center justify-center touch-target">
+        ↑
+    </button>
 
     <!-- JavaScript -->
     <script>
@@ -1297,39 +1024,26 @@
 
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
-                const isOpen = mobileMenu.classList.contains('hidden');
+                const isOpen = !mobileMenu.classList.contains('open');
                 
                 if (isOpen) {
-                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('open');
                     menuOpenIcon.classList.add('hidden');
                     menuCloseIcon.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
                 } else {
-                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('open');
                     menuOpenIcon.classList.remove('hidden');
                     menuCloseIcon.classList.add('hidden');
-                    document.body.style.overflow = '';
                 }
             });
 
             // Close menu when clicking links
             mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('open');
                     menuOpenIcon.classList.remove('hidden');
                     menuCloseIcon.classList.add('hidden');
-                    document.body.style.overflow = '';
                 });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (event) => {
-                if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                    menuOpenIcon.classList.remove('hidden');
-                    menuCloseIcon.classList.add('hidden');
-                    document.body.style.overflow = '';
-                }
             });
         }
 
@@ -1344,11 +1058,10 @@
                 
                 if (targetElement) {
                     // Close mobile menu if open
-                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
+                    if (mobileMenu && mobileMenu.classList.contains('open')) {
+                        mobileMenu.classList.remove('open');
                         menuOpenIcon.classList.remove('hidden');
                         menuCloseIcon.classList.add('hidden');
-                        document.body.style.overflow = '';
                     }
                     
                     // Calculate header height
@@ -1382,75 +1095,48 @@
             observer.observe(element);
         });
 
-        // Add hover effects to cards
-        document.querySelectorAll('.card-hover').forEach(element => {
-            element.addEventListener('mouseenter', function() {
-                this.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
-            });
-        });
-
         // Back to top button
-        const backToTop = document.createElement('button');
-        backToTop.innerHTML = '↑';
-        backToTop.className = 'fixed bottom-8 left-8 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-colors z-40 hidden flex items-center justify-center text-xl';
-        backToTop.style.transform = 'translateY(100px)';
-        backToTop.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
-        backToTop.style.opacity = '0';
-        document.body.appendChild(backToTop);
+        const backToTop = document.getElementById('back-to-top');
 
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.remove('hidden');
-                setTimeout(() => {
-                    backToTop.style.transform = 'translateY(0)';
-                    backToTop.style.opacity = '1';
-                }, 10);
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
             } else {
-                backToTop.style.transform = 'translateY(100px)';
-                backToTop.style.opacity = '0';
-                setTimeout(() => {
-                    if (window.scrollY <= 500) {
-                        backToTop.classList.add('hidden');
-                    }
-                }, 300);
+                backToTop.classList.remove('visible');
             }
         });
 
-        // WhatsApp click tracking
+        // WhatsApp click tracking with service context
         document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
             link.addEventListener('click', function() {
                 // Add animation feedback
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
                     this.style.transform = '';
-                }, 300);
-                
-                // Optional: Log to console (replace with analytics in production)
-                console.log('WhatsApp CTA clicked:', this.textContent);
+                }, 200);
             });
         });
 
-        // Update WhatsApp links with service context
-        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-            // Only update if not already has a custom message
-            if (!link.href.includes('text=') || link.href.includes('[Your%20Area]')) {
-                if (link.textContent.includes('Painting')) {
-                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need Painting & Plastering services with quality guarantee. Please send a free quote!");
-                } else if (link.textContent.includes('Paving')) {
-                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need Paving & Brickwork services with quality guarantee. Please send a free quote!");
-                } else if (link.textContent.includes('Ceiling')) {
-                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need Ceiling & Tiling services with quality guarantee. Please send a free quote!");
-                } else if (link.textContent.includes('Remodeling')) {
-                    link.href = "https://wa.me/27766473499?text=" + encodeURIComponent("Hi Home Connector! I need Remodeling services with quality guarantee. Please send a free quote!");
-                }
-            }
-        });
+        // Slideshow functionality
+        const slideshowContainer = document.querySelector('.slideshow-container');
+        if (slideshowContainer) {
+            // Pause slideshow on hover
+            slideshowContainer.addEventListener('mouseenter', () => {
+                const track = slideshowContainer.querySelector('.slideshow-track');
+                track.style.animationPlayState = 'paused';
+            });
+            
+            slideshowContainer.addEventListener('mouseleave', () => {
+                const track = slideshowContainer.querySelector('.slideshow-track');
+                track.style.animationPlayState = 'running';
+            });
+        }
 
-        // Initialize all animations on load
+        // Initialize animations on load
         window.addEventListener('load', () => {
             // Trigger initial animations
             document.querySelectorAll('.animate-on-scroll').forEach(el => {
@@ -1459,18 +1145,17 @@
                     el.classList.add('visible');
                 }
             });
-            
-            // Add pulse animation to quality guarantee badges
-            document.querySelectorAll('.quality-badge').forEach(badge => {
-                badge.style.animation = 'pulseSubtle 3s infinite';
-            });
         });
 
-        // Highlight text animation
-        document.querySelectorAll('.highlight-text').forEach(text => {
-            text.addEventListener('mouseenter', function() {
-                this.style.transition = 'all 0.3s ease';
-            });
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (mobileMenu && mobileMenu.classList.contains('open') && 
+                !mobileMenu.contains(event.target) && 
+                !mobileMenuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('open');
+                menuOpenIcon.classList.remove('hidden');
+                menuCloseIcon.classList.add('hidden');
+            }
         });
     </script>
 </body>
