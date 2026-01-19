@@ -48,7 +48,7 @@
               'slide-up': 'slideUp 0.6s ease-out',
               'pulse-subtle': 'pulseSubtle 3s infinite',
               'float': 'float 6s ease-in-out infinite',
-              'slide': 'slide 40s linear infinite',
+              'slide': 'slide 64s linear infinite',
             },
             keyframes: {
               fadeIn: {
@@ -69,11 +69,14 @@
               },
               slide: {
                 '0%': { transform: 'translateX(0%)' },
-                '20%': { transform: 'translateX(0%)' },
-                '40%': { transform: 'translateX(-100%)' },
-                '60%': { transform: 'translateX(-200%)' },
-                '80%': { transform: 'translateX(-300%)' },
-                '100%': { transform: 'translateX(-400%)' }
+                '12.5%': { transform: 'translateX(0%)' },
+                '25%': { transform: 'translateX(-12.5%)' },
+                '37.5%': { transform: 'translateX(-25%)' },
+                '50%': { transform: 'translateX(-37.5%)' },
+                '62.5%': { transform: 'translateX(-50%)' },
+                '75%': { transform: 'translateX(-62.5%)' },
+                '87.5%': { transform: 'translateX(-75%)' },
+                '100%': { transform: 'translateX(-87.5%)' }
               }
             }
           }
@@ -170,24 +173,25 @@
         animation: float 6s ease-in-out infinite;
       }
       
-      /* Slideshow Styles - 5 SLIDES */
+      /* Slideshow Styles - 8 SLIDES */
       .slideshow-container {
         width: 100%;
         height: 400px;
         overflow: hidden;
         position: relative;
         border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
       
       .slideshow-track {
         display: flex;
-        width: 500%; /* 5 slides at 100% each */
+        width: 800%; /* 8 slides at 100% each */
         height: 100%;
-        animation: slide 40s linear infinite;
+        animation: slide 64s linear infinite;
       }
 
       .slide {
-        width: 20%; /* 100% / 5 slides = 20% each */
+        width: 12.5%; /* 100% / 8 slides = 12.5% each */
         height: 100%;
         flex-shrink: 0;
         background-size: cover;
@@ -240,6 +244,11 @@
       .back-to-top.visible {
         transform: translateY(0);
         opacity: 1;
+      }
+      
+      .service-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
       }
     </style>
 </head>
@@ -387,7 +396,7 @@
         </div>
     </section>
 
-    <!-- Slideshow Section -->
+    <!-- Slideshow Section - 8 SLIDES -->
     <section id="slideshow" class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center mb-8">
@@ -395,7 +404,7 @@
                 <p class="text-lg text-gray-600">See our quality craftsmanship in action</p>
             </div>
 
-            <!-- Image Slideshow - USING 5 SLIDES FROM GITHUB REPO -->
+            <!-- Image Slideshow - USING 8 SLIDES FROM GITHUB REPO -->
             <div class="slideshow-container mb-8 animate-on-scroll">
                 <div class="slideshow-track">
                     <!-- Slide 1 -->
@@ -452,6 +461,39 @@
                             </a>
                         </div>
                     </div>
+                    
+                    <!-- Slide 6 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide6.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Ceiling Installation</h3>
+                            <p class="mb-4 max-w-2xl">Gypsum and suspended ceilings</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20ceiling%20installation." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Ceiling Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 7 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide7.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Rhinolite Applications</h3>
+                            <p class="mb-4 max-w-2xl">Textured wall coatings for protection</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20rhinolite%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Rhinolite Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 8 -->
+                    <div class="slide" style="background-image: url('https://raw.githubusercontent.com/Maribamedia/HomeConnector/main/slides/slide8.jpg');">
+                        <div class="slide-overlay">
+                            <h3 class="text-2xl font-bold mb-3">Complete Remodeling</h3>
+                            <p class="mb-4 max-w-2xl">Full home transformations</p>
+                            <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20remodeling%20services." target="_blank" class="whatsapp-button px-5 py-2.5 rounded-lg font-semibold">
+                                WhatsApp for Remodeling Quote
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -477,7 +519,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                 <!-- Painting -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🎨</div>
+                    <div class="service-icon">🎨</div>
                     <h3 class="text-lg font-bold mb-2">Professional Painting</h3>
                     <p class="text-gray-600 text-sm mb-3">Interior & exterior painting with premium materials.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20painting%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -487,7 +529,7 @@
 
                 <!-- Paving -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🧱</div>
+                    <div class="service-icon">🧱</div>
                     <h3 class="text-lg font-bold mb-2">Expert Paving</h3>
                     <p class="text-gray-600 text-sm mb-3">Driveways, walkways, and patio paving.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20paving%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -497,7 +539,7 @@
 
                 <!-- Plastering -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🏗️</div>
+                    <div class="service-icon">🏗️</div>
                     <h3 class="text-lg font-bold mb-2">Precision Plastering</h3>
                     <p class="text-gray-600 text-sm mb-3">Smooth, even plaster finishes.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20plastering%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -507,7 +549,7 @@
 
                 <!-- Brickwork -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🧱</div>
+                    <div class="service-icon">🧱</div>
                     <h3 class="text-lg font-bold mb-2">Quality Brickwork</h3>
                     <p class="text-gray-600 text-sm mb-3">Structural and decorative brickwork.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20brickwork%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -517,7 +559,7 @@
 
                 <!-- Ceiling Installation -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">⬆️</div>
+                    <div class="service-icon">⬆️</div>
                     <h3 class="text-lg font-bold mb-2">Ceiling Installation</h3>
                     <p class="text-gray-600 text-sm mb-3">Gypsum and suspended ceilings.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20ceiling%20installation." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -527,7 +569,7 @@
 
                 <!-- Tiling -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🔲</div>
+                    <div class="service-icon">🔲</div>
                     <h3 class="text-lg font-bold mb-2">Professional Tiling</h3>
                     <p class="text-gray-600 text-sm mb-3">Floor and wall tiling with perfect alignment.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20tiling%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -537,7 +579,7 @@
 
                 <!-- Rhinolite -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🛡️</div>
+                    <div class="service-icon">🛡️</div>
                     <h3 class="text-lg font-bold mb-2">Rhinolite Applications</h3>
                     <p class="text-gray-600 text-sm mb-3">Textured wall coatings for protection.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20rhinolite%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
@@ -547,7 +589,7 @@
 
                 <!-- Remodeling -->
                 <div class="bg-white rounded-xl p-5 border border-gray-200 card-hover animate-on-scroll text-center">
-                    <div class="text-3xl mb-3">🏠</div>
+                    <div class="service-icon">🏠</div>
                     <h3 class="text-lg font-bold mb-2">Complete Remodeling</h3>
                     <p class="text-gray-600 text-sm mb-3">Full home transformations and renovations.</p>
                     <a href="https://wa.me/27766473499?text=Hi!%20I%20need%20remodeling%20services." target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
